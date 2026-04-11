@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#eef2ff" />
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#5367c3" stroke-width="4" />
+  <path d="M28 72 C40 26, 80 26, 92 72 Z" fill="#5367c3" />
+  <path d="M42 56 L60 26 L78 56 Z" fill="none" stroke="#eef2ff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <title>Outer Col</title>
+</svg>

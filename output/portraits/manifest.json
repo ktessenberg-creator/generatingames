@@ -1,0 +1,22 @@
+{
+  "generatedAt": "2026-04-11T00:57:43.859Z",
+  "provider": "mock",
+  "dryRun": false,
+  "count": 2,
+  "entries": [
+    {
+      "name": "Lance",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Lance\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: armoured grizzeled halberd wielder\nScene/backdrop: subtle environment hint matching Adventurer, Outer Col, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "outputFile": "lance.svg",
+      "provider": "mock",
+      "status": "generated"
+    },
+    {
+      "name": "Lana",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Lana\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: knight in white and black armour on a horse\nScene/backdrop: subtle environment hint matching Adventurer, Outer Col, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "outputFile": "lana.svg",
+      "provider": "mock",
+      "status": "generated"
+    }
+  ]
+}

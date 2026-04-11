@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#eef8eb" />
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#4f8f49" stroke-width="4" />
+  <path d="M60 20 C72 36, 74 56, 60 82 C46 56, 48 36, 60 20 Z" fill="#4f8f49" />
+  <path d="M57 58 L63 58 L63 92 L57 92 Z" fill="none" stroke="#eef8eb" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <title>Park</title>
+</svg>

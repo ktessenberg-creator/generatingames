@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#fff7ea" />
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#c2782d" stroke-width="4" />
+  <path d="M60 20 L84 44 L60 68 L36 44 Z" fill="#c2782d" />
+  <path d="M60 36 L72 48 L60 60 L48 48 Z" fill="none" stroke="#fff7ea" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <title>Adventurer</title>
+</svg>

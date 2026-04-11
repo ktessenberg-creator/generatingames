@@ -1,0 +1,11 @@
+{
+  "name": "gamegen",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:cards": "node src/generate-cards.mjs",
+    "generate:portraits": "node src/generate-portraits.mjs",
+    "generate:all": "npm run generate:portraits && npm run generate:cards"
+  }
+}

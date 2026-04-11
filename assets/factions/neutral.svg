@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#f4f0ea" />
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#7f715e" stroke-width="4" />
+  <path d="M60 22 L94 44 L94 76 L60 98 L26 76 L26 44 Z" fill="#7f715e" />
+  <path d="M60 34 L80 46 L80 72 L60 84 L40 72 L40 46 Z" fill="none" stroke="#f4f0ea" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <title>Neutral</title>
+</svg>

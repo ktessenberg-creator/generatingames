@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#f2eaff" />
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#663c9e" stroke-width="4" />
+  <path d="M24 74 L60 22 L96 74 L60 54 Z" fill="#663c9e" />
+  <path d="M60 34 L72 52 L60 44 L48 52 Z" fill="none" stroke="#f2eaff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <title>Thieves</title>
+</svg>

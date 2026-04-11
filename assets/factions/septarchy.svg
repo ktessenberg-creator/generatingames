@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#fff2e4" />
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#b86d2c" stroke-width="4" />
+  <path d="M60 18 L70 36 L90 40 L76 56 L80 78 L60 68 L40 78 L44 56 L30 40 L50 36 Z" fill="#b86d2c" />
+  <path d="M60 34 A8 8 0 1 1 59.9 34 Z" fill="none" stroke="#fff2e4" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <title>Septarchy</title>
+</svg>

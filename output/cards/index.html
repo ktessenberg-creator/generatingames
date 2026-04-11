@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GameGen Card Gallery</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f0e4c7;
+        --ink: #382615;
+        --panel: rgba(255, 248, 235, 0.78);
+        --line: rgba(77, 54, 31, 0.2);
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top, rgba(255, 255, 255, 0.5), transparent 36%),
+          linear-gradient(145deg, #d7be92, var(--bg) 45%, #ccb180);
+      }
+      main {
+        width: min(1200px, calc(100vw - 40px));
+        margin: 0 auto;
+        padding: 32px 0 48px;
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: clamp(2rem, 4vw, 3.5rem);
+      }
+      p {
+        margin: 0 0 24px;
+        max-width: 760px;
+        line-height: 1.5;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 14px;
+        text-decoration: none;
+        color: inherit;
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        box-shadow: 0 16px 30px rgba(55, 35, 15, 0.12);
+        backdrop-filter: blur(10px);
+      }
+      img {
+        width: 100%;
+        border-radius: 16px;
+        aspect-ratio: 744 / 1039;
+        object-fit: cover;
+        background: #f9f2de;
+      }
+      span { font-weight: 700; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>GameGen Card Gallery</h1>
+      <p>Generated cards from CSV data with faction icons and portrait slots. Add portrait files under <code>assets/portraits</code> or use the portrait generator to populate them automatically.</p>
+      <section class="grid">
+        <a class="card" href="./lance.svg" target="_blank" rel="noreferrer">
+        <img src="./lance.svg" alt="Lance" />
+        <span>Lance</span>
+      </a>
+<a class="card" href="./lana.svg" target="_blank" rel="noreferrer">
+        <img src="./lana.svg" alt="Lana" />
+        <span>Lana</span>
+      </a>
+<a class="card" href="./dronan.svg" target="_blank" rel="noreferrer">
+        <img src="./dronan.svg" alt="Dronan" />
+        <span>Dronan</span>
+      </a>
+<a class="card" href="./saladin.svg" target="_blank" rel="noreferrer">
+        <img src="./saladin.svg" alt="Saladin" />
+        <span>Saladin</span>
+      </a>
+<a class="card" href="./erika.svg" target="_blank" rel="noreferrer">
+        <img src="./erika.svg" alt="Erika" />
+        <span>Erika</span>
+      </a>
+<a class="card" href="./byron.svg" target="_blank" rel="noreferrer">
+        <img src="./byron.svg" alt="Byron" />
+        <span>Byron</span>
+      </a>
+<a class="card" href="./corric.svg" target="_blank" rel="noreferrer">
+        <img src="./corric.svg" alt="Corric" />
+        <span>Corric</span>
+      </a>
+<a class="card" href="./rinse.svg" target="_blank" rel="noreferrer">
+        <img src="./rinse.svg" alt="Rinse" />
+        <span>Rinse</span>
+      </a>
+<a class="card" href="./gelemire.svg" target="_blank" rel="noreferrer">
+        <img src="./gelemire.svg" alt="Gelemire" />
+        <span>Gelemire</span>
+      </a>
+<a class="card" href="./ztun.svg" target="_blank" rel="noreferrer">
+        <img src="./ztun.svg" alt="Ztun" />
+        <span>Ztun</span>
+      </a>
+<a class="card" href="./bernadette.svg" target="_blank" rel="noreferrer">
+        <img src="./bernadette.svg" alt="Bernadette" />
+        <span>Bernadette</span>
+      </a>
+<a class="card" href="./reese.svg" target="_blank" rel="noreferrer">
+        <img src="./reese.svg" alt="Reese" />
+        <span>Reese</span>
+      </a>
+<a class="card" href="./moss.svg" target="_blank" rel="noreferrer">
+        <img src="./moss.svg" alt="Moss" />
+        <span>Moss</span>
+      </a>
+<a class="card" href="./gavailey.svg" target="_blank" rel="noreferrer">
+        <img src="./gavailey.svg" alt="Gavailey" />
+        <span>Gavailey</span>
+      </a>
+<a class="card" href="./hopeless-assistant.svg" target="_blank" rel="noreferrer">
+        <img src="./hopeless-assistant.svg" alt="Hopeless assistant" />
+        <span>Hopeless assistant</span>
+      </a>
+<a class="card" href="./twist.svg" target="_blank" rel="noreferrer">
+        <img src="./twist.svg" alt="Twist" />
+        <span>Twist</span>
+      </a>
+<a class="card" href="./listener.svg" target="_blank" rel="noreferrer">
+        <img src="./listener.svg" alt="Listener" />
+        <span>Listener</span>
+      </a>
+<a class="card" href="./watcher.svg" target="_blank" rel="noreferrer">
+        <img src="./watcher.svg" alt="Watcher" />
+        <span>Watcher</span>
+      </a>
+<a class="card" href="./albert.svg" target="_blank" rel="noreferrer">
+        <img src="./albert.svg" alt="Albert" />
+        <span>Albert</span>
+      </a>
+<a class="card" href="./ogglethorpe.svg" target="_blank" rel="noreferrer">
+        <img src="./ogglethorpe.svg" alt="Ogglethorpe" />
+        <span>Ogglethorpe</span>
+      </a>
+      </section>
+    </main>
+  </body>
+</html>
