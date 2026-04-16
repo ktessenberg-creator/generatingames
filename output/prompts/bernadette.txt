@@ -5,7 +5,7 @@ Style/medium: painted fantasy illustration, high detail, card-art quality, reada
 Composition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop
 Lighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation
 Color palette: faction-driven fantasy palette with clear subject separation from background
-Subject: old witch with an imp familiar
-Scene/backdrop: subtle environment hint matching Adventurer, Septarchy, but keep the character as the focus
+Subject: "Get them Squibby!"
+Scene/backdrop: subtle environment hint inspired by: "Get them Squibby!"
 Constraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background
 Avoid: logo marks, borders, captions, collage layout, photoreal uncanny details

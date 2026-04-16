@@ -1,21 +1,609 @@
 {
-  "generatedAt": "2026-04-11T00:57:43.859Z",
-  "provider": "mock",
+  "generatedAt": "2026-04-11T23:18:33.226Z",
+  "provider": "dataset",
   "dryRun": false,
-  "count": 2,
+  "count": 86,
   "entries": [
     {
       "name": "Lance",
-      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Lance\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: armoured grizzeled halberd wielder\nScene/backdrop: subtle environment hint matching Adventurer, Outer Col, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
-      "outputFile": "lance.svg",
-      "provider": "mock",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Lance\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: Lance, the first and frontmost of Pests and Chests https://drive.google.com/file/d/1WQsAeRZEevrCKDnJtkYSFEMHQj_x4qf9/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: Lance, the first and frontmost of Pests and Chests\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "lance.png",
       "status": "generated"
     },
     {
       "name": "Lana",
-      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Lana\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: knight in white and black armour on a horse\nScene/backdrop: subtle environment hint matching Adventurer, Outer Col, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
-      "outputFile": "lana.svg",
-      "provider": "mock",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Lana\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: Justice is blind, and Lana is arbitary, the only reward is in smiting https://drive.google.com/file/d/1f-EAFbCKDYl182UmoFJL8G4oO3alF_CC/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: Justice is blind, and Lana is arbitary, the only reward is in smiting\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "lana.png",
+      "status": "generated"
+    },
+    {
+      "name": "Dronan",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Dronan\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"For the last time, I do not lay eggs!\" https://drive.google.com/file/d/1MBB-FEBEnoSI91v9N3yQrVtKDaI22E3I/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"For the last time, I do not lay eggs!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "dronan.png",
+      "status": "generated"
+    },
+    {
+      "name": "Saladin",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Saladin\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: Since leaving his rulers in Jazeeria, Saladin bows to no one. https://drive.google.com/file/d/1Bj_gfuLOEmQnJeAv_lN5BEIk325pn47y/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: Since leaving his rulers in Jazeeria, Saladin bows to no one.\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "saladin.png",
+      "status": "generated"
+    },
+    {
+      "name": "Erika",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Erika\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"I wasn't kicked out of the university! I can learn my own way of magic through adventuring.\" https://drive.google.com/file/d/1q91scuJwf6ennpBx5SWkQLgkFvUqfc1G/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"I wasn't kicked out of the university! I can learn my own way of magic through adventuring.\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "erika.png",
+      "status": "generated"
+    },
+    {
+      "name": "Byron",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Byron\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"Who?\" https://drive.google.com/file/d/1jWDB7CO21xXNKUejwAxj2V1uh6JvnTPH/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"Who?\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "byron.png",
+      "status": "generated"
+    },
+    {
+      "name": "Corric",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Corric\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"Question!\" https://drive.google.com/file/d/1UHgG5Kk9y72AvT4FeMczdTm_3AQOYs0-/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"Question!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "corric.png",
+      "status": "generated"
+    },
+    {
+      "name": "Rinse",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Rinse\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: What if we simply destroyed the world? Then what would they do? https://drive.google.com/file/d/1lxuljo8wPBfBdf5-Ij9FSwywoWrzXy1Z/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: What if we simply destroyed the world? Then what would they do?\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "rinse.png",
+      "status": "generated"
+    },
+    {
+      "name": "Gelemire",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Gelemire\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"and you must be Gele.. - sound of fist connecting with nose-\" https://drive.google.com/file/d/1z2AdMkmnbqvgvGo4QNlZxfNAbhxpxIFU/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"and you must be Gele.. - sound of fist connecting with nose-\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "gelemire.png",
+      "status": "generated"
+    },
+    {
+      "name": "Ztun",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Ztun\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: Ztuns talents were for digging, adventuring merely gave him the chance to discover his passion, potatoes https://drive.google.com/file/d/1K9jJtTgvCFMjHE0xKDCHzUBJB5BlP9Vw/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: Ztuns talents were for digging, adventuring merely gave him the chance to discover his passion, potatoes\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "ztun.png",
+      "status": "generated"
+    },
+    {
+      "name": "Bernadette",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Bernadette\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"Get them Squibby!\" https://drive.google.com/file/d/1jVv5FqwqDZNY6Q_3TcHoRiKtHcH_UBYr/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"Get them Squibby!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "bernadette.png",
+      "status": "generated"
+    },
+    {
+      "name": "Reese",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Reese\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1xeItAND1np95cNXu9RGnnuerO7gBp_HB/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Adventurer, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "reese.png",
+      "status": "generated"
+    },
+    {
+      "name": "Moss",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Moss\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"Moss just ran in...\" https://drive.google.com/file/d/1TJAlTCfGsN_A2wSbqggxdFxofFmBuOsW/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"Moss just ran in...\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "moss.png",
+      "status": "generated"
+    },
+    {
+      "name": "Gavailey",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Gavailey\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1DKIr7v8-tXniOfpeAf4dimKTWmdsLI41/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Adventurer, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "gavailey.png",
+      "status": "generated"
+    },
+    {
+      "name": "Abaddon, Hopeless assistant",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Abaddon, Hopeless assistant\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"If we can deal with the abolyth and the lich at the same time then by my calculations we should still make it to our pottery class\" https://drive.google.com/file/d/1teGcKimuF3yHDP3mi6S5IdbsxPTLiglJ/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"If we can deal with the abolyth and the lich at the same time then by my calculations we should still make it to our pottery class\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "abaddon-hopeless-assistant.png",
+      "status": "generated"
+    },
+    {
+      "name": "Twist",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Twist\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"No Gods. No Masters...\" https://drive.google.com/file/d/13nmsxCV6yFkrdWpFXaxJgSo0p6sDLKfK/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"No Gods. No Masters...\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "twist.png",
+      "status": "generated"
+    },
+    {
+      "name": "Listener",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Listener\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1FHXHYs4HUWq_0XvYPZglhR4EEA-SZ1us/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Thieves, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "listener.png",
+      "status": "generated"
+    },
+    {
+      "name": "Watcher",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Watcher\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1jj7FIU9mgMrS8p-D_Cqret9LGwz_HDwi/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Thieves, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "watcher.png",
+      "status": "generated"
+    },
+    {
+      "name": "Albert",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Albert\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1bRlNt_dqPO9wkiidPmP4JR9cx64_wQti/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Thieves, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "albert.png",
+      "status": "generated"
+    },
+    {
+      "name": "Ogglethorpe",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Ogglethorpe\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/130OkheJ_wxN-aPyH61jcuuIVLKl4KcAL/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Thieves, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "ogglethorpe.png",
+      "status": "generated"
+    },
+    {
+      "name": "Gunsmith",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Gunsmith\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1we19_aDpaFzczfj-gaIai76gxOz-OSC5/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Thieves, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "gunsmith.png",
+      "status": "generated"
+    },
+    {
+      "name": "Slum Dweller",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Slum Dweller\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"Pests and Chests, you are the most dangerous hypocrites I have ever met\" - Twist https://drive.google.com/file/d/1_2YDbD7JsJqIyY1-R1bHJxofOfs6Gbjh/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"Pests and Chests, you are the most dangerous hypocrites I have ever met\" - Twist\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "slum-dweller.png",
+      "status": "generated"
+    },
+    {
+      "name": "Thief",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Thief\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"I know this city\" - Twist https://drive.google.com/file/d/1KiuLW0Nrc2WanhIKwFMbV1AfmO58XsAz/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"I know this city\" - Twist\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "thief.png",
+      "status": "generated"
+    },
+    {
+      "name": "The Warden",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of The Warden\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"They always return to the scene of the crime\" https://drive.google.com/file/d/1VLFLQbs4sd324nApkMsvtGphZA_5NlAu/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"They always return to the scene of the crime\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "the-warden.png",
+      "status": "generated"
+    },
+    {
+      "name": "Praxis",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Praxis\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/10UgXp0Yi2dzToIPSW-JwzMAhjf_Vsmxo/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Medicarium, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "praxis.png",
+      "status": "generated"
+    },
+    {
+      "name": "Biddimim",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Biddimim\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"We're simply waiting here for the darkness to consume us all\" https://drive.google.com/file/d/1vV1gF7ri-H66k2m-CMoIqcdla9or7hK8/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"We're simply waiting here for the darkness to consume us all\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "biddimim.png",
+      "status": "generated"
+    },
+    {
+      "name": "Father Sentar",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Father Sentar\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: Even the the effects of a True Sight spell fail to reveal the true form of the Church of the Self's leader https://drive.google.com/file/d/1xVt7uw8tYGzpqRfj7VALKcK4L_PI5Lg4/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: Even the the effects of a True Sight spell fail to reveal the true form of the Church of the Self's leader\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "father-sentar.png",
+      "status": "generated"
+    },
+    {
+      "name": "Marcotte",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Marcotte\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1jc4kgmMpOAG0dlqHcjMwIp8P37mc5DpV/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Medicarium, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "marcotte.png",
+      "status": "generated"
+    },
+    {
+      "name": "Catherine",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Catherine\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1U4VeLcI0hfWhByejxrhnV_APB8VIupJn/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Medicarium, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "catherine.png",
+      "status": "generated"
+    },
+    {
+      "name": "Death",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Death\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"This man kept me imprisoned, I will make his death complete\" https://drive.google.com/file/d/1Lfk1pzOHVru-tQJ-7DJ8Z39AuaXjcBJD/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"This man kept me imprisoned, I will make his death complete\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "death.png",
+      "status": "generated"
+    },
+    {
+      "name": "Abaddon, False Cleric",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Abaddon, False Cleric\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"What's an illusionist?\" https://drive.google.com/file/d/1adZHkyA_ZTlfWx3TkbP9OO-HDkFnOJdQ/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"What's an illusionist?\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "abaddon-false-cleric.png",
+      "status": "generated"
+    },
+    {
+      "name": "Sir Damien",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Sir Damien\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"Paladins can choose!\" https://drive.google.com/file/d/1XwSHDYnN9V-uCTb6T-VSk6N6_1DWirfg/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"Paladins can choose!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "sir-damien.png",
+      "status": "generated"
+    },
+    {
+      "name": "Lights Intent Officer",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Lights Intent Officer\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1bOOvLwMFuZ9MGHXcvAHGHVYzRXhPlknf/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Medicarium, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "lights-intent-officer.png",
+      "status": "generated"
+    },
+    {
+      "name": "Medicarium Cleric",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Medicarium Cleric\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1pgwdtQxnFPd-DbEfAQB1HupVqrewhqRN/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Medicarium, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "medicarium-cleric.png",
+      "status": "generated"
+    },
+    {
+      "name": "Alieah",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Alieah\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"I just want to be left alone\" https://drive.google.com/file/d/1RBip0NeZz4m73U4Q_tj-5mdshzFFvDyB/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"I just want to be left alone\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "alieah.png",
+      "status": "generated"
+    },
+    {
+      "name": "Asmodeus",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Asmodeus\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1-LFKMYFvvsZU10rTcJ3k9VvCdNQCZkZe/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Septarchy, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "asmodeus.png",
+      "status": "generated"
+    },
+    {
+      "name": "Vainglory",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Vainglory\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"This is all Bullshit\" https://drive.google.com/file/d/1s26GwL6mr5cxxKRkg90So6giDE6_Z43a/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"This is all Bullshit\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "vainglory.png",
+      "status": "generated"
+    },
+    {
+      "name": "Lilith",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Lilith\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"We're friends, aren't we Pests and Chests?\" https://drive.google.com/file/d/1YkrZ6f_1s8wAQLnvftxdSe20Swr8ZVxz/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"We're friends, aren't we Pests and Chests?\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "lilith.png",
+      "status": "generated"
+    },
+    {
+      "name": "Belthagor",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Belthagor\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1lRDe6ljd1giNmbE_j_3qd9L_ot5tZFIp/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Septarchy, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "belthagor.png",
+      "status": "generated"
+    },
+    {
+      "name": "Jerris",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Jerris\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"Would any of you like to duel?\" https://drive.google.com/file/d/1Nx6Xtwsc7pIKRJcgp9O_1in2I-vWPEoO/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"Would any of you like to duel?\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "jerris.png",
+      "status": "generated"
+    },
+    {
+      "name": "Beliel",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Beliel\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1l8ppgDm8jTERMQXqS_RxfFDtCMrpRfvR/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Septarchy, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "beliel.png",
+      "status": "generated"
+    },
+    {
+      "name": "Gregorian",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Gregorian\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1UtZRqSffnNhhcQMaXWpdIia2j3hhxRsm/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Septarchy, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "gregorian.png",
+      "status": "generated"
+    },
+    {
+      "name": "Abaddon, Lord Sloth",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Abaddon, Lord Sloth\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1s7zUw-0UVg4gnsfJIw9pVS33TJg6rE78/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Septarchy, Abaddon, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "abaddon-lord-sloth.png",
+      "status": "generated"
+    },
+    {
+      "name": "Imp",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Imp\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: Infinite potential and not much else https://drive.google.com/file/d/1Ziwlr5H7uNaRbuUtwHKbJ5Ac5crSDN0G/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: Infinite potential and not much else\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "imp.png",
+      "status": "generated"
+    },
+    {
+      "name": "A'dam",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of A'dam\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"Isn't it wonderful, that the students of Solomon and I are able to talk to each other\" https://drive.google.com/file/d/1gbjfNbbnQv3m5oCkQWLM4_0YZPkFYDkP/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"Isn't it wonderful, that the students of Solomon and I are able to talk to each other\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "a-dam.png",
+      "status": "generated"
+    },
+    {
+      "name": "Titania",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Titania\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"The Fae deserve to be free\" https://drive.google.com/file/d/1gAsXBrZfLM0GB8j7uHYWEk2u_nx6omYD/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"The Fae deserve to be free\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "titania.png",
+      "status": "generated"
+    },
+    {
+      "name": "Knife",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Knife\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1F1yPNzX9ZbOq3FrwdPQLIzKoaEgibOtK/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Adams Team, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "knife.png",
+      "status": "generated"
+    },
+    {
+      "name": "Woe",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Woe\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"Then you should just do whatever brings you the most Joy\" https://drive.google.com/file/d/1OtyrkuBYFX0habXWXWJXtbjXg611bc0Z/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"Then you should just do whatever brings you the most Joy\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "woe.png",
+      "status": "generated"
+    },
+    {
+      "name": "Lucifer",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Lucifer\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1T7fTG8TeVEK_2lMLGHz6U8w2C604UfR0/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Adams Team, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "lucifer.png",
+      "status": "generated"
+    },
+    {
+      "name": "Druid of the North",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Druid of the North\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1xyJ6mqtnUoH5dGFxhU6BjjkMDWX7aOy-/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Adams Team, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "druid-of-the-north.png",
+      "status": "generated"
+    },
+    {
+      "name": "Michiel",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Michiel\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1k0mGx0v2bmbnslEojbPSoWkzvBRlR_rW/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Adams Team, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "michiel.png",
+      "status": "generated"
+    },
+    {
+      "name": "Abaddon, Bloody Mage",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Abaddon, Bloody Mage\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1KXv7j1AvAJT0SN8HbB2PC6y1BvYMG4jU/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Adams Team, Abaddon, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "abaddon-bloody-mage.png",
+      "status": "generated"
+    },
+    {
+      "name": "Puck",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Puck\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"This is an oppotunity, I could send you back\" https://drive.google.com/file/d/1i3Ihi1JU-K-Kh6F6bDLZAwtuoQJ_iKex/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"This is an oppotunity, I could send you back\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "puck.png",
+      "status": "generated"
+    },
+    {
+      "name": "Elf Tribalist",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Elf Tribalist\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/12T9lTqF9dKMgHhLjZ4rXnPFiuHV0PX9j/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Adams Team, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "elf-tribalist.png",
+      "status": "generated"
+    },
+    {
+      "name": "Fae Trickster",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Fae Trickster\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1fnwOYyEOva5ISmKWFKlVf-HMiY1jHYGj/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Adams Team, Team Dragon, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "fae-trickster.png",
+      "status": "generated"
+    },
+    {
+      "name": "Brym",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Brym\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"WE'RE THE MEATFISTS!\" https://drive.google.com/file/d/1dBDGnvHK2ph3z_EdZjBhhK9Wc0gPG5Y4/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"WE'RE THE MEATFISTS!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "brym.png",
+      "status": "generated"
+    },
+    {
+      "name": "Skip",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Skip\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"WE'RE THE MEATFISTS!\" https://drive.google.com/file/d/1X5bcRhXOyj4pafDM6fwBz25bUpwT-RAO/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"WE'RE THE MEATFISTS!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "skip.png",
+      "status": "generated"
+    },
+    {
+      "name": "Rick",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Rick\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"WE'RE THE MEATFISTS!\" https://drive.google.com/file/d/1wF6h-VwMse3izlIXjXpLfsOoso9NShIu/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"WE'RE THE MEATFISTS!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "rick.png",
+      "status": "generated"
+    },
+    {
+      "name": "Chives",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Chives\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"WE'RE THE MEATFISTS!\" https://drive.google.com/file/d/1UHce-UtuokETPw3fTcwnTsLQyWFhza4B/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"WE'RE THE MEATFISTS!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "chives.png",
+      "status": "generated"
+    },
+    {
+      "name": "Eric",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Eric\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"WE'RE THE MEATFISTS!\" https://drive.google.com/file/d/12ZPHY84g6pcX7S6s9Dwxw5VqMgQQv_2E/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"WE'RE THE MEATFISTS!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "eric.png",
+      "status": "generated"
+    },
+    {
+      "name": "Leslie",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Leslie\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"WE'RE THE MEATFISTS!\" https://drive.google.com/file/d/1piOQagHesVVxsBfS3jeV5DiJnU06wAtL/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"WE'RE THE MEATFISTS!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "leslie.png",
+      "status": "generated"
+    },
+    {
+      "name": "Alex",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Alex\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"WE'RE THE MEATFISTS!\" https://drive.google.com/file/d/1S_kScHOd6TqnYWSKxIE-jxpLuT7BfiIU/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"WE'RE THE MEATFISTS!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "alex.png",
+      "status": "generated"
+    },
+    {
+      "name": "Davies",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Davies\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"WE'RE THE MEATFISTS!\" https://drive.google.com/file/d/1I5Gbhx0iTYG_R13R8e8FseObyStkuELX/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"WE'RE THE MEATFISTS!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "davies.png",
+      "status": "generated"
+    },
+    {
+      "name": "Ernest",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Ernest\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"WE'RE THE MEATFISTS!\" https://drive.google.com/file/d/14cNh7pJkw0pm9eq8sAK_eZNNOOlV6gW7/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"WE'RE THE MEATFISTS!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "ernest.png",
+      "status": "generated"
+    },
+    {
+      "name": "Roland",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Roland\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"WE'RE THE MEATFISTS!\" https://drive.google.com/file/d/15n2kRj3jrROwEpBu4IRJGcyOqaQFck7m/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"WE'RE THE MEATFISTS!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "roland.png",
+      "status": "generated"
+    },
+    {
+      "name": "Abaddon, Meatfist Hireling",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Abaddon, Meatfist Hireling\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"We're the Meatfists?\" https://drive.google.com/file/d/1DsK5CDy-C3IR-HrkHffVvTChyIlltv1f/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"We're the Meatfists?\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "abaddon-meatfist-hireling.png",
+      "status": "generated"
+    },
+    {
+      "name": "Goblin",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Goblin\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"I wish to fight, A Single Goblin\" https://drive.google.com/file/d/1EFuIgwAm5c2WVLW5UzTDB8MXCfgoYFaZ/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"I wish to fight, A Single Goblin\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "goblin.png",
+      "status": "generated"
+    },
+    {
+      "name": "Goblin, Goblin King",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Goblin, Goblin King\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1DXZwLLFVkRZshZ9GB03gqc0qtDbAGk9I/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Goblins, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "goblin-goblin-king.png",
+      "status": "generated"
+    },
+    {
+      "name": "Goblin Scout",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Goblin Scout\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: We never really knew why goblins were in places, we just killed them https://drive.google.com/file/d/1DvXwFsN5TS92cWigTnPqMQrrNWQs9KrP/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: We never really knew why goblins were in places, we just killed them\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "goblin-scout.png",
+      "status": "generated"
+    },
+    {
+      "name": "Two Goblins",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Two Goblins\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: You know whats worse than a goblin? https://drive.google.com/file/d/1NPkr-7r4kSot0S_anr5LMMkpSlBnpSI_/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: You know whats worse than a goblin?\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "two-goblins.png",
+      "status": "generated"
+    },
+    {
+      "name": "Goblin Strategist",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Goblin Strategist\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: GET EM! https://drive.google.com/file/d/1T0h5UFAcf-f8mgH0FCIrIVK-bMpL5NRB/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: GET EM!\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "goblin-strategist.png",
+      "status": "generated"
+    },
+    {
+      "name": "Hydra, Goblin King",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Hydra, Goblin King\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: Munch Munch Munch https://drive.google.com/file/d/103_lLeJgPSjZ3O3MJH0jPVFa_v-MvSSo/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: Munch Munch Munch\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "hydra-goblin-king.png",
+      "status": "generated"
+    },
+    {
+      "name": "Solomon's Diary",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Solomon's Diary\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1pZzfCy8ZJ_WP7GQE2qMYdMxDa0YA8NEp/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Team Dragon, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "solomon-s-diary.png",
+      "status": "generated"
+    },
+    {
+      "name": "Solomon, the Dragon",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Solomon, the Dragon\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1tO63NQ6y_-K9UrAxEXBp0DMjgYMMo8dd/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Team Dragon, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "solomon-the-dragon.png",
+      "status": "generated"
+    },
+    {
+      "name": "Solomon, Confessional Spirit",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Solomon, Confessional Spirit\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1bBBSM7QLYTl2Guj95_p0j9s-jEROlt2u/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Team Dragon, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "solomon-confessional-spirit.png",
+      "status": "generated"
+    },
+    {
+      "name": "Abaddon, Dragon fanatic",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Abaddon, Dragon fanatic\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"Team Dragon!\" https://drive.google.com/file/d/1pXeM9fZMIma3iIxuw2PUXD80WRHDsS17/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"Team Dragon!\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "abaddon-dragon-fanatic.png",
+      "status": "generated"
+    },
+    {
+      "name": "Gambit",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Gambit\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"I. Always. Win.\" https://drive.google.com/file/d/1CziowXmlbuYvODgDvgXWjvu030-WPRtC/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"I. Always. Win.\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "gambit.png",
+      "status": "generated"
+    },
+    {
+      "name": "Hospitalier",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Hospitalier\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/177F1sC-5ykC58B1bLgcX5obJ0q4Nalge/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Team Dragon, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "hospitalier.png",
+      "status": "generated"
+    },
+    {
+      "name": "Vigor",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Vigor\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"Prophecy will prevail\" https://drive.google.com/file/d/15mov2t6aTlhOpLlblKm6cn6iNn-Y8Ukb/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"Prophecy will prevail\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "vigor.png",
+      "status": "generated"
+    },
+    {
+      "name": "Oberon",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Oberon\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1FuZNDRbCXljle-be4a2xhOfvWPSJnQcn/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Team Dragon, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "oberon.png",
+      "status": "generated"
+    },
+    {
+      "name": "Weal",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Weal\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1SIKvm5XqOm71rkAbXZaBsy3aprOPq6et/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Team Dragon, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "weal.png",
+      "status": "generated"
+    },
+    {
+      "name": "Vim",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Vim\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"Prophecy and Narrative must be destroyed\" https://drive.google.com/file/d/1JdV2JENsZFAbYWApP51QZnS7uv7WxHkb/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"Prophecy and Narrative must be destroyed\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "vim.png",
+      "status": "generated"
+    },
+    {
+      "name": "Orc Marksmen",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Orc Marksmen\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: https://drive.google.com/file/d/1c-UZMWxR_ubFV4iMeadkk08OmKDtKv2o/view?usp=drive_link\nScene/backdrop: subtle environment hint matching Goblins, but keep the character as the focus\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "orc-marksmen.png",
+      "status": "generated"
+    },
+    {
+      "name": "Abaddon, Goblin King",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Abaddon, Goblin King\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"I just happened to kill the giant gooey hydra, look where it got me\" https://drive.google.com/file/d/1lcRoPImLkM4MIBTP4qDaKcVLL1NGP_hC/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"I just happened to kill the giant gooey hydra, look where it got me\"\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "abaddon-goblin-king.png",
+      "status": "generated"
+    },
+    {
+      "name": "Goblin Warchief",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Goblin Warchief\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: \"The smartest goblin\" isn't much of a title https://drive.google.com/file/d/1l9qtx12j623jAGDVnWpzMXLQR7ZUlXGj/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: \"The smartest goblin\" isn't much of a title\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "goblin-warchief.png",
+      "status": "generated"
+    },
+    {
+      "name": "Goblin Pillager",
+      "prompt": "Use case: illustration-story\nAsset type: portrait illustration for a trading card game character\nPrimary request: create a fantasy portrait of Goblin Pillager\nStyle/medium: painted fantasy illustration, high detail, card-art quality, readable at small size\nComposition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop\nLighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation\nColor palette: faction-driven fantasy palette with clear subject separation from background\nSubject: Goblins, although making up only 10% of the population cause 120% of the crimes https://drive.google.com/file/d/1kRTd8-H40ME-R6HSiicMEbLfcP4kFojV/view?usp=drive_link\nScene/backdrop: subtle environment hint inspired by: Goblins, although making up only 10% of the population cause 120% of the crimes\nConstraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background\nAvoid: logo marks, borders, captions, collage layout, photoreal uncanny details",
+      "provider": "dataset",
+      "outputFile": "goblin-pillager.png",
       "status": "generated"
     }
   ]

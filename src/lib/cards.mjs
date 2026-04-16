@@ -48,7 +48,7 @@ export const factionIconDesigns = {
 };
 
 export async function loadCards(rootDir, { resolvePortraits = false } = {}) {
-  const inputPath = path.join(rootDir, "data", "cards.csv");
+  const inputPath = await resolveInputPath(rootDir);
   const portraitDir = path.join(rootDir, "assets", "portraits");
   const csv = await readFile(inputPath, "utf8");
   const rows = parseCsv(csv);
@@ -139,22 +139,36 @@ export function parseCsv(source) {
 }
 
 export async function normalizeCard(row, portraitDir) {
-  const factions = [row["Faction 1"], row["Faction 2"], row["Faction 3"]].filter(Boolean);
-  const name = row.Name.trim();
+  const sourceType = detectRowType(row);
+  const name = String(row.Name ?? "").trim();
+  const factions = sourceType === "playtest" ? getPlaytestFactions(row) : [row["Faction 1"], row["Faction 2"], row["Faction 3"]].filter(Boolean);
   const portraitBase = slugify(name);
   const portraitFile = portraitDir ? await findPortraitFile(portraitDir, portraitBase) : "";
+  const portraitDataUri = portraitDir && portraitFile ? await buildPortraitDataUri(path.join(portraitDir, portraitFile)) : "";
+  const imageUrl = getSourceImageUrl(row);
+  const isMajor = sourceType === "playtest" ? truthyFlag(row.is_Major) || String(row.Keywords ?? "").includes("Major") : false;
+  const isChaff = sourceType === "playtest" ? truthyFlag(row.is_Chaff) || String(row.Keywords ?? "").includes("Chaff") : false;
+  const arcana = sourceType === "playtest" ? deriveArcana(row, isMajor, isChaff) : String(row.Arcana ?? "").trim();
+  const info = sourceType === "playtest"
+    ? cleanField(row["Flavour text"])
+    : (row.info ?? row[" info"] ?? "").trim();
 
   return {
     name,
     factions,
-    cardType: row["Card Type"].trim(),
-    arcana: row.Arcana.trim(),
+    cardType: String(row["Card Type"] ?? "").trim(),
+    arcana,
     power: Number.parseInt(row.Power, 10) || 0,
-    text: row.Text.trim(),
-    info: (row.info ?? row[" info"] ?? "").trim(),
+    text: cleanField(row.Text),
+    info,
+    flavourText: cleanField(row["Flavour text"]),
     primaryFaction: factions[0] ?? "Neutral",
     portraitFile,
-    portraitBase
+    portraitDataUri,
+    portraitBase,
+    portraitUrl: imageUrl,
+    copies: Number.parseInt(row["Total copies"] ?? row["Number copies"] ?? "0", 10) || 0,
+    sourceType
   };
 }
 
@@ -173,6 +187,10 @@ export async function findPortraitFile(portraitDir, base) {
 
 export function buildPortraitPrompt(card) {
   const factions = (card.factions.length > 0 ? card.factions : ["Neutral"]).join(", ");
+  const subject = card.info || `${card.cardType} aligned with ${factions}`;
+  const backdrop = card.flavourText
+    ? `subtle environment hint inspired by: ${card.flavourText}`
+    : `subtle environment hint matching ${factions}, but keep the character as the focus`;
   return [
     "Use case: illustration-story",
     "Asset type: portrait illustration for a trading card game character",
@@ -181,8 +199,8 @@ export function buildPortraitPrompt(card) {
     "Composition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop",
     "Lighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation",
     "Color palette: faction-driven fantasy palette with clear subject separation from background",
-    `Subject: ${card.info || `${card.cardType} aligned with ${factions}`}`,
-    `Scene/backdrop: subtle environment hint matching ${factions}, but keep the character as the focus`,
+    `Subject: ${subject}`,
+    `Scene/backdrop: ${backdrop}`,
     "Constraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background",
     "Avoid: logo marks, borders, captions, collage layout, photoreal uncanny details"
   ].join("\n");
@@ -231,4 +249,94 @@ function iconSvg(name, accent, paper, outerPath, innerPath) {
   <path d="${innerPath}" fill="none" stroke="${paper}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
   <title>${escapeXml(name)}</title>
 </svg>`;
+}
+
+async function resolveInputPath(rootDir) {
+  const explicit = process.env.GAMEGEN_CARDS_CSV;
+  if (explicit) {
+    return path.isAbsolute(explicit) ? explicit : path.join(rootDir, explicit);
+  }
+
+  const preferred = path.join(rootDir, "data", "Playtestrr with precons - Cards Dataset.csv");
+  try {
+    await access(preferred);
+    return preferred;
+  } catch {
+    return path.join(rootDir, "data", "cards.csv");
+  }
+}
+
+function detectRowType(row) {
+  return Object.hasOwn(row, "PnC") ? "playtest" : "simple";
+}
+
+function getPlaytestFactions(row) {
+  const factionColumns = [
+    "PnC",
+    "Thieves",
+    "Septarchy",
+    "Medicarium",
+    "Adams team",
+    "Meatfists",
+    "Abaddon",
+    "Goblins!",
+    "Team Dragon"
+  ];
+
+  return factionColumns
+    .filter((key) => truthyFlag(row[key]))
+    .map((key) => normalizeFactionName(key));
+}
+
+function normalizeFactionName(name) {
+  const map = {
+    PnC: "Adventurer",
+    "Goblins!": "Goblins",
+    "Adams team": "Adams Team"
+  };
+  return map[name] ?? name;
+}
+
+function truthyFlag(value) {
+  const normalized = String(value ?? "").trim().toLowerCase();
+  return normalized === "show" || normalized === "true" || normalized === "yes" || normalized === "1";
+}
+
+function deriveArcana(row, isMajor, isChaff) {
+  if (isMajor) return "Major";
+  if (isChaff) return "Chaff";
+  return cleanField(row.Keywords);
+}
+
+function getSourceImageUrl(row) {
+  const candidateKeys = Object.keys(row).filter((key) => key.trim().toUpperCase() === "NEW IMAGE LINKS");
+  for (const key of candidateKeys) {
+    const value = cleanField(row[key]);
+    if (value) return value;
+  }
+  return "";
+}
+
+function cleanField(value) {
+  return String(value ?? "")
+    .trim()
+    .replaceAll('""', '"');
+}
+
+async function buildPortraitDataUri(filePath) {
+  const extension = path.extname(filePath).toLowerCase();
+  const mimeType = {
+    ".png": "image/png",
+    ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg",
+    ".webp": "image/webp",
+    ".svg": "image/svg+xml"
+  }[extension];
+
+  if (!mimeType) {
+    return "";
+  }
+
+  const file = await readFile(filePath);
+  return `data:${mimeType};base64,${file.toString("base64")}`;
 }

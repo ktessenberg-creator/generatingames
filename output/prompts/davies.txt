@@ -1,0 +1,11 @@
+Use case: illustration-story
+Asset type: portrait illustration for a trading card game character
+Primary request: create a fantasy portrait of Davies
+Style/medium: painted fantasy illustration, high detail, card-art quality, readable at small size
+Composition/framing: vertical portrait, chest-up or waist-up, centered subject, strong silhouette, leave room near edges for card frame crop
+Lighting/mood: dramatic but clean key light, rich contrast, heroic tabletop-card presentation
+Color palette: faction-driven fantasy palette with clear subject separation from background
+Subject: "WE'RE THE MEATFISTS!"
+Scene/backdrop: subtle environment hint inspired by: "WE'RE THE MEATFISTS!"
+Constraints: one main subject only, no text, no watermark, no UI, no extra hands, no duplicate faces, no busy background
+Avoid: logo marks, borders, captions, collage layout, photoreal uncanny details

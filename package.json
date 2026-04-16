@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "generate:cards": "node src/generate-cards.mjs",
+    "generate:decks": "node src/generate-decklists.mjs",
     "generate:portraits": "node src/generate-portraits.mjs",
-    "generate:all": "npm run generate:portraits && npm run generate:cards"
+    "generate:all": "npm run generate:portraits && npm run generate:cards && npm run generate:decks",
+    "start": "node src/server.mjs"
   }
 }

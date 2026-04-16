@@ -1,0 +1,3619 @@
+[
+  {
+    "id": "abaddon",
+    "name": "Abaddon",
+    "faction": "Abaddon",
+    "cards": [
+      {
+        "instanceId": "abaddon:abaddon-hopeless-assistant:1",
+        "cardId": "abaddon-hopeless-assistant",
+        "name": "Abaddon, Hopeless assistant",
+        "faction": "Abaddon",
+        "factions": [
+          "Adventurer",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If you start your turn with this in play, you may take an extra action",
+        "flavourText": "\"If we can deal with the abolyth and the lich at the same time then by my calculations we should still make it to our pottery class\"",
+        "portraitPath": "/assets/portraits/abaddon-hopeless-assistant.png",
+        "cardAssetPath": "/output/cards/abaddon-hopeless-assistant.svg"
+      },
+      {
+        "instanceId": "abaddon:abaddon-hopeless-assistant:2",
+        "cardId": "abaddon-hopeless-assistant",
+        "name": "Abaddon, Hopeless assistant",
+        "faction": "Abaddon",
+        "factions": [
+          "Adventurer",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If you start your turn with this in play, you may take an extra action",
+        "flavourText": "\"If we can deal with the abolyth and the lich at the same time then by my calculations we should still make it to our pottery class\"",
+        "portraitPath": "/assets/portraits/abaddon-hopeless-assistant.png",
+        "cardAssetPath": "/output/cards/abaddon-hopeless-assistant.svg"
+      },
+      {
+        "instanceId": "abaddon:abaddon-false-cleric:1",
+        "cardId": "abaddon-false-cleric",
+        "name": "Abaddon, False Cleric",
+        "faction": "Abaddon",
+        "factions": [
+          "Medicarium",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If you take a support action, you may take another support action for free",
+        "flavourText": "\"What's an illusionist?\"",
+        "portraitPath": "/assets/portraits/abaddon-false-cleric.png",
+        "cardAssetPath": "/output/cards/abaddon-false-cleric.svg"
+      },
+      {
+        "instanceId": "abaddon:abaddon-false-cleric:2",
+        "cardId": "abaddon-false-cleric",
+        "name": "Abaddon, False Cleric",
+        "faction": "Abaddon",
+        "factions": [
+          "Medicarium",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If you take a support action, you may take another support action for free",
+        "flavourText": "\"What's an illusionist?\"",
+        "portraitPath": "/assets/portraits/abaddon-false-cleric.png",
+        "cardAssetPath": "/output/cards/abaddon-false-cleric.svg"
+      },
+      {
+        "instanceId": "abaddon:abaddon-lord-sloth:1",
+        "cardId": "abaddon-lord-sloth",
+        "name": "Abaddon, Lord Sloth",
+        "faction": "Abaddon",
+        "factions": [
+          "Septarchy",
+          "Abaddon"
+        ],
+        "cardType": "Undead",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If you need to count the number of cards you have in play, do not count this card. When you need to count the number of cards you have in play reduce the total by 1",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/abaddon-lord-sloth.png",
+        "cardAssetPath": "/output/cards/abaddon-lord-sloth.svg"
+      },
+      {
+        "instanceId": "abaddon:abaddon-lord-sloth:2",
+        "cardId": "abaddon-lord-sloth",
+        "name": "Abaddon, Lord Sloth",
+        "faction": "Abaddon",
+        "factions": [
+          "Septarchy",
+          "Abaddon"
+        ],
+        "cardType": "Undead",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If you need to count the number of cards you have in play, do not count this card. When you need to count the number of cards you have in play reduce the total by 1",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/abaddon-lord-sloth.png",
+        "cardAssetPath": "/output/cards/abaddon-lord-sloth.svg"
+      },
+      {
+        "instanceId": "abaddon:abaddon-bloody-mage:1",
+        "cardId": "abaddon-bloody-mage",
+        "name": "Abaddon, Bloody Mage",
+        "faction": "Abaddon",
+        "factions": [
+          "Adams Team",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Abaddon, Bloody Mage: destroy a card you control, your opponent Mill 2",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/abaddon-bloody-mage.png",
+        "cardAssetPath": "/output/cards/abaddon-bloody-mage.svg"
+      },
+      {
+        "instanceId": "abaddon:abaddon-bloody-mage:2",
+        "cardId": "abaddon-bloody-mage",
+        "name": "Abaddon, Bloody Mage",
+        "faction": "Abaddon",
+        "factions": [
+          "Adams Team",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Abaddon, Bloody Mage: destroy a card you control, your opponent Mill 2",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/abaddon-bloody-mage.png",
+        "cardAssetPath": "/output/cards/abaddon-bloody-mage.svg"
+      },
+      {
+        "instanceId": "abaddon:abaddon-meatfist-hireling:1",
+        "cardId": "abaddon-meatfist-hireling",
+        "name": "Abaddon, Meatfist Hireling",
+        "faction": "Abaddon",
+        "factions": [
+          "Meatfists",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If all your cards are in the same zone, you may take an extra action",
+        "flavourText": "\"We're the Meatfists?\"",
+        "portraitPath": "/assets/portraits/abaddon-meatfist-hireling.png",
+        "cardAssetPath": "/output/cards/abaddon-meatfist-hireling.svg"
+      },
+      {
+        "instanceId": "abaddon:abaddon-meatfist-hireling:2",
+        "cardId": "abaddon-meatfist-hireling",
+        "name": "Abaddon, Meatfist Hireling",
+        "faction": "Abaddon",
+        "factions": [
+          "Meatfists",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If all your cards are in the same zone, you may take an extra action",
+        "flavourText": "\"We're the Meatfists?\"",
+        "portraitPath": "/assets/portraits/abaddon-meatfist-hireling.png",
+        "cardAssetPath": "/output/cards/abaddon-meatfist-hireling.svg"
+      },
+      {
+        "instanceId": "abaddon:abaddon-goblin-king:1",
+        "cardId": "abaddon-goblin-king",
+        "name": "Abaddon, Goblin King",
+        "faction": "Abaddon",
+        "factions": [
+          "Adventurer",
+          "Abaddon",
+          "Goblins"
+        ],
+        "cardType": "Goblin Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "You may play a 1 power card that shares a faction with this card from your grave for free each turn",
+        "flavourText": "\"I just happened to kill the giant gooey hydra, look where it got me\"",
+        "portraitPath": "/assets/portraits/abaddon-goblin-king.png",
+        "cardAssetPath": "/output/cards/abaddon-goblin-king.svg"
+      },
+      {
+        "instanceId": "abaddon:abaddon-goblin-king:2",
+        "cardId": "abaddon-goblin-king",
+        "name": "Abaddon, Goblin King",
+        "faction": "Abaddon",
+        "factions": [
+          "Adventurer",
+          "Abaddon",
+          "Goblins"
+        ],
+        "cardType": "Goblin Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "You may play a 1 power card that shares a faction with this card from your grave for free each turn",
+        "flavourText": "\"I just happened to kill the giant gooey hydra, look where it got me\"",
+        "portraitPath": "/assets/portraits/abaddon-goblin-king.png",
+        "cardAssetPath": "/output/cards/abaddon-goblin-king.svg"
+      }
+    ],
+    "cardCount": 12,
+    "uniqueCards": 6
+  },
+  {
+    "id": "adams-team",
+    "name": "Adams Team",
+    "faction": "Adams Team",
+    "cards": [
+      {
+        "instanceId": "adams-team:death:1",
+        "cardId": "death",
+        "name": "Death",
+        "faction": "Adams Team",
+        "factions": [
+          "Medicarium",
+          "Adams Team"
+        ],
+        "cardType": "Elf",
+        "arcana": "Major",
+        "basePower": 1,
+        "power": 1,
+        "text": "Indestructible. Death may only be played in the Backline Zone. Death may not take the Shift Action or be moved to other Zones by effects. Mill a card at the start of your turn. Support Action: Mill 1 then return a card from your grave to your hand",
+        "flavourText": "\"This man kept me imprisoned, I will make his death complete\"",
+        "portraitPath": "/assets/portraits/death.png",
+        "cardAssetPath": "/output/cards/death.svg"
+      },
+      {
+        "instanceId": "adams-team:death:2",
+        "cardId": "death",
+        "name": "Death",
+        "faction": "Adams Team",
+        "factions": [
+          "Medicarium",
+          "Adams Team"
+        ],
+        "cardType": "Elf",
+        "arcana": "Major",
+        "basePower": 1,
+        "power": 1,
+        "text": "Indestructible. Death may only be played in the Backline Zone. Death may not take the Shift Action or be moved to other Zones by effects. Mill a card at the start of your turn. Support Action: Mill 1 then return a card from your grave to your hand",
+        "flavourText": "\"This man kept me imprisoned, I will make his death complete\"",
+        "portraitPath": "/assets/portraits/death.png",
+        "cardAssetPath": "/output/cards/death.svg"
+      },
+      {
+        "instanceId": "adams-team:a-dam:1",
+        "cardId": "a-dam",
+        "name": "A'dam",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Elf",
+        "arcana": "Major",
+        "basePower": 9,
+        "power": 9,
+        "text": "You can only play A'dam if you have 11 or more cards in your Graveyard. A'dam cannot be played in the Flank Zone or shifted to the Flank zone",
+        "flavourText": "\"Isn't it wonderful, that the students of Solomon and I are able to talk to each other\"",
+        "portraitPath": "/assets/portraits/a-dam.png",
+        "cardAssetPath": "/output/cards/a-dam.svg"
+      },
+      {
+        "instanceId": "adams-team:a-dam:2",
+        "cardId": "a-dam",
+        "name": "A'dam",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Elf",
+        "arcana": "Major",
+        "basePower": 9,
+        "power": 9,
+        "text": "You can only play A'dam if you have 11 or more cards in your Graveyard. A'dam cannot be played in the Flank Zone or shifted to the Flank zone",
+        "flavourText": "\"Isn't it wonderful, that the students of Solomon and I are able to talk to each other\"",
+        "portraitPath": "/assets/portraits/a-dam.png",
+        "cardAssetPath": "/output/cards/a-dam.svg"
+      },
+      {
+        "instanceId": "adams-team:titania:1",
+        "cardId": "titania",
+        "name": "Titania",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Fae",
+        "arcana": "Major",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Titania: Swap your Graveyard with your deck,  Mill 11",
+        "flavourText": "\"The Fae deserve to be free\"",
+        "portraitPath": "/assets/portraits/titania.png",
+        "cardAssetPath": "/output/cards/titania.svg"
+      },
+      {
+        "instanceId": "adams-team:titania:2",
+        "cardId": "titania",
+        "name": "Titania",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Fae",
+        "arcana": "Major",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Titania: Swap your Graveyard with your deck,  Mill 11",
+        "flavourText": "\"The Fae deserve to be free\"",
+        "portraitPath": "/assets/portraits/titania.png",
+        "cardAssetPath": "/output/cards/titania.svg"
+      },
+      {
+        "instanceId": "adams-team:knife:1",
+        "cardId": "knife",
+        "name": "Knife",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Human",
+        "arcana": "Major",
+        "basePower": 4,
+        "power": 4,
+        "text": "The first time Knife destroys a card: Mill 2, destroy Target card",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/knife.png",
+        "cardAssetPath": "/output/cards/knife.svg"
+      },
+      {
+        "instanceId": "adams-team:knife:2",
+        "cardId": "knife",
+        "name": "Knife",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Human",
+        "arcana": "Major",
+        "basePower": 4,
+        "power": 4,
+        "text": "The first time Knife destroys a card: Mill 2, destroy Target card",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/knife.png",
+        "cardAssetPath": "/output/cards/knife.svg"
+      },
+      {
+        "instanceId": "adams-team:woe:1",
+        "cardId": "woe",
+        "name": "Woe",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team",
+          "Team Dragon"
+        ],
+        "cardType": "Demon",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "When Woe uses the Attack Action: +1 Power until the end of your turn",
+        "flavourText": "\"Then you should just do whatever brings you the most Joy\"",
+        "portraitPath": "/assets/portraits/woe.png",
+        "cardAssetPath": "/output/cards/woe.svg"
+      },
+      {
+        "instanceId": "adams-team:woe:2",
+        "cardId": "woe",
+        "name": "Woe",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team",
+          "Team Dragon"
+        ],
+        "cardType": "Demon",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "When Woe uses the Attack Action: +1 Power until the end of your turn",
+        "flavourText": "\"Then you should just do whatever brings you the most Joy\"",
+        "portraitPath": "/assets/portraits/woe.png",
+        "cardAssetPath": "/output/cards/woe.svg"
+      },
+      {
+        "instanceId": "adams-team:lucifer:1",
+        "cardId": "lucifer",
+        "name": "Lucifer",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Angel",
+        "arcana": "",
+        "basePower": 4,
+        "power": 4,
+        "text": "Lucifer cannot use the Attack Action or Reinforce attacks",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/lucifer.png",
+        "cardAssetPath": "/output/cards/lucifer.svg"
+      },
+      {
+        "instanceId": "adams-team:lucifer:2",
+        "cardId": "lucifer",
+        "name": "Lucifer",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Angel",
+        "arcana": "",
+        "basePower": 4,
+        "power": 4,
+        "text": "Lucifer cannot use the Attack Action or Reinforce attacks",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/lucifer.png",
+        "cardAssetPath": "/output/cards/lucifer.svg"
+      },
+      {
+        "instanceId": "adams-team:druid-of-the-north:1",
+        "cardId": "druid-of-the-north",
+        "name": "Druid of the North",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Elf",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Druid of the North: destroy another card you control, Heal a random card to your hand, Heal a random card to your deck",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/druid-of-the-north.png",
+        "cardAssetPath": "/output/cards/druid-of-the-north.svg"
+      },
+      {
+        "instanceId": "adams-team:druid-of-the-north:2",
+        "cardId": "druid-of-the-north",
+        "name": "Druid of the North",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Elf",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Druid of the North: destroy another card you control, Heal a random card to your hand, Heal a random card to your deck",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/druid-of-the-north.png",
+        "cardAssetPath": "/output/cards/druid-of-the-north.svg"
+      },
+      {
+        "instanceId": "adams-team:michiel:1",
+        "cardId": "michiel",
+        "name": "Michiel",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Elf",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "If Michiel would be destroyed you may Mill 4 to prevent it",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/michiel.png",
+        "cardAssetPath": "/output/cards/michiel.svg"
+      },
+      {
+        "instanceId": "adams-team:michiel:2",
+        "cardId": "michiel",
+        "name": "Michiel",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Elf",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "If Michiel would be destroyed you may Mill 4 to prevent it",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/michiel.png",
+        "cardAssetPath": "/output/cards/michiel.svg"
+      },
+      {
+        "instanceId": "adams-team:abaddon-bloody-mage:1",
+        "cardId": "abaddon-bloody-mage",
+        "name": "Abaddon, Bloody Mage",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Abaddon, Bloody Mage: destroy a card you control, your opponent Mill 2",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/abaddon-bloody-mage.png",
+        "cardAssetPath": "/output/cards/abaddon-bloody-mage.svg"
+      },
+      {
+        "instanceId": "adams-team:abaddon-bloody-mage:2",
+        "cardId": "abaddon-bloody-mage",
+        "name": "Abaddon, Bloody Mage",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Abaddon, Bloody Mage: destroy a card you control, your opponent Mill 2",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/abaddon-bloody-mage.png",
+        "cardAssetPath": "/output/cards/abaddon-bloody-mage.svg"
+      },
+      {
+        "instanceId": "adams-team:puck:1",
+        "cardId": "puck",
+        "name": "Puck",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Fae",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Puck: Look at the card on the top of each players deck, you may shuffle them into their decks",
+        "flavourText": "\"This is an oppotunity, I could send you back\"",
+        "portraitPath": "/assets/portraits/puck.png",
+        "cardAssetPath": "/output/cards/puck.svg"
+      },
+      {
+        "instanceId": "adams-team:puck:2",
+        "cardId": "puck",
+        "name": "Puck",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Fae",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Puck: Look at the card on the top of each players deck, you may shuffle them into their decks",
+        "flavourText": "\"This is an oppotunity, I could send you back\"",
+        "portraitPath": "/assets/portraits/puck.png",
+        "cardAssetPath": "/output/cards/puck.svg"
+      },
+      {
+        "instanceId": "adams-team:elf-tribalist:1",
+        "cardId": "elf-tribalist",
+        "name": "Elf Tribalist",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Elf",
+        "arcana": "Chaff",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Elf Tribalist: Mill 1",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/elf-tribalist.png",
+        "cardAssetPath": "/output/cards/elf-tribalist.svg"
+      },
+      {
+        "instanceId": "adams-team:elf-tribalist:2",
+        "cardId": "elf-tribalist",
+        "name": "Elf Tribalist",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team"
+        ],
+        "cardType": "Elf",
+        "arcana": "Chaff",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Elf Tribalist: Mill 1",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/elf-tribalist.png",
+        "cardAssetPath": "/output/cards/elf-tribalist.svg"
+      },
+      {
+        "instanceId": "adams-team:fae-trickster:1",
+        "cardId": "fae-trickster",
+        "name": "Fae Trickster",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team",
+          "Team Dragon"
+        ],
+        "cardType": "Fae",
+        "arcana": "Chaff",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Fae: Look at the top card of either players deck, you may shuffle it into that deck",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/fae-trickster.png",
+        "cardAssetPath": "/output/cards/fae-trickster.svg"
+      },
+      {
+        "instanceId": "adams-team:fae-trickster:2",
+        "cardId": "fae-trickster",
+        "name": "Fae Trickster",
+        "faction": "Adams Team",
+        "factions": [
+          "Adams Team",
+          "Team Dragon"
+        ],
+        "cardType": "Fae",
+        "arcana": "Chaff",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Fae: Look at the top card of either players deck, you may shuffle it into that deck",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/fae-trickster.png",
+        "cardAssetPath": "/output/cards/fae-trickster.svg"
+      }
+    ],
+    "cardCount": 24,
+    "uniqueCards": 12
+  },
+  {
+    "id": "adventurer",
+    "name": "Adventurer",
+    "faction": "Adventurer",
+    "cards": [
+      {
+        "instanceId": "adventurer:lance:1",
+        "cardId": "lance",
+        "name": "Lance",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Human",
+        "arcana": "Major",
+        "basePower": 8,
+        "power": 8,
+        "text": "Lance may only be played in the Frontline Zone. Lance may not take the Shift Action or be moved to other Zones by effects",
+        "flavourText": "Lance, the first and frontmost of Pests and Chests",
+        "portraitPath": "/assets/portraits/lance.png",
+        "cardAssetPath": "/output/cards/lance.svg"
+      },
+      {
+        "instanceId": "adventurer:lance:2",
+        "cardId": "lance",
+        "name": "Lance",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Human",
+        "arcana": "Major",
+        "basePower": 8,
+        "power": 8,
+        "text": "Lance may only be played in the Frontline Zone. Lance may not take the Shift Action or be moved to other Zones by effects",
+        "flavourText": "Lance, the first and frontmost of Pests and Chests",
+        "portraitPath": "/assets/portraits/lance.png",
+        "cardAssetPath": "/output/cards/lance.svg"
+      },
+      {
+        "instanceId": "adventurer:lana:1",
+        "cardId": "lana",
+        "name": "Lana",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Human",
+        "arcana": "Major",
+        "basePower": 3,
+        "power": 3,
+        "text": "When you play Lana, Play a 1 Power Spider token and a  2 Power Justice token in the same Zone as Lana",
+        "flavourText": "Justice is blind, and Lana is arbitary, the only reward is in smiting",
+        "portraitPath": "/assets/portraits/lana.png",
+        "cardAssetPath": "/output/cards/lana.svg"
+      },
+      {
+        "instanceId": "adventurer:lana:2",
+        "cardId": "lana",
+        "name": "Lana",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Human",
+        "arcana": "Major",
+        "basePower": 3,
+        "power": 3,
+        "text": "When you play Lana, Play a 1 Power Spider token and a  2 Power Justice token in the same Zone as Lana",
+        "flavourText": "Justice is blind, and Lana is arbitary, the only reward is in smiting",
+        "portraitPath": "/assets/portraits/lana.png",
+        "cardAssetPath": "/output/cards/lana.svg"
+      },
+      {
+        "instanceId": "adventurer:dronan:1",
+        "cardId": "dronan",
+        "name": "Dronan",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Tortle",
+        "arcana": "Major",
+        "basePower": 5,
+        "power": 5,
+        "text": "When you play Dronan, return a random card from your Graveyard to your hand",
+        "flavourText": "\"For the last time, I do not lay eggs!\"",
+        "portraitPath": "/assets/portraits/dronan.png",
+        "cardAssetPath": "/output/cards/dronan.svg"
+      },
+      {
+        "instanceId": "adventurer:dronan:2",
+        "cardId": "dronan",
+        "name": "Dronan",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Tortle",
+        "arcana": "Major",
+        "basePower": 5,
+        "power": 5,
+        "text": "When you play Dronan, return a random card from your Graveyard to your hand",
+        "flavourText": "\"For the last time, I do not lay eggs!\"",
+        "portraitPath": "/assets/portraits/dronan.png",
+        "cardAssetPath": "/output/cards/dronan.svg"
+      },
+      {
+        "instanceId": "adventurer:saladin:1",
+        "cardId": "saladin",
+        "name": "Saladin",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer",
+          "Thieves"
+        ],
+        "cardType": "Human",
+        "arcana": "Major",
+        "basePower": 4,
+        "power": 4,
+        "text": "Saladin can be played facedown in the Flank Zone.  Saladin has twice as much power when taking the Attack Action. (Facedown cards cannot be attacked or targeted by card effects. Flip the card face up when it takes an Action)",
+        "flavourText": "Since leaving his rulers in Jazeeria, Saladin bows to no one.",
+        "portraitPath": "/assets/portraits/saladin.png",
+        "cardAssetPath": "/output/cards/saladin.svg"
+      },
+      {
+        "instanceId": "adventurer:saladin:2",
+        "cardId": "saladin",
+        "name": "Saladin",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer",
+          "Thieves"
+        ],
+        "cardType": "Human",
+        "arcana": "Major",
+        "basePower": 4,
+        "power": 4,
+        "text": "Saladin can be played facedown in the Flank Zone.  Saladin has twice as much power when taking the Attack Action. (Facedown cards cannot be attacked or targeted by card effects. Flip the card face up when it takes an Action)",
+        "flavourText": "Since leaving his rulers in Jazeeria, Saladin bows to no one.",
+        "portraitPath": "/assets/portraits/saladin.png",
+        "cardAssetPath": "/output/cards/saladin.svg"
+      },
+      {
+        "instanceId": "adventurer:erika:1",
+        "cardId": "erika",
+        "name": "Erika",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Halfling",
+        "arcana": "Major",
+        "basePower": 2,
+        "power": 2,
+        "text": "Whenever another one of your cards takes the Attack Action, Untap that card and they may take an additional Attack Action. This additional Attack Action does not consume one of your turn Actions.",
+        "flavourText": "\"I wasn't kicked out of the university! I can learn my own way of magic through adventuring.\"",
+        "portraitPath": "/assets/portraits/erika.png",
+        "cardAssetPath": "/output/cards/erika.svg"
+      },
+      {
+        "instanceId": "adventurer:erika:2",
+        "cardId": "erika",
+        "name": "Erika",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Halfling",
+        "arcana": "Major",
+        "basePower": 2,
+        "power": 2,
+        "text": "Whenever another one of your cards takes the Attack Action, Untap that card and they may take an additional Attack Action. This additional Attack Action does not consume one of your turn Actions.",
+        "flavourText": "\"I wasn't kicked out of the university! I can learn my own way of magic through adventuring.\"",
+        "portraitPath": "/assets/portraits/erika.png",
+        "cardAssetPath": "/output/cards/erika.svg"
+      },
+      {
+        "instanceId": "adventurer:byron:1",
+        "cardId": "byron",
+        "name": "Byron",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Construct",
+        "arcana": "Major",
+        "basePower": 5,
+        "power": 5,
+        "text": "When Byron is in the Frontline and your opponent declares an Attack Action targetting a card in your Backline Zone: You may change the target of that Attack Action to Byron",
+        "flavourText": "\"Who?\"",
+        "portraitPath": "/assets/portraits/byron.png",
+        "cardAssetPath": "/output/cards/byron.svg"
+      },
+      {
+        "instanceId": "adventurer:byron:2",
+        "cardId": "byron",
+        "name": "Byron",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Construct",
+        "arcana": "Major",
+        "basePower": 5,
+        "power": 5,
+        "text": "When Byron is in the Frontline and your opponent declares an Attack Action targetting a card in your Backline Zone: You may change the target of that Attack Action to Byron",
+        "flavourText": "\"Who?\"",
+        "portraitPath": "/assets/portraits/byron.png",
+        "cardAssetPath": "/output/cards/byron.svg"
+      },
+      {
+        "instanceId": "adventurer:corric:1",
+        "cardId": "corric",
+        "name": "Corric",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer",
+          "Thieves"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Corric can be played facedown in the Flank Zone. When  Corric takes the Attack Action for the first time, gains +2 Power for this Attack Action. (Facedown cards cannot be attacked or targeted by card effects. Flip the card face up when it takes an Action)",
+        "flavourText": "\"Question!\"",
+        "portraitPath": "/assets/portraits/corric.png",
+        "cardAssetPath": "/output/cards/corric.svg"
+      },
+      {
+        "instanceId": "adventurer:corric:2",
+        "cardId": "corric",
+        "name": "Corric",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer",
+          "Thieves"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Corric can be played facedown in the Flank Zone. When  Corric takes the Attack Action for the first time, gains +2 Power for this Attack Action. (Facedown cards cannot be attacked or targeted by card effects. Flip the card face up when it takes an Action)",
+        "flavourText": "\"Question!\"",
+        "portraitPath": "/assets/portraits/corric.png",
+        "cardAssetPath": "/output/cards/corric.svg"
+      },
+      {
+        "instanceId": "adventurer:rinse:1",
+        "cardId": "rinse",
+        "name": "Rinse",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Rinse: Target two cards on the opponents side, randomly destroy one. Target two cards on your side, randomly destroy one",
+        "flavourText": "What if we simply destroyed the world? Then what would they do?",
+        "portraitPath": "/assets/portraits/rinse.png",
+        "cardAssetPath": "/output/cards/rinse.svg"
+      },
+      {
+        "instanceId": "adventurer:rinse:2",
+        "cardId": "rinse",
+        "name": "Rinse",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Rinse: Target two cards on the opponents side, randomly destroy one. Target two cards on your side, randomly destroy one",
+        "flavourText": "What if we simply destroyed the world? Then what would they do?",
+        "portraitPath": "/assets/portraits/rinse.png",
+        "cardAssetPath": "/output/cards/rinse.svg"
+      },
+      {
+        "instanceId": "adventurer:gelemire:1",
+        "cardId": "gelemire",
+        "name": "Gelemire",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Lizardman",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Any card that fights Gelemire is stunned for a turn (Stunned cards cannot take Actions until the end of their controllers next turn)",
+        "flavourText": "\"and you must be Gele.. - sound of fist connecting with nose-\"",
+        "portraitPath": "/assets/portraits/gelemire.png",
+        "cardAssetPath": "/output/cards/gelemire.svg"
+      },
+      {
+        "instanceId": "adventurer:gelemire:2",
+        "cardId": "gelemire",
+        "name": "Gelemire",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Lizardman",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Any card that fights Gelemire is stunned for a turn (Stunned cards cannot take Actions until the end of their controllers next turn)",
+        "flavourText": "\"and you must be Gele.. - sound of fist connecting with nose-\"",
+        "portraitPath": "/assets/portraits/gelemire.png",
+        "cardAssetPath": "/output/cards/gelemire.svg"
+      },
+      {
+        "instanceId": "adventurer:ztun:1",
+        "cardId": "ztun",
+        "name": "Ztun",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Kobald",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Ztun: Draw a card",
+        "flavourText": "Ztuns talents were for digging, adventuring merely gave him the chance to discover his passion, potatoes",
+        "portraitPath": "/assets/portraits/ztun.png",
+        "cardAssetPath": "/output/cards/ztun.svg"
+      },
+      {
+        "instanceId": "adventurer:ztun:2",
+        "cardId": "ztun",
+        "name": "Ztun",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Kobald",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Ztun: Draw a card",
+        "flavourText": "Ztuns talents were for digging, adventuring merely gave him the chance to discover his passion, potatoes",
+        "portraitPath": "/assets/portraits/ztun.png",
+        "cardAssetPath": "/output/cards/ztun.svg"
+      },
+      {
+        "instanceId": "adventurer:bernadette:1",
+        "cardId": "bernadette",
+        "name": "Bernadette",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer",
+          "Septarchy"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Bernadette: Play a 1 Power Squibby token in the same Zone. This token has: \"If you need to count the number of cards you have in play, do not count this card\"",
+        "flavourText": "\"Get them Squibby!\"",
+        "portraitPath": "/assets/portraits/bernadette.png",
+        "cardAssetPath": "/output/cards/bernadette.svg"
+      },
+      {
+        "instanceId": "adventurer:bernadette:2",
+        "cardId": "bernadette",
+        "name": "Bernadette",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer",
+          "Septarchy"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Bernadette: Play a 1 Power Squibby token in the same Zone. This token has: \"If you need to count the number of cards you have in play, do not count this card\"",
+        "flavourText": "\"Get them Squibby!\"",
+        "portraitPath": "/assets/portraits/bernadette.png",
+        "cardAssetPath": "/output/cards/bernadette.svg"
+      },
+      {
+        "instanceId": "adventurer:reese:1",
+        "cardId": "reese",
+        "name": "Reese",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Reese swap the position of two cards on the same side",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/reese.png",
+        "cardAssetPath": "/output/cards/reese.svg"
+      },
+      {
+        "instanceId": "adventurer:reese:2",
+        "cardId": "reese",
+        "name": "Reese",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Reese swap the position of two cards on the same side",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/reese.png",
+        "cardAssetPath": "/output/cards/reese.svg"
+      },
+      {
+        "instanceId": "adventurer:moss:1",
+        "cardId": "moss",
+        "name": "Moss",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Moss: Moss can take the Attack Action this turn without using a Turn Action",
+        "flavourText": "\"Moss just ran in...\"",
+        "portraitPath": "/assets/portraits/moss.png",
+        "cardAssetPath": "/output/cards/moss.svg"
+      },
+      {
+        "instanceId": "adventurer:moss:2",
+        "cardId": "moss",
+        "name": "Moss",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Moss: Moss can take the Attack Action this turn without using a Turn Action",
+        "flavourText": "\"Moss just ran in...\"",
+        "portraitPath": "/assets/portraits/moss.png",
+        "cardAssetPath": "/output/cards/moss.svg"
+      },
+      {
+        "instanceId": "adventurer:gavailey:1",
+        "cardId": "gavailey",
+        "name": "Gavailey",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Dwarf",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "When Gavailey destroys a card your opponent Mills 1",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/gavailey.png",
+        "cardAssetPath": "/output/cards/gavailey.svg"
+      },
+      {
+        "instanceId": "adventurer:gavailey:2",
+        "cardId": "gavailey",
+        "name": "Gavailey",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer"
+        ],
+        "cardType": "Dwarf",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "When Gavailey destroys a card your opponent Mills 1",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/gavailey.png",
+        "cardAssetPath": "/output/cards/gavailey.svg"
+      },
+      {
+        "instanceId": "adventurer:abaddon-hopeless-assistant:1",
+        "cardId": "abaddon-hopeless-assistant",
+        "name": "Abaddon, Hopeless assistant",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If you start your turn with this in play, you may take an extra action",
+        "flavourText": "\"If we can deal with the abolyth and the lich at the same time then by my calculations we should still make it to our pottery class\"",
+        "portraitPath": "/assets/portraits/abaddon-hopeless-assistant.png",
+        "cardAssetPath": "/output/cards/abaddon-hopeless-assistant.svg"
+      },
+      {
+        "instanceId": "adventurer:abaddon-hopeless-assistant:2",
+        "cardId": "abaddon-hopeless-assistant",
+        "name": "Abaddon, Hopeless assistant",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If you start your turn with this in play, you may take an extra action",
+        "flavourText": "\"If we can deal with the abolyth and the lich at the same time then by my calculations we should still make it to our pottery class\"",
+        "portraitPath": "/assets/portraits/abaddon-hopeless-assistant.png",
+        "cardAssetPath": "/output/cards/abaddon-hopeless-assistant.svg"
+      },
+      {
+        "instanceId": "adventurer:abaddon-goblin-king:1",
+        "cardId": "abaddon-goblin-king",
+        "name": "Abaddon, Goblin King",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer",
+          "Abaddon",
+          "Goblins"
+        ],
+        "cardType": "Goblin Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "You may play a 1 power card that shares a faction with this card from your grave for free each turn",
+        "flavourText": "\"I just happened to kill the giant gooey hydra, look where it got me\"",
+        "portraitPath": "/assets/portraits/abaddon-goblin-king.png",
+        "cardAssetPath": "/output/cards/abaddon-goblin-king.svg"
+      },
+      {
+        "instanceId": "adventurer:abaddon-goblin-king:2",
+        "cardId": "abaddon-goblin-king",
+        "name": "Abaddon, Goblin King",
+        "faction": "Adventurer",
+        "factions": [
+          "Adventurer",
+          "Abaddon",
+          "Goblins"
+        ],
+        "cardType": "Goblin Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "You may play a 1 power card that shares a faction with this card from your grave for free each turn",
+        "flavourText": "\"I just happened to kill the giant gooey hydra, look where it got me\"",
+        "portraitPath": "/assets/portraits/abaddon-goblin-king.png",
+        "cardAssetPath": "/output/cards/abaddon-goblin-king.svg"
+      }
+    ],
+    "cardCount": 32,
+    "uniqueCards": 16
+  },
+  {
+    "id": "goblins",
+    "name": "Goblins",
+    "faction": "Goblins",
+    "cards": [
+      {
+        "instanceId": "goblins:goblin:1",
+        "cardId": "goblin",
+        "name": "Goblin",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin",
+        "arcana": "Chaff",
+        "basePower": 1,
+        "power": 1,
+        "text": "",
+        "flavourText": "\"I wish to fight, A Single Goblin\"",
+        "portraitPath": "/assets/portraits/goblin.png",
+        "cardAssetPath": "/output/cards/goblin.svg"
+      },
+      {
+        "instanceId": "goblins:goblin:2",
+        "cardId": "goblin",
+        "name": "Goblin",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin",
+        "arcana": "Chaff",
+        "basePower": 1,
+        "power": 1,
+        "text": "",
+        "flavourText": "\"I wish to fight, A Single Goblin\"",
+        "portraitPath": "/assets/portraits/goblin.png",
+        "cardAssetPath": "/output/cards/goblin.svg"
+      },
+      {
+        "instanceId": "goblins:goblin-goblin-king:1",
+        "cardId": "goblin-goblin-king",
+        "name": "Goblin, Goblin King",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "You may play chaff cards with the creature type Goblin from your Graveyard",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/goblin-goblin-king.png",
+        "cardAssetPath": "/output/cards/goblin-goblin-king.svg"
+      },
+      {
+        "instanceId": "goblins:goblin-goblin-king:2",
+        "cardId": "goblin-goblin-king",
+        "name": "Goblin, Goblin King",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "You may play chaff cards with the creature type Goblin from your Graveyard",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/goblin-goblin-king.png",
+        "cardAssetPath": "/output/cards/goblin-goblin-king.svg"
+      },
+      {
+        "instanceId": "goblins:goblin-scout:1",
+        "cardId": "goblin-scout",
+        "name": "Goblin Scout",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When Goblin Scout dies: Target another card you control with the creature type Goblin. That card may attack the opponent directly this turn",
+        "flavourText": "We never really knew why goblins were in places, we just killed them",
+        "portraitPath": "/assets/portraits/goblin-scout.png",
+        "cardAssetPath": "/output/cards/goblin-scout.svg"
+      },
+      {
+        "instanceId": "goblins:goblin-scout:2",
+        "cardId": "goblin-scout",
+        "name": "Goblin Scout",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When Goblin Scout dies: Target another card you control with the creature type Goblin. That card may attack the opponent directly this turn",
+        "flavourText": "We never really knew why goblins were in places, we just killed them",
+        "portraitPath": "/assets/portraits/goblin-scout.png",
+        "cardAssetPath": "/output/cards/goblin-scout.svg"
+      },
+      {
+        "instanceId": "goblins:two-goblins:1",
+        "cardId": "two-goblins",
+        "name": "Two Goblins",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When 2 Goblins dies: play a 1 Power Goblin token",
+        "flavourText": "You know whats worse than a goblin?",
+        "portraitPath": "/assets/portraits/two-goblins.png",
+        "cardAssetPath": "/output/cards/two-goblins.svg"
+      },
+      {
+        "instanceId": "goblins:two-goblins:2",
+        "cardId": "two-goblins",
+        "name": "Two Goblins",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When 2 Goblins dies: play a 1 Power Goblin token",
+        "flavourText": "You know whats worse than a goblin?",
+        "portraitPath": "/assets/portraits/two-goblins.png",
+        "cardAssetPath": "/output/cards/two-goblins.svg"
+      },
+      {
+        "instanceId": "goblins:goblin-strategist:1",
+        "cardId": "goblin-strategist",
+        "name": "Goblin Strategist",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When Goblin Strategist dies: shift a card your opponent controls",
+        "flavourText": "GET EM!",
+        "portraitPath": "/assets/portraits/goblin-strategist.png",
+        "cardAssetPath": "/output/cards/goblin-strategist.svg"
+      },
+      {
+        "instanceId": "goblins:goblin-strategist:2",
+        "cardId": "goblin-strategist",
+        "name": "Goblin Strategist",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When Goblin Strategist dies: shift a card your opponent controls",
+        "flavourText": "GET EM!",
+        "portraitPath": "/assets/portraits/goblin-strategist.png",
+        "cardAssetPath": "/output/cards/goblin-strategist.svg"
+      },
+      {
+        "instanceId": "goblins:hydra-goblin-king:1",
+        "cardId": "hydra-goblin-king",
+        "name": "Hydra, Goblin King",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin Hydra",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Destroy a Goblin you control: Hydra, Goblin King has +1 Power this turn",
+        "flavourText": "Munch Munch Munch",
+        "portraitPath": "/assets/portraits/hydra-goblin-king.png",
+        "cardAssetPath": "/output/cards/hydra-goblin-king.svg"
+      },
+      {
+        "instanceId": "goblins:hydra-goblin-king:2",
+        "cardId": "hydra-goblin-king",
+        "name": "Hydra, Goblin King",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin Hydra",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Destroy a Goblin you control: Hydra, Goblin King has +1 Power this turn",
+        "flavourText": "Munch Munch Munch",
+        "portraitPath": "/assets/portraits/hydra-goblin-king.png",
+        "cardAssetPath": "/output/cards/hydra-goblin-king.svg"
+      },
+      {
+        "instanceId": "goblins:abaddon-dragon-fanatic:1",
+        "cardId": "abaddon-dragon-fanatic",
+        "name": "Abaddon, Dragon fanatic",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins",
+          "Team Dragon"
+        ],
+        "cardType": "Kobald",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When Abaddon, Dragon fanatic dies: Search your deck for a card that shares a faction with Abaddon, Dragon fanatic and add it to your hand",
+        "flavourText": "\"Team Dragon!\"",
+        "portraitPath": "/assets/portraits/abaddon-dragon-fanatic.png",
+        "cardAssetPath": "/output/cards/abaddon-dragon-fanatic.svg"
+      },
+      {
+        "instanceId": "goblins:abaddon-dragon-fanatic:2",
+        "cardId": "abaddon-dragon-fanatic",
+        "name": "Abaddon, Dragon fanatic",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins",
+          "Team Dragon"
+        ],
+        "cardType": "Kobald",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When Abaddon, Dragon fanatic dies: Search your deck for a card that shares a faction with Abaddon, Dragon fanatic and add it to your hand",
+        "flavourText": "\"Team Dragon!\"",
+        "portraitPath": "/assets/portraits/abaddon-dragon-fanatic.png",
+        "cardAssetPath": "/output/cards/abaddon-dragon-fanatic.svg"
+      },
+      {
+        "instanceId": "goblins:orc-marksmen:1",
+        "cardId": "orc-marksmen",
+        "name": "Orc Marksmen",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Orc",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "Destroy a Goblin you control: your cards with the creature type Goblin have +1 Power until the end of the turn",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/orc-marksmen.png",
+        "cardAssetPath": "/output/cards/orc-marksmen.svg"
+      },
+      {
+        "instanceId": "goblins:orc-marksmen:2",
+        "cardId": "orc-marksmen",
+        "name": "Orc Marksmen",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Orc",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "Destroy a Goblin you control: your cards with the creature type Goblin have +1 Power until the end of the turn",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/orc-marksmen.png",
+        "cardAssetPath": "/output/cards/orc-marksmen.svg"
+      },
+      {
+        "instanceId": "goblins:abaddon-goblin-king:1",
+        "cardId": "abaddon-goblin-king",
+        "name": "Abaddon, Goblin King",
+        "faction": "Goblins",
+        "factions": [
+          "Adventurer",
+          "Abaddon",
+          "Goblins"
+        ],
+        "cardType": "Goblin Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "You may play a 1 power card that shares a faction with this card from your grave for free each turn",
+        "flavourText": "\"I just happened to kill the giant gooey hydra, look where it got me\"",
+        "portraitPath": "/assets/portraits/abaddon-goblin-king.png",
+        "cardAssetPath": "/output/cards/abaddon-goblin-king.svg"
+      },
+      {
+        "instanceId": "goblins:abaddon-goblin-king:2",
+        "cardId": "abaddon-goblin-king",
+        "name": "Abaddon, Goblin King",
+        "faction": "Goblins",
+        "factions": [
+          "Adventurer",
+          "Abaddon",
+          "Goblins"
+        ],
+        "cardType": "Goblin Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "You may play a 1 power card that shares a faction with this card from your grave for free each turn",
+        "flavourText": "\"I just happened to kill the giant gooey hydra, look where it got me\"",
+        "portraitPath": "/assets/portraits/abaddon-goblin-king.png",
+        "cardAssetPath": "/output/cards/abaddon-goblin-king.svg"
+      },
+      {
+        "instanceId": "goblins:goblin-warchief:1",
+        "cardId": "goblin-warchief",
+        "name": "Goblin Warchief",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "Support Action: Target card you control with the creature type Goblin gains +X Power equal to the number of cards in your Graveyard with the creature type Goblin until the end of the turn",
+        "flavourText": "\"The smartest goblin\" isn't much of a title",
+        "portraitPath": "/assets/portraits/goblin-warchief.png",
+        "cardAssetPath": "/output/cards/goblin-warchief.svg"
+      },
+      {
+        "instanceId": "goblins:goblin-warchief:2",
+        "cardId": "goblin-warchief",
+        "name": "Goblin Warchief",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "Support Action: Target card you control with the creature type Goblin gains +X Power equal to the number of cards in your Graveyard with the creature type Goblin until the end of the turn",
+        "flavourText": "\"The smartest goblin\" isn't much of a title",
+        "portraitPath": "/assets/portraits/goblin-warchief.png",
+        "cardAssetPath": "/output/cards/goblin-warchief.svg"
+      },
+      {
+        "instanceId": "goblins:goblin-pillager:1",
+        "cardId": "goblin-pillager",
+        "name": "Goblin Pillager",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When Goblin Pillager dies: your opponent Mills 3",
+        "flavourText": "Goblins, although making up only 10% of the population cause 120% of the crimes",
+        "portraitPath": "/assets/portraits/goblin-pillager.png",
+        "cardAssetPath": "/output/cards/goblin-pillager.svg"
+      },
+      {
+        "instanceId": "goblins:goblin-pillager:2",
+        "cardId": "goblin-pillager",
+        "name": "Goblin Pillager",
+        "faction": "Goblins",
+        "factions": [
+          "Goblins"
+        ],
+        "cardType": "Goblin",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When Goblin Pillager dies: your opponent Mills 3",
+        "flavourText": "Goblins, although making up only 10% of the population cause 120% of the crimes",
+        "portraitPath": "/assets/portraits/goblin-pillager.png",
+        "cardAssetPath": "/output/cards/goblin-pillager.svg"
+      }
+    ],
+    "cardCount": 22,
+    "uniqueCards": 11
+  },
+  {
+    "id": "meatfists",
+    "name": "Meatfists",
+    "faction": "Meatfists",
+    "cards": [
+      {
+        "instanceId": "meatfists:brym:1",
+        "cardId": "brym",
+        "name": "Brym",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 4,
+        "power": 4,
+        "text": "Ties in fights where the opponent has one more power",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/brym.png",
+        "cardAssetPath": "/output/cards/brym.svg"
+      },
+      {
+        "instanceId": "meatfists:brym:2",
+        "cardId": "brym",
+        "name": "Brym",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 4,
+        "power": 4,
+        "text": "Ties in fights where the opponent has one more power",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/brym.png",
+        "cardAssetPath": "/output/cards/brym.svg"
+      },
+      {
+        "instanceId": "meatfists:skip:1",
+        "cardId": "skip",
+        "name": "Skip",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "If you have taken 4 attack actions this turn, Skip can take a free attack action",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/skip.png",
+        "cardAssetPath": "/output/cards/skip.svg"
+      },
+      {
+        "instanceId": "meatfists:skip:2",
+        "cardId": "skip",
+        "name": "Skip",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "If you have taken 4 attack actions this turn, Skip can take a free attack action",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/skip.png",
+        "cardAssetPath": "/output/cards/skip.svg"
+      },
+      {
+        "instanceId": "meatfists:rick:1",
+        "cardId": "rick",
+        "name": "Rick",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Any card that battles this loses one power",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/rick.png",
+        "cardAssetPath": "/output/cards/rick.svg"
+      },
+      {
+        "instanceId": "meatfists:rick:2",
+        "cardId": "rick",
+        "name": "Rick",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Any card that battles this loses one power",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/rick.png",
+        "cardAssetPath": "/output/cards/rick.svg"
+      },
+      {
+        "instanceId": "meatfists:chives:1",
+        "cardId": "chives",
+        "name": "Chives",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Can attack backline from frontline",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/chives.png",
+        "cardAssetPath": "/output/cards/chives.svg"
+      },
+      {
+        "instanceId": "meatfists:chives:2",
+        "cardId": "chives",
+        "name": "Chives",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Can attack backline from frontline",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/chives.png",
+        "cardAssetPath": "/output/cards/chives.svg"
+      },
+      {
+        "instanceId": "meatfists:eric:1",
+        "cardId": "eric",
+        "name": "Eric",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Can attack flanks from the frontline",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/eric.png",
+        "cardAssetPath": "/output/cards/eric.svg"
+      },
+      {
+        "instanceId": "meatfists:eric:2",
+        "cardId": "eric",
+        "name": "Eric",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Can attack flanks from the frontline",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/eric.png",
+        "cardAssetPath": "/output/cards/eric.svg"
+      },
+      {
+        "instanceId": "meatfists:leslie:1",
+        "cardId": "leslie",
+        "name": "Leslie",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "If this card wins a fight, destroy any Reinforcing cards in Backline Zone",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/leslie.png",
+        "cardAssetPath": "/output/cards/leslie.svg"
+      },
+      {
+        "instanceId": "meatfists:leslie:2",
+        "cardId": "leslie",
+        "name": "Leslie",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "If this card wins a fight, destroy any Reinforcing cards in Backline Zone",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/leslie.png",
+        "cardAssetPath": "/output/cards/leslie.svg"
+      },
+      {
+        "instanceId": "meatfists:alex:1",
+        "cardId": "alex",
+        "name": "Alex",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "If this attacks and wins a fight, it can destroy a card in the same zone as the the defender with less power",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/alex.png",
+        "cardAssetPath": "/output/cards/alex.svg"
+      },
+      {
+        "instanceId": "meatfists:alex:2",
+        "cardId": "alex",
+        "name": "Alex",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "If this attacks and wins a fight, it can destroy a card in the same zone as the the defender with less power",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/alex.png",
+        "cardAssetPath": "/output/cards/alex.svg"
+      },
+      {
+        "instanceId": "meatfists:davies:1",
+        "cardId": "davies",
+        "name": "Davies",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Can Reinforce from the frontline",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/davies.png",
+        "cardAssetPath": "/output/cards/davies.svg"
+      },
+      {
+        "instanceId": "meatfists:davies:2",
+        "cardId": "davies",
+        "name": "Davies",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Can Reinforce from the frontline",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/davies.png",
+        "cardAssetPath": "/output/cards/davies.svg"
+      },
+      {
+        "instanceId": "meatfists:ernest:1",
+        "cardId": "ernest",
+        "name": "Ernest",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "If your frontline attackers would tie, destroy the enemy card",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/ernest.png",
+        "cardAssetPath": "/output/cards/ernest.svg"
+      },
+      {
+        "instanceId": "meatfists:ernest:2",
+        "cardId": "ernest",
+        "name": "Ernest",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "If your frontline attackers would tie, destroy the enemy card",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/ernest.png",
+        "cardAssetPath": "/output/cards/ernest.svg"
+      },
+      {
+        "instanceId": "meatfists:roland:1",
+        "cardId": "roland",
+        "name": "Roland",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Plus 2 vs frontlines, plus 1 vs backlines",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/roland.png",
+        "cardAssetPath": "/output/cards/roland.svg"
+      },
+      {
+        "instanceId": "meatfists:roland:2",
+        "cardId": "roland",
+        "name": "Roland",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Plus 2 vs frontlines, plus 1 vs backlines",
+        "flavourText": "\"WE'RE THE MEATFISTS!\"",
+        "portraitPath": "/assets/portraits/roland.png",
+        "cardAssetPath": "/output/cards/roland.svg"
+      },
+      {
+        "instanceId": "meatfists:abaddon-meatfist-hireling:1",
+        "cardId": "abaddon-meatfist-hireling",
+        "name": "Abaddon, Meatfist Hireling",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If all your cards are in the same zone, you may take an extra action",
+        "flavourText": "\"We're the Meatfists?\"",
+        "portraitPath": "/assets/portraits/abaddon-meatfist-hireling.png",
+        "cardAssetPath": "/output/cards/abaddon-meatfist-hireling.svg"
+      },
+      {
+        "instanceId": "meatfists:abaddon-meatfist-hireling:2",
+        "cardId": "abaddon-meatfist-hireling",
+        "name": "Abaddon, Meatfist Hireling",
+        "faction": "Meatfists",
+        "factions": [
+          "Meatfists",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If all your cards are in the same zone, you may take an extra action",
+        "flavourText": "\"We're the Meatfists?\"",
+        "portraitPath": "/assets/portraits/abaddon-meatfist-hireling.png",
+        "cardAssetPath": "/output/cards/abaddon-meatfist-hireling.svg"
+      }
+    ],
+    "cardCount": 22,
+    "uniqueCards": 11
+  },
+  {
+    "id": "medicarium",
+    "name": "Medicarium",
+    "faction": "Medicarium",
+    "cards": [
+      {
+        "instanceId": "medicarium:the-warden:1",
+        "cardId": "the-warden",
+        "name": "The Warden",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium",
+          "Team Dragon"
+        ],
+        "cardType": "Half dragon",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Supporting action: move an enemy to a different position",
+        "flavourText": "\"They always return to the scene of the crime\"",
+        "portraitPath": "/assets/portraits/the-warden.png",
+        "cardAssetPath": "/output/cards/the-warden.svg"
+      },
+      {
+        "instanceId": "medicarium:the-warden:2",
+        "cardId": "the-warden",
+        "name": "The Warden",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium",
+          "Team Dragon"
+        ],
+        "cardType": "Half dragon",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Supporting action: move an enemy to a different position",
+        "flavourText": "\"They always return to the scene of the crime\"",
+        "portraitPath": "/assets/portraits/the-warden.png",
+        "cardAssetPath": "/output/cards/the-warden.svg"
+      },
+      {
+        "instanceId": "medicarium:praxis:1",
+        "cardId": "praxis",
+        "name": "Praxis",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Praxis: Your opponent may not take the draw action next turn",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/praxis.png",
+        "cardAssetPath": "/output/cards/praxis.svg"
+      },
+      {
+        "instanceId": "medicarium:praxis:2",
+        "cardId": "praxis",
+        "name": "Praxis",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Praxis: Your opponent may not take the draw action next turn",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/praxis.png",
+        "cardAssetPath": "/output/cards/praxis.svg"
+      },
+      {
+        "instanceId": "medicarium:biddimim:1",
+        "cardId": "biddimim",
+        "name": "Biddimim",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "When you play Biddimim: look at top 2 cards of your deck, put these cards on the top or bottom of your deck in any order",
+        "flavourText": "\"We're simply waiting here for the darkness to consume us all\"",
+        "portraitPath": "/assets/portraits/biddimim.png",
+        "cardAssetPath": "/output/cards/biddimim.svg"
+      },
+      {
+        "instanceId": "medicarium:biddimim:2",
+        "cardId": "biddimim",
+        "name": "Biddimim",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "When you play Biddimim: look at top 2 cards of your deck, put these cards on the top or bottom of your deck in any order",
+        "flavourText": "\"We're simply waiting here for the darkness to consume us all\"",
+        "portraitPath": "/assets/portraits/biddimim.png",
+        "cardAssetPath": "/output/cards/biddimim.svg"
+      },
+      {
+        "instanceId": "medicarium:father-sentar:1",
+        "cardId": "father-sentar",
+        "name": "Father Sentar",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Mind flayer",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Supporting Action: pick an enemy card. That card cannot attack or take actions until your next turn",
+        "flavourText": "Even the the effects of a True Sight spell fail to reveal the true form of the Church of the Self's leader",
+        "portraitPath": "/assets/portraits/father-sentar.png",
+        "cardAssetPath": "/output/cards/father-sentar.svg"
+      },
+      {
+        "instanceId": "medicarium:father-sentar:2",
+        "cardId": "father-sentar",
+        "name": "Father Sentar",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Mind flayer",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Supporting Action: pick an enemy card. That card cannot attack or take actions until your next turn",
+        "flavourText": "Even the the effects of a True Sight spell fail to reveal the true form of the Church of the Self's leader",
+        "portraitPath": "/assets/portraits/father-sentar.png",
+        "cardAssetPath": "/output/cards/father-sentar.svg"
+      },
+      {
+        "instanceId": "medicarium:marcotte:1",
+        "cardId": "marcotte",
+        "name": "Marcotte",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "While Marcotte is in your Frontline Zone:  +1 power for each card in your Backline Zone. Marcotte cannot be Reinforced",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/marcotte.png",
+        "cardAssetPath": "/output/cards/marcotte.svg"
+      },
+      {
+        "instanceId": "medicarium:marcotte:2",
+        "cardId": "marcotte",
+        "name": "Marcotte",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "While Marcotte is in your Frontline Zone:  +1 power for each card in your Backline Zone. Marcotte cannot be Reinforced",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/marcotte.png",
+        "cardAssetPath": "/output/cards/marcotte.svg"
+      },
+      {
+        "instanceId": "medicarium:catherine:1",
+        "cardId": "catherine",
+        "name": "Catherine",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "Support Action: return a card from your graveyard to your hand",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/catherine.png",
+        "cardAssetPath": "/output/cards/catherine.svg"
+      },
+      {
+        "instanceId": "medicarium:catherine:2",
+        "cardId": "catherine",
+        "name": "Catherine",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "Support Action: return a card from your graveyard to your hand",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/catherine.png",
+        "cardAssetPath": "/output/cards/catherine.svg"
+      },
+      {
+        "instanceId": "medicarium:death:1",
+        "cardId": "death",
+        "name": "Death",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium",
+          "Adams Team"
+        ],
+        "cardType": "Elf",
+        "arcana": "Major",
+        "basePower": 1,
+        "power": 1,
+        "text": "Indestructible. Death may only be played in the Backline Zone. Death may not take the Shift Action or be moved to other Zones by effects. Mill a card at the start of your turn. Support Action: Mill 1 then return a card from your grave to your hand",
+        "flavourText": "\"This man kept me imprisoned, I will make his death complete\"",
+        "portraitPath": "/assets/portraits/death.png",
+        "cardAssetPath": "/output/cards/death.svg"
+      },
+      {
+        "instanceId": "medicarium:death:2",
+        "cardId": "death",
+        "name": "Death",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium",
+          "Adams Team"
+        ],
+        "cardType": "Elf",
+        "arcana": "Major",
+        "basePower": 1,
+        "power": 1,
+        "text": "Indestructible. Death may only be played in the Backline Zone. Death may not take the Shift Action or be moved to other Zones by effects. Mill a card at the start of your turn. Support Action: Mill 1 then return a card from your grave to your hand",
+        "flavourText": "\"This man kept me imprisoned, I will make his death complete\"",
+        "portraitPath": "/assets/portraits/death.png",
+        "cardAssetPath": "/output/cards/death.svg"
+      },
+      {
+        "instanceId": "medicarium:abaddon-false-cleric:1",
+        "cardId": "abaddon-false-cleric",
+        "name": "Abaddon, False Cleric",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If you take a support action, you may take another support action for free",
+        "flavourText": "\"What's an illusionist?\"",
+        "portraitPath": "/assets/portraits/abaddon-false-cleric.png",
+        "cardAssetPath": "/output/cards/abaddon-false-cleric.svg"
+      },
+      {
+        "instanceId": "medicarium:abaddon-false-cleric:2",
+        "cardId": "abaddon-false-cleric",
+        "name": "Abaddon, False Cleric",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium",
+          "Abaddon"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If you take a support action, you may take another support action for free",
+        "flavourText": "\"What's an illusionist?\"",
+        "portraitPath": "/assets/portraits/abaddon-false-cleric.png",
+        "cardAssetPath": "/output/cards/abaddon-false-cleric.svg"
+      },
+      {
+        "instanceId": "medicarium:sir-damien:1",
+        "cardId": "sir-damien",
+        "name": "Sir Damien",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Centaur",
+        "arcana": "Major",
+        "basePower": 7,
+        "power": 7,
+        "text": "When you play Sir Damien:  your oponent must reveal their hand",
+        "flavourText": "\"Paladins can choose!\"",
+        "portraitPath": "/assets/portraits/sir-damien.png",
+        "cardAssetPath": "/output/cards/sir-damien.svg"
+      },
+      {
+        "instanceId": "medicarium:sir-damien:2",
+        "cardId": "sir-damien",
+        "name": "Sir Damien",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Centaur",
+        "arcana": "Major",
+        "basePower": 7,
+        "power": 7,
+        "text": "When you play Sir Damien:  your oponent must reveal their hand",
+        "flavourText": "\"Paladins can choose!\"",
+        "portraitPath": "/assets/portraits/sir-damien.png",
+        "cardAssetPath": "/output/cards/sir-damien.svg"
+      },
+      {
+        "instanceId": "medicarium:lights-intent-officer:1",
+        "cardId": "lights-intent-officer",
+        "name": "Lights Intent Officer",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Human",
+        "arcana": "Chaff",
+        "basePower": 2,
+        "power": 2,
+        "text": "Cannot attack supports",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/lights-intent-officer.png",
+        "cardAssetPath": "/output/cards/lights-intent-officer.svg"
+      },
+      {
+        "instanceId": "medicarium:lights-intent-officer:2",
+        "cardId": "lights-intent-officer",
+        "name": "Lights Intent Officer",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Human",
+        "arcana": "Chaff",
+        "basePower": 2,
+        "power": 2,
+        "text": "Cannot attack supports",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/lights-intent-officer.png",
+        "cardAssetPath": "/output/cards/lights-intent-officer.svg"
+      },
+      {
+        "instanceId": "medicarium:medicarium-cleric:1",
+        "cardId": "medicarium-cleric",
+        "name": "Medicarium Cleric",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Human",
+        "arcana": "Chaff",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Medicarium Cleric: Heal 1 (To Heal Target X cards in your Graveyard and shuffle them into your deck)",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/medicarium-cleric.png",
+        "cardAssetPath": "/output/cards/medicarium-cleric.svg"
+      },
+      {
+        "instanceId": "medicarium:medicarium-cleric:2",
+        "cardId": "medicarium-cleric",
+        "name": "Medicarium Cleric",
+        "faction": "Medicarium",
+        "factions": [
+          "Medicarium"
+        ],
+        "cardType": "Human",
+        "arcana": "Chaff",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Medicarium Cleric: Heal 1 (To Heal Target X cards in your Graveyard and shuffle them into your deck)",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/medicarium-cleric.png",
+        "cardAssetPath": "/output/cards/medicarium-cleric.svg"
+      },
+      {
+        "instanceId": "medicarium:alieah:1",
+        "cardId": "alieah",
+        "name": "Alieah",
+        "faction": "Medicarium",
+        "factions": [
+          "Septarchy",
+          "Medicarium"
+        ],
+        "cardType": "Demon",
+        "arcana": "Major",
+        "basePower": 3,
+        "power": 3,
+        "text": "When you play Alieah: you may mill a card to take control of an enemy card until the end of your opponents next turn (Place the stolen card in same Zone it was taken from)",
+        "flavourText": "\"I just want to be left alone\"",
+        "portraitPath": "/assets/portraits/alieah.png",
+        "cardAssetPath": "/output/cards/alieah.svg"
+      },
+      {
+        "instanceId": "medicarium:alieah:2",
+        "cardId": "alieah",
+        "name": "Alieah",
+        "faction": "Medicarium",
+        "factions": [
+          "Septarchy",
+          "Medicarium"
+        ],
+        "cardType": "Demon",
+        "arcana": "Major",
+        "basePower": 3,
+        "power": 3,
+        "text": "When you play Alieah: you may mill a card to take control of an enemy card until the end of your opponents next turn (Place the stolen card in same Zone it was taken from)",
+        "flavourText": "\"I just want to be left alone\"",
+        "portraitPath": "/assets/portraits/alieah.png",
+        "cardAssetPath": "/output/cards/alieah.svg"
+      }
+    ],
+    "cardCount": 24,
+    "uniqueCards": 12
+  },
+  {
+    "id": "septarchy",
+    "name": "Septarchy",
+    "faction": "Septarchy",
+    "cards": [
+      {
+        "instanceId": "septarchy:bernadette:1",
+        "cardId": "bernadette",
+        "name": "Bernadette",
+        "faction": "Septarchy",
+        "factions": [
+          "Adventurer",
+          "Septarchy"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Bernadette: Play a 1 Power Squibby token in the same Zone. This token has: \"If you need to count the number of cards you have in play, do not count this card\"",
+        "flavourText": "\"Get them Squibby!\"",
+        "portraitPath": "/assets/portraits/bernadette.png",
+        "cardAssetPath": "/output/cards/bernadette.svg"
+      },
+      {
+        "instanceId": "septarchy:bernadette:2",
+        "cardId": "bernadette",
+        "name": "Bernadette",
+        "faction": "Septarchy",
+        "factions": [
+          "Adventurer",
+          "Septarchy"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Bernadette: Play a 1 Power Squibby token in the same Zone. This token has: \"If you need to count the number of cards you have in play, do not count this card\"",
+        "flavourText": "\"Get them Squibby!\"",
+        "portraitPath": "/assets/portraits/bernadette.png",
+        "cardAssetPath": "/output/cards/bernadette.svg"
+      },
+      {
+        "instanceId": "septarchy:alieah:1",
+        "cardId": "alieah",
+        "name": "Alieah",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy",
+          "Medicarium"
+        ],
+        "cardType": "Demon",
+        "arcana": "Major",
+        "basePower": 3,
+        "power": 3,
+        "text": "When you play Alieah: you may mill a card to take control of an enemy card until the end of your opponents next turn (Place the stolen card in same Zone it was taken from)",
+        "flavourText": "\"I just want to be left alone\"",
+        "portraitPath": "/assets/portraits/alieah.png",
+        "cardAssetPath": "/output/cards/alieah.svg"
+      },
+      {
+        "instanceId": "septarchy:alieah:2",
+        "cardId": "alieah",
+        "name": "Alieah",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy",
+          "Medicarium"
+        ],
+        "cardType": "Demon",
+        "arcana": "Major",
+        "basePower": 3,
+        "power": 3,
+        "text": "When you play Alieah: you may mill a card to take control of an enemy card until the end of your opponents next turn (Place the stolen card in same Zone it was taken from)",
+        "flavourText": "\"I just want to be left alone\"",
+        "portraitPath": "/assets/portraits/alieah.png",
+        "cardAssetPath": "/output/cards/alieah.svg"
+      },
+      {
+        "instanceId": "septarchy:asmodeus:1",
+        "cardId": "asmodeus",
+        "name": "Asmodeus",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Demon",
+        "arcana": "Major",
+        "basePower": 10,
+        "power": 10,
+        "text": "Asmodeus has -1 Power for each card you have in play",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/asmodeus.png",
+        "cardAssetPath": "/output/cards/asmodeus.svg"
+      },
+      {
+        "instanceId": "septarchy:asmodeus:2",
+        "cardId": "asmodeus",
+        "name": "Asmodeus",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Demon",
+        "arcana": "Major",
+        "basePower": 10,
+        "power": 10,
+        "text": "Asmodeus has -1 Power for each card you have in play",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/asmodeus.png",
+        "cardAssetPath": "/output/cards/asmodeus.svg"
+      },
+      {
+        "instanceId": "septarchy:vainglory:1",
+        "cardId": "vainglory",
+        "name": "Vainglory",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Tiefling",
+        "arcana": "Major",
+        "basePower": 4,
+        "power": 4,
+        "text": "When Vainglory is destroyed, return a different card from your grave to your hand",
+        "flavourText": "\"This is all Bullshit\"",
+        "portraitPath": "/assets/portraits/vainglory.png",
+        "cardAssetPath": "/output/cards/vainglory.svg"
+      },
+      {
+        "instanceId": "septarchy:vainglory:2",
+        "cardId": "vainglory",
+        "name": "Vainglory",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Tiefling",
+        "arcana": "Major",
+        "basePower": 4,
+        "power": 4,
+        "text": "When Vainglory is destroyed, return a different card from your grave to your hand",
+        "flavourText": "\"This is all Bullshit\"",
+        "portraitPath": "/assets/portraits/vainglory.png",
+        "cardAssetPath": "/output/cards/vainglory.svg"
+      },
+      {
+        "instanceId": "septarchy:lilith:1",
+        "cardId": "lilith",
+        "name": "Lilith",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Demon",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "When you play Lilith: If you control less cards than your opponent, draw a card",
+        "flavourText": "\"We're friends, aren't we Pests and Chests?\"",
+        "portraitPath": "/assets/portraits/lilith.png",
+        "cardAssetPath": "/output/cards/lilith.svg"
+      },
+      {
+        "instanceId": "septarchy:lilith:2",
+        "cardId": "lilith",
+        "name": "Lilith",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Demon",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "When you play Lilith: If you control less cards than your opponent, draw a card",
+        "flavourText": "\"We're friends, aren't we Pests and Chests?\"",
+        "portraitPath": "/assets/portraits/lilith.png",
+        "cardAssetPath": "/output/cards/lilith.svg"
+      },
+      {
+        "instanceId": "septarchy:belthagor:1",
+        "cardId": "belthagor",
+        "name": "Belthagor",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Demon",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "When Belthagor destroys a card and you then control less cards than your opponent: This card gains +1 Power",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/belthagor.png",
+        "cardAssetPath": "/output/cards/belthagor.svg"
+      },
+      {
+        "instanceId": "septarchy:belthagor:2",
+        "cardId": "belthagor",
+        "name": "Belthagor",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Demon",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "When Belthagor destroys a card and you then control less cards than your opponent: This card gains +1 Power",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/belthagor.png",
+        "cardAssetPath": "/output/cards/belthagor.svg"
+      },
+      {
+        "instanceId": "septarchy:jerris:1",
+        "cardId": "jerris",
+        "name": "Jerris",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Tiefling",
+        "arcana": "",
+        "basePower": 6,
+        "power": 6,
+        "text": "At the end of your turn if Jerris didn't attack destroy it. At the start of your turn: If there's more than one card (total) in the same Zone as Jerris: Jerris must use an Attack Action to attack a card in the same Zone as him",
+        "flavourText": "\"Would any of you like to duel?\"",
+        "portraitPath": "/assets/portraits/jerris.png",
+        "cardAssetPath": "/output/cards/jerris.svg"
+      },
+      {
+        "instanceId": "septarchy:jerris:2",
+        "cardId": "jerris",
+        "name": "Jerris",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Tiefling",
+        "arcana": "",
+        "basePower": 6,
+        "power": 6,
+        "text": "At the end of your turn if Jerris didn't attack destroy it. At the start of your turn: If there's more than one card (total) in the same Zone as Jerris: Jerris must use an Attack Action to attack a card in the same Zone as him",
+        "flavourText": "\"Would any of you like to duel?\"",
+        "portraitPath": "/assets/portraits/jerris.png",
+        "cardAssetPath": "/output/cards/jerris.svg"
+      },
+      {
+        "instanceId": "septarchy:beliel:1",
+        "cardId": "beliel",
+        "name": "Beliel",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Demon",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Beliel has +2 Power while he is not being Reinforced. When Beliel destroys a card your opponent Mills the difference between Beliel's Power and the destroyed card's Power. At the end of your turn Mill 1 for each card you have in play",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/beliel.png",
+        "cardAssetPath": "/output/cards/beliel.svg"
+      },
+      {
+        "instanceId": "septarchy:beliel:2",
+        "cardId": "beliel",
+        "name": "Beliel",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Demon",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Beliel has +2 Power while he is not being Reinforced. When Beliel destroys a card your opponent Mills the difference between Beliel's Power and the destroyed card's Power. At the end of your turn Mill 1 for each card you have in play",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/beliel.png",
+        "cardAssetPath": "/output/cards/beliel.svg"
+      },
+      {
+        "instanceId": "septarchy:gregorian:1",
+        "cardId": "gregorian",
+        "name": "Gregorian",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Demon",
+        "arcana": "",
+        "basePower": 0,
+        "power": 0,
+        "text": "Gregorian's Power is equal to the number of cards your opponent has in play",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/gregorian.png",
+        "cardAssetPath": "/output/cards/gregorian.svg"
+      },
+      {
+        "instanceId": "septarchy:gregorian:2",
+        "cardId": "gregorian",
+        "name": "Gregorian",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Demon",
+        "arcana": "",
+        "basePower": 0,
+        "power": 0,
+        "text": "Gregorian's Power is equal to the number of cards your opponent has in play",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/gregorian.png",
+        "cardAssetPath": "/output/cards/gregorian.svg"
+      },
+      {
+        "instanceId": "septarchy:abaddon-lord-sloth:1",
+        "cardId": "abaddon-lord-sloth",
+        "name": "Abaddon, Lord Sloth",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy",
+          "Abaddon"
+        ],
+        "cardType": "Undead",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If you need to count the number of cards you have in play, do not count this card. When you need to count the number of cards you have in play reduce the total by 1",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/abaddon-lord-sloth.png",
+        "cardAssetPath": "/output/cards/abaddon-lord-sloth.svg"
+      },
+      {
+        "instanceId": "septarchy:abaddon-lord-sloth:2",
+        "cardId": "abaddon-lord-sloth",
+        "name": "Abaddon, Lord Sloth",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy",
+          "Abaddon"
+        ],
+        "cardType": "Undead",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "If you need to count the number of cards you have in play, do not count this card. When you need to count the number of cards you have in play reduce the total by 1",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/abaddon-lord-sloth.png",
+        "cardAssetPath": "/output/cards/abaddon-lord-sloth.svg"
+      },
+      {
+        "instanceId": "septarchy:imp:1",
+        "cardId": "imp",
+        "name": "Imp",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Demon",
+        "arcana": "Chaff",
+        "basePower": 1,
+        "power": 1,
+        "text": "If you need to count the number of cards you have in play, do not count this card",
+        "flavourText": "Infinite potential and not much else",
+        "portraitPath": "/assets/portraits/imp.png",
+        "cardAssetPath": "/output/cards/imp.svg"
+      },
+      {
+        "instanceId": "septarchy:imp:2",
+        "cardId": "imp",
+        "name": "Imp",
+        "faction": "Septarchy",
+        "factions": [
+          "Septarchy"
+        ],
+        "cardType": "Demon",
+        "arcana": "Chaff",
+        "basePower": 1,
+        "power": 1,
+        "text": "If you need to count the number of cards you have in play, do not count this card",
+        "flavourText": "Infinite potential and not much else",
+        "portraitPath": "/assets/portraits/imp.png",
+        "cardAssetPath": "/output/cards/imp.svg"
+      }
+    ],
+    "cardCount": 22,
+    "uniqueCards": 11
+  },
+  {
+    "id": "team-dragon",
+    "name": "Team Dragon",
+    "faction": "Team Dragon",
+    "cards": [
+      {
+        "instanceId": "team-dragon:the-warden:1",
+        "cardId": "the-warden",
+        "name": "The Warden",
+        "faction": "Team Dragon",
+        "factions": [
+          "Medicarium",
+          "Team Dragon"
+        ],
+        "cardType": "Half dragon",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Supporting action: move an enemy to a different position",
+        "flavourText": "\"They always return to the scene of the crime\"",
+        "portraitPath": "/assets/portraits/the-warden.png",
+        "cardAssetPath": "/output/cards/the-warden.svg"
+      },
+      {
+        "instanceId": "team-dragon:the-warden:2",
+        "cardId": "the-warden",
+        "name": "The Warden",
+        "faction": "Team Dragon",
+        "factions": [
+          "Medicarium",
+          "Team Dragon"
+        ],
+        "cardType": "Half dragon",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Supporting action: move an enemy to a different position",
+        "flavourText": "\"They always return to the scene of the crime\"",
+        "portraitPath": "/assets/portraits/the-warden.png",
+        "cardAssetPath": "/output/cards/the-warden.svg"
+      },
+      {
+        "instanceId": "team-dragon:woe:1",
+        "cardId": "woe",
+        "name": "Woe",
+        "faction": "Team Dragon",
+        "factions": [
+          "Adams Team",
+          "Team Dragon"
+        ],
+        "cardType": "Demon",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "When Woe uses the Attack Action: +1 Power until the end of your turn",
+        "flavourText": "\"Then you should just do whatever brings you the most Joy\"",
+        "portraitPath": "/assets/portraits/woe.png",
+        "cardAssetPath": "/output/cards/woe.svg"
+      },
+      {
+        "instanceId": "team-dragon:woe:2",
+        "cardId": "woe",
+        "name": "Woe",
+        "faction": "Team Dragon",
+        "factions": [
+          "Adams Team",
+          "Team Dragon"
+        ],
+        "cardType": "Demon",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "When Woe uses the Attack Action: +1 Power until the end of your turn",
+        "flavourText": "\"Then you should just do whatever brings you the most Joy\"",
+        "portraitPath": "/assets/portraits/woe.png",
+        "cardAssetPath": "/output/cards/woe.svg"
+      },
+      {
+        "instanceId": "team-dragon:fae-trickster:1",
+        "cardId": "fae-trickster",
+        "name": "Fae Trickster",
+        "faction": "Team Dragon",
+        "factions": [
+          "Adams Team",
+          "Team Dragon"
+        ],
+        "cardType": "Fae",
+        "arcana": "Chaff",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Fae: Look at the top card of either players deck, you may shuffle it into that deck",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/fae-trickster.png",
+        "cardAssetPath": "/output/cards/fae-trickster.svg"
+      },
+      {
+        "instanceId": "team-dragon:fae-trickster:2",
+        "cardId": "fae-trickster",
+        "name": "Fae Trickster",
+        "faction": "Team Dragon",
+        "factions": [
+          "Adams Team",
+          "Team Dragon"
+        ],
+        "cardType": "Fae",
+        "arcana": "Chaff",
+        "basePower": 1,
+        "power": 1,
+        "text": "When you play Fae: Look at the top card of either players deck, you may shuffle it into that deck",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/fae-trickster.png",
+        "cardAssetPath": "/output/cards/fae-trickster.svg"
+      },
+      {
+        "instanceId": "team-dragon:solomon-s-diary:1",
+        "cardId": "solomon-s-diary",
+        "name": "Solomon's Diary",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Dragon spirit",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "Solomon's Diary cannot use the Attack Action or Reinforce.\nIf you control \"Solomon, the Dragon\" it gains +3 Power.\n\nSupport Action: Mill 3, draw a card and return Target card from your Graveyard to your hand.",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/solomon-s-diary.png",
+        "cardAssetPath": "/output/cards/solomon-s-diary.svg"
+      },
+      {
+        "instanceId": "team-dragon:solomon-s-diary:2",
+        "cardId": "solomon-s-diary",
+        "name": "Solomon's Diary",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Dragon spirit",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "Solomon's Diary cannot use the Attack Action or Reinforce.\nIf you control \"Solomon, the Dragon\" it gains +3 Power.\n\nSupport Action: Mill 3, draw a card and return Target card from your Graveyard to your hand.",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/solomon-s-diary.png",
+        "cardAssetPath": "/output/cards/solomon-s-diary.svg"
+      },
+      {
+        "instanceId": "team-dragon:solomon-the-dragon:1",
+        "cardId": "solomon-the-dragon",
+        "name": "Solomon, the Dragon",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Dragon",
+        "arcana": "Major",
+        "basePower": 8,
+        "power": 8,
+        "text": "Frontline only. \nIf you control \"Solomon's Diary\" and \"Solomon, Confessional Spirit\": Solomon, the Dragon can attack your opponent's deck directly. \nIf you do not control \"Solomon's Diary\" and \"Solomon, Confessional Spirit\": Solomon, the Dragon cannot attack directly and At the end of your turn: destroy a card you control",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/solomon-the-dragon.png",
+        "cardAssetPath": "/output/cards/solomon-the-dragon.svg"
+      },
+      {
+        "instanceId": "team-dragon:solomon-the-dragon:2",
+        "cardId": "solomon-the-dragon",
+        "name": "Solomon, the Dragon",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Dragon",
+        "arcana": "Major",
+        "basePower": 8,
+        "power": 8,
+        "text": "Frontline only. \nIf you control \"Solomon's Diary\" and \"Solomon, Confessional Spirit\": Solomon, the Dragon can attack your opponent's deck directly. \nIf you do not control \"Solomon's Diary\" and \"Solomon, Confessional Spirit\": Solomon, the Dragon cannot attack directly and At the end of your turn: destroy a card you control",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/solomon-the-dragon.png",
+        "cardAssetPath": "/output/cards/solomon-the-dragon.svg"
+      },
+      {
+        "instanceId": "team-dragon:solomon-confessional-spirit:1",
+        "cardId": "solomon-confessional-spirit",
+        "name": "Solomon, Confessional Spirit",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Dragon spirit",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "Solomon, Confessional cannot use the Attack Action.\nIf you control \"Solomon, the Dragon\" it gains \"At the end of your turn Choose 1: Draw a card, Heal 3, Put Target card in your Graveyard on top of your deck\"\n\nSupport Action: put Target card in your Graveyard on top of your deck",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/solomon-confessional-spirit.png",
+        "cardAssetPath": "/output/cards/solomon-confessional-spirit.svg"
+      },
+      {
+        "instanceId": "team-dragon:solomon-confessional-spirit:2",
+        "cardId": "solomon-confessional-spirit",
+        "name": "Solomon, Confessional Spirit",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Dragon spirit",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "Solomon, Confessional cannot use the Attack Action.\nIf you control \"Solomon, the Dragon\" it gains \"At the end of your turn Choose 1: Draw a card, Heal 3, Put Target card in your Graveyard on top of your deck\"\n\nSupport Action: put Target card in your Graveyard on top of your deck",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/solomon-confessional-spirit.png",
+        "cardAssetPath": "/output/cards/solomon-confessional-spirit.svg"
+      },
+      {
+        "instanceId": "team-dragon:abaddon-dragon-fanatic:1",
+        "cardId": "abaddon-dragon-fanatic",
+        "name": "Abaddon, Dragon fanatic",
+        "faction": "Team Dragon",
+        "factions": [
+          "Goblins",
+          "Team Dragon"
+        ],
+        "cardType": "Kobald",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When Abaddon, Dragon fanatic dies: Search your deck for a card that shares a faction with Abaddon, Dragon fanatic and add it to your hand",
+        "flavourText": "\"Team Dragon!\"",
+        "portraitPath": "/assets/portraits/abaddon-dragon-fanatic.png",
+        "cardAssetPath": "/output/cards/abaddon-dragon-fanatic.svg"
+      },
+      {
+        "instanceId": "team-dragon:abaddon-dragon-fanatic:2",
+        "cardId": "abaddon-dragon-fanatic",
+        "name": "Abaddon, Dragon fanatic",
+        "faction": "Team Dragon",
+        "factions": [
+          "Goblins",
+          "Team Dragon"
+        ],
+        "cardType": "Kobald",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "When Abaddon, Dragon fanatic dies: Search your deck for a card that shares a faction with Abaddon, Dragon fanatic and add it to your hand",
+        "flavourText": "\"Team Dragon!\"",
+        "portraitPath": "/assets/portraits/abaddon-dragon-fanatic.png",
+        "cardAssetPath": "/output/cards/abaddon-dragon-fanatic.svg"
+      },
+      {
+        "instanceId": "team-dragon:gambit:1",
+        "cardId": "gambit",
+        "name": "Gambit",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Human",
+        "arcana": "Major",
+        "basePower": 4,
+        "power": 4,
+        "text": "When you play Gambit: put Target card your opponent controls on the top of their deck",
+        "flavourText": "\"I. Always. Win.\"",
+        "portraitPath": "/assets/portraits/gambit.png",
+        "cardAssetPath": "/output/cards/gambit.svg"
+      },
+      {
+        "instanceId": "team-dragon:gambit:2",
+        "cardId": "gambit",
+        "name": "Gambit",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Human",
+        "arcana": "Major",
+        "basePower": 4,
+        "power": 4,
+        "text": "When you play Gambit: put Target card your opponent controls on the top of their deck",
+        "flavourText": "\"I. Always. Win.\"",
+        "portraitPath": "/assets/portraits/gambit.png",
+        "cardAssetPath": "/output/cards/gambit.svg"
+      },
+      {
+        "instanceId": "team-dragon:hospitalier:1",
+        "cardId": "hospitalier",
+        "name": "Hospitalier",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Human",
+        "arcana": "Chaff",
+        "basePower": 2,
+        "power": 2,
+        "text": "Cannot attack flankers",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/hospitalier.png",
+        "cardAssetPath": "/output/cards/hospitalier.svg"
+      },
+      {
+        "instanceId": "team-dragon:hospitalier:2",
+        "cardId": "hospitalier",
+        "name": "Hospitalier",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Human",
+        "arcana": "Chaff",
+        "basePower": 2,
+        "power": 2,
+        "text": "Cannot attack flankers",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/hospitalier.png",
+        "cardAssetPath": "/output/cards/hospitalier.svg"
+      },
+      {
+        "instanceId": "team-dragon:vigor:1",
+        "cardId": "vigor",
+        "name": "Vigor",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Dragon",
+        "arcana": "Major",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Vigor: your opponent shuffles two cards from their hand into their deck",
+        "flavourText": "\"Prophecy will prevail\"",
+        "portraitPath": "/assets/portraits/vigor.png",
+        "cardAssetPath": "/output/cards/vigor.svg"
+      },
+      {
+        "instanceId": "team-dragon:vigor:2",
+        "cardId": "vigor",
+        "name": "Vigor",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Dragon",
+        "arcana": "Major",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Vigor: your opponent shuffles two cards from their hand into their deck",
+        "flavourText": "\"Prophecy will prevail\"",
+        "portraitPath": "/assets/portraits/vigor.png",
+        "cardAssetPath": "/output/cards/vigor.svg"
+      },
+      {
+        "instanceId": "team-dragon:oberon:1",
+        "cardId": "oberon",
+        "name": "Oberon",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Fae",
+        "arcana": "Major",
+        "basePower": 4,
+        "power": 4,
+        "text": "When you play Oberon: Target Solomon you control gains indestructable until your next turn",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/oberon.png",
+        "cardAssetPath": "/output/cards/oberon.svg"
+      },
+      {
+        "instanceId": "team-dragon:oberon:2",
+        "cardId": "oberon",
+        "name": "Oberon",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Fae",
+        "arcana": "Major",
+        "basePower": 4,
+        "power": 4,
+        "text": "When you play Oberon: Target Solomon you control gains indestructable until your next turn",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/oberon.png",
+        "cardAssetPath": "/output/cards/oberon.svg"
+      },
+      {
+        "instanceId": "team-dragon:weal:1",
+        "cardId": "weal",
+        "name": "Weal",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Dragon",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Weal: Each player can play one card from their Graveyard for free",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/weal.png",
+        "cardAssetPath": "/output/cards/weal.svg"
+      },
+      {
+        "instanceId": "team-dragon:weal:2",
+        "cardId": "weal",
+        "name": "Weal",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Dragon",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "When you play Weal: Each player can play one card from their Graveyard for free",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/weal.png",
+        "cardAssetPath": "/output/cards/weal.svg"
+      },
+      {
+        "instanceId": "team-dragon:vim:1",
+        "cardId": "vim",
+        "name": "Vim",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Dragon",
+        "arcana": "Major",
+        "basePower": 3,
+        "power": 3,
+        "text": "When you play Vim: Search your deck for a card. Add that card to your hand",
+        "flavourText": "\"Prophecy and Narrative must be destroyed\"",
+        "portraitPath": "/assets/portraits/vim.png",
+        "cardAssetPath": "/output/cards/vim.svg"
+      },
+      {
+        "instanceId": "team-dragon:vim:2",
+        "cardId": "vim",
+        "name": "Vim",
+        "faction": "Team Dragon",
+        "factions": [
+          "Team Dragon"
+        ],
+        "cardType": "Dragon",
+        "arcana": "Major",
+        "basePower": 3,
+        "power": 3,
+        "text": "When you play Vim: Search your deck for a card. Add that card to your hand",
+        "flavourText": "\"Prophecy and Narrative must be destroyed\"",
+        "portraitPath": "/assets/portraits/vim.png",
+        "cardAssetPath": "/output/cards/vim.svg"
+      }
+    ],
+    "cardCount": 26,
+    "uniqueCards": 13
+  },
+  {
+    "id": "thieves",
+    "name": "Thieves",
+    "faction": "Thieves",
+    "cards": [
+      {
+        "instanceId": "thieves:saladin:1",
+        "cardId": "saladin",
+        "name": "Saladin",
+        "faction": "Thieves",
+        "factions": [
+          "Adventurer",
+          "Thieves"
+        ],
+        "cardType": "Human",
+        "arcana": "Major",
+        "basePower": 4,
+        "power": 4,
+        "text": "Saladin can be played facedown in the Flank Zone.  Saladin has twice as much power when taking the Attack Action. (Facedown cards cannot be attacked or targeted by card effects. Flip the card face up when it takes an Action)",
+        "flavourText": "Since leaving his rulers in Jazeeria, Saladin bows to no one.",
+        "portraitPath": "/assets/portraits/saladin.png",
+        "cardAssetPath": "/output/cards/saladin.svg"
+      },
+      {
+        "instanceId": "thieves:saladin:2",
+        "cardId": "saladin",
+        "name": "Saladin",
+        "faction": "Thieves",
+        "factions": [
+          "Adventurer",
+          "Thieves"
+        ],
+        "cardType": "Human",
+        "arcana": "Major",
+        "basePower": 4,
+        "power": 4,
+        "text": "Saladin can be played facedown in the Flank Zone.  Saladin has twice as much power when taking the Attack Action. (Facedown cards cannot be attacked or targeted by card effects. Flip the card face up when it takes an Action)",
+        "flavourText": "Since leaving his rulers in Jazeeria, Saladin bows to no one.",
+        "portraitPath": "/assets/portraits/saladin.png",
+        "cardAssetPath": "/output/cards/saladin.svg"
+      },
+      {
+        "instanceId": "thieves:corric:1",
+        "cardId": "corric",
+        "name": "Corric",
+        "faction": "Thieves",
+        "factions": [
+          "Adventurer",
+          "Thieves"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Corric can be played facedown in the Flank Zone. When  Corric takes the Attack Action for the first time, gains +2 Power for this Attack Action. (Facedown cards cannot be attacked or targeted by card effects. Flip the card face up when it takes an Action)",
+        "flavourText": "\"Question!\"",
+        "portraitPath": "/assets/portraits/corric.png",
+        "cardAssetPath": "/output/cards/corric.svg"
+      },
+      {
+        "instanceId": "thieves:corric:2",
+        "cardId": "corric",
+        "name": "Corric",
+        "faction": "Thieves",
+        "factions": [
+          "Adventurer",
+          "Thieves"
+        ],
+        "cardType": "Halfling",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Corric can be played facedown in the Flank Zone. When  Corric takes the Attack Action for the first time, gains +2 Power for this Attack Action. (Facedown cards cannot be attacked or targeted by card effects. Flip the card face up when it takes an Action)",
+        "flavourText": "\"Question!\"",
+        "portraitPath": "/assets/portraits/corric.png",
+        "cardAssetPath": "/output/cards/corric.svg"
+      },
+      {
+        "instanceId": "thieves:twist:1",
+        "cardId": "twist",
+        "name": "Twist",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Halfling",
+        "arcana": "Major",
+        "basePower": 6,
+        "power": 6,
+        "text": "Once per turn you can shift Twists position without spending an action",
+        "flavourText": "\"No Gods. No Masters...\"",
+        "portraitPath": "/assets/portraits/twist.png",
+        "cardAssetPath": "/output/cards/twist.svg"
+      },
+      {
+        "instanceId": "thieves:twist:2",
+        "cardId": "twist",
+        "name": "Twist",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Halfling",
+        "arcana": "Major",
+        "basePower": 6,
+        "power": 6,
+        "text": "Once per turn you can shift Twists position without spending an action",
+        "flavourText": "\"No Gods. No Masters...\"",
+        "portraitPath": "/assets/portraits/twist.png",
+        "cardAssetPath": "/output/cards/twist.svg"
+      },
+      {
+        "instanceId": "thieves:listener:1",
+        "cardId": "listener",
+        "name": "Listener",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Support Action: flip a card in your Flank Zone facedown",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/listener.png",
+        "cardAssetPath": "/output/cards/listener.svg"
+      },
+      {
+        "instanceId": "thieves:listener:2",
+        "cardId": "listener",
+        "name": "Listener",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Support Action: flip a card in your Flank Zone facedown",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/listener.png",
+        "cardAssetPath": "/output/cards/listener.svg"
+      },
+      {
+        "instanceId": "thieves:watcher:1",
+        "cardId": "watcher",
+        "name": "Watcher",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Support Action: you can play a non major card from your hand facedown in the flank zone",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/watcher.png",
+        "cardAssetPath": "/output/cards/watcher.svg"
+      },
+      {
+        "instanceId": "thieves:watcher:2",
+        "cardId": "watcher",
+        "name": "Watcher",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 3,
+        "power": 3,
+        "text": "Support Action: you can play a non major card from your hand facedown in the flank zone",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/watcher.png",
+        "cardAssetPath": "/output/cards/watcher.svg"
+      },
+      {
+        "instanceId": "thieves:albert:1",
+        "cardId": "albert",
+        "name": "Albert",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "Support Action: Mill a card draw 2 cards",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/albert.png",
+        "cardAssetPath": "/output/cards/albert.svg"
+      },
+      {
+        "instanceId": "thieves:albert:2",
+        "cardId": "albert",
+        "name": "Albert",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Human",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "Support Action: Mill a card draw 2 cards",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/albert.png",
+        "cardAssetPath": "/output/cards/albert.svg"
+      },
+      {
+        "instanceId": "thieves:ogglethorpe:1",
+        "cardId": "ogglethorpe",
+        "name": "Ogglethorpe",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Gnome",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "Cards in your Flank Zone gain +1 power while they take the Attack Action",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/ogglethorpe.png",
+        "cardAssetPath": "/output/cards/ogglethorpe.svg"
+      },
+      {
+        "instanceId": "thieves:ogglethorpe:2",
+        "cardId": "ogglethorpe",
+        "name": "Ogglethorpe",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Gnome",
+        "arcana": "",
+        "basePower": 1,
+        "power": 1,
+        "text": "Cards in your Flank Zone gain +1 power while they take the Attack Action",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/ogglethorpe.png",
+        "cardAssetPath": "/output/cards/ogglethorpe.svg"
+      },
+      {
+        "instanceId": "thieves:gunsmith:1",
+        "cardId": "gunsmith",
+        "name": "Gunsmith",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Dwarf",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "Support Action: Select a card in your Flank Zone, it gains  +4 Power this turn",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/gunsmith.png",
+        "cardAssetPath": "/output/cards/gunsmith.svg"
+      },
+      {
+        "instanceId": "thieves:gunsmith:2",
+        "cardId": "gunsmith",
+        "name": "Gunsmith",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Dwarf",
+        "arcana": "",
+        "basePower": 2,
+        "power": 2,
+        "text": "Support Action: Select a card in your Flank Zone, it gains  +4 Power this turn",
+        "flavourText": "",
+        "portraitPath": "/assets/portraits/gunsmith.png",
+        "cardAssetPath": "/output/cards/gunsmith.svg"
+      },
+      {
+        "instanceId": "thieves:slum-dweller:1",
+        "cardId": "slum-dweller",
+        "name": "Slum Dweller",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Human",
+        "arcana": "Chaff",
+        "basePower": 1,
+        "power": 1,
+        "text": "Can support attacking cards in your Flank Zone",
+        "flavourText": "\"Pests and Chests, you are the most dangerous hypocrites I have ever met\" - Twist",
+        "portraitPath": "/assets/portraits/slum-dweller.png",
+        "cardAssetPath": "/output/cards/slum-dweller.svg"
+      },
+      {
+        "instanceId": "thieves:slum-dweller:2",
+        "cardId": "slum-dweller",
+        "name": "Slum Dweller",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Human",
+        "arcana": "Chaff",
+        "basePower": 1,
+        "power": 1,
+        "text": "Can support attacking cards in your Flank Zone",
+        "flavourText": "\"Pests and Chests, you are the most dangerous hypocrites I have ever met\" - Twist",
+        "portraitPath": "/assets/portraits/slum-dweller.png",
+        "cardAssetPath": "/output/cards/slum-dweller.svg"
+      },
+      {
+        "instanceId": "thieves:thief:1",
+        "cardId": "thief",
+        "name": "Thief",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Human",
+        "arcana": "Chaff",
+        "basePower": 1,
+        "power": 1,
+        "text": "Thief can be played facedown in the Flank Zone. Thief has +1 Power while attacking.  (Facedown cards cannot be attacked or targeted by card effects. Flip the card",
+        "flavourText": "\"I know this city\" - Twist",
+        "portraitPath": "/assets/portraits/thief.png",
+        "cardAssetPath": "/output/cards/thief.svg"
+      },
+      {
+        "instanceId": "thieves:thief:2",
+        "cardId": "thief",
+        "name": "Thief",
+        "faction": "Thieves",
+        "factions": [
+          "Thieves"
+        ],
+        "cardType": "Human",
+        "arcana": "Chaff",
+        "basePower": 1,
+        "power": 1,
+        "text": "Thief can be played facedown in the Flank Zone. Thief has +1 Power while attacking.  (Facedown cards cannot be attacked or targeted by card effects. Flip the card",
+        "flavourText": "\"I know this city\" - Twist",
+        "portraitPath": "/assets/portraits/thief.png",
+        "cardAssetPath": "/output/cards/thief.svg"
+      }
+    ],
+    "cardCount": 20,
+    "uniqueCards": 10
+  }
+]

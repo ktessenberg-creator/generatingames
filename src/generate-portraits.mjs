@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readdir, unlink, writeFile } from "node:fs/promises";
 import path from "node:path";
 import {
   buildPortraitPrompt,
@@ -18,7 +18,7 @@ async function main() {
   await mkdir(manifestDir, { recursive: true });
   await ensurePortraitReadme(path.join(portraitDir, "README.md"));
 
-  const cards = await loadCards(rootDir);
+  const cards = await loadCards(rootDir, { resolvePortraits: true });
   const selectedCards = filterCards(cards, options);
 
   if (selectedCards.length === 0) {
@@ -31,25 +31,35 @@ async function main() {
   const manifest = [];
 
   for (const card of selectedCards) {
-    const outputExtension = provider.outputExtension || "png";
-    const outputFile = `${slugify(card.name)}.${outputExtension}`;
     const prompt = buildPortraitPrompt(card);
-    const outputPath = path.join(portraitDir, outputFile);
     const summary = {
       name: card.name,
       prompt,
-      outputFile,
       provider: provider.name
     };
 
     if (options.dryRun) {
-      manifest.push({ ...summary, status: "planned" });
+      manifest.push({
+        ...summary,
+        outputFile: `${slugify(card.name)}.${provider.outputExtension || "png"}`,
+        status: "planned"
+      });
       continue;
     }
 
-    const image = await provider.generate({ card, prompt });
-    await writeFile(outputPath, image);
-    manifest.push({ ...summary, status: "generated" });
+    const generated = await provider.generate({ card, prompt });
+    const extension = generated.extension || provider.outputExtension || "png";
+    const outputFile = `${slugify(card.name)}.${extension}`;
+    const outputPath = path.join(portraitDir, outputFile);
+
+    await removeSiblingPortraits(portraitDir, slugify(card.name), outputFile);
+    await writeFile(outputPath, generated.buffer, generated.encoding || undefined);
+
+    manifest.push({
+      ...summary,
+      outputFile,
+      status: "generated"
+    });
     console.log(`Generated portrait for ${card.name} -> ${outputPath}`);
   }
 
@@ -82,7 +92,7 @@ function parseArgs(argv) {
     force: argv.includes("--force"),
     names: [],
     limit: Number.POSITIVE_INFINITY,
-    provider: process.env.LOCAL_IMAGE_PROVIDER || "automatic1111",
+    provider: process.env.LOCAL_IMAGE_PROVIDER || "dataset",
     baseUrl: process.env.LOCAL_IMAGE_BASE_URL || "http://127.0.0.1:7860",
     negativePrompt:
       process.env.LOCAL_IMAGE_NEGATIVE_PROMPT ||
@@ -134,6 +144,30 @@ function filterCards(cards, options) {
 }
 
 function createProvider(options) {
+  if (options.provider === "dataset") {
+    return {
+      name: "dataset",
+      outputExtension: "png",
+      async generate({ card }) {
+        if (!card.portraitUrl) {
+          throw new Error(`Card "${card.name}" does not have a dataset image URL.`);
+        }
+
+        const response = await fetch(card.portraitUrl);
+        if (!response.ok) {
+          const errorText = await response.text();
+          throw new Error(`Dataset image request failed for ${card.name} (${response.status}): ${errorText}`);
+        }
+
+        const arrayBuffer = await response.arrayBuffer();
+        return {
+          buffer: Buffer.from(arrayBuffer),
+          extension: extensionFromResponse(card.portraitUrl, response.headers.get("content-type"))
+        };
+      }
+    };
+  }
+
   if (options.provider === "automatic1111") {
     return {
       name: "automatic1111",
@@ -163,7 +197,11 @@ function createProvider(options) {
         if (!image) {
           throw new Error("Automatic1111 response did not include an image.");
         }
-        return Buffer.from(image, "base64");
+
+        return {
+          buffer: Buffer.from(image, "base64"),
+          extension: "png"
+        };
       }
     };
   }
@@ -174,12 +212,15 @@ function createProvider(options) {
       outputExtension: "svg",
       async generate({ card, prompt }) {
         const svg = renderMockPortraitSvg(card.name, prompt, options.modelHint);
-        return Buffer.from(svg, "utf8");
+        return {
+          buffer: Buffer.from(svg, "utf8"),
+          extension: "svg"
+        };
       }
     };
   }
 
-  throw new Error(`Unsupported provider "${options.provider}". Supported providers: automatic1111, mock`);
+  throw new Error(`Unsupported provider "${options.provider}". Supported providers: dataset, automatic1111, mock`);
 }
 
 function renderMockPortraitSvg(name, prompt, modelHint) {
@@ -222,6 +263,31 @@ function escape(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&apos;");
+}
+
+function extensionFromResponse(url, contentType) {
+  const normalizedType = String(contentType ?? "").toLowerCase();
+  if (normalizedType.includes("png")) return "png";
+  if (normalizedType.includes("jpeg") || normalizedType.includes("jpg")) return "jpg";
+  if (normalizedType.includes("webp")) return "webp";
+  if (normalizedType.includes("svg")) return "svg";
+
+  const pathname = new URL(url).pathname.toLowerCase();
+  if (pathname.endsWith(".png")) return "png";
+  if (pathname.endsWith(".jpg") || pathname.endsWith(".jpeg")) return "jpg";
+  if (pathname.endsWith(".webp")) return "webp";
+  if (pathname.endsWith(".svg")) return "svg";
+  return "png";
+}
+
+async function removeSiblingPortraits(portraitDir, base, keepFile) {
+  const files = await readdir(portraitDir);
+  const prefix = `${base}.`;
+  for (const file of files) {
+    if (file.startsWith(prefix) && file !== keepFile) {
+      await unlink(path.join(portraitDir, file));
+    }
+  }
 }
 
 main().catch((error) => {

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GameGen Prototype</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section id="test-links" class="test-links hidden"></section>
+
+      <section class="hero">
+        <div>
+          <p class="eyebrow">GameGen Prototype</p>
+          <h1>Deck of Prophecy</h1>
+          <p class="lede">Pick a faction deck, draw five cards, and play cards onto your board while only seeing your opponent’s board and hand count.</p>
+        </div>
+        <div id="lobby-actions" class="lobby-actions"></div>
+      </section>
+
+      <section id="status-banner" class="status-banner hidden"></section>
+
+      <section id="main-layout" class="layout">
+        <aside id="setup-panel" class="panel">
+          <h2>Game Setup</h2>
+          <div id="setup-view"></div>
+        </aside>
+
+        <section id="game-table" class="table">
+          <div class="board-stack">
+            <div class="zone">
+              <div id="opponent-board" class="battlefield"></div>
+            </div>
+
+            <div class="zone">
+              <div id="self-board" class="battlefield friendly"></div>
+            </div>
+
+            <div class="zone hand-zone">
+              <div class="hand-layout">
+                <h2 class="hand-side-label">Hand</h2>
+                <div class="hand-content">
+                  <div class="zone-header zone-header-meta-only">
+                    <span id="hand-meta"></span>
+                  </div>
+                  <div id="self-hand" class="card-row hand-row"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="game-sidebar">
+            <section id="turn-controls" class="turn-controls hidden"></section>
+          </aside>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+  </html>
