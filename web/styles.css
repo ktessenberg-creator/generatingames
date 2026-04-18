@@ -426,9 +426,9 @@ h1 {
   gap: 8px;
   min-width: 0;
   width: 100%;
-  min-height: 104px;
-  padding: 12px;
-  border-radius: 16px;
+  min-height: 68px;
+  padding: 8px 10px;
+  border-radius: 14px;
   border: 1px dashed rgba(106, 73, 36, 0.28);
   background: rgba(255,255,255,0.38);
   text-align: center;
@@ -437,7 +437,7 @@ h1 {
 }
 
 .own-life {
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .leader-drop.attacking {
@@ -464,7 +464,7 @@ h1 {
 
 .battle-main-stack {
   display: grid;
-  gap: 10px;
+  gap: 6px;
 }
 
 .battle-main .board-cards {
@@ -516,13 +516,13 @@ h1 {
 
 .battle-pocket-card {
   position: relative;
-  min-height: 124px;
-  border-radius: 18px;
+  min-height: 102px;
+  border-radius: 16px;
   border: 1px solid rgba(106, 73, 36, 0.18);
   background: rgba(255,255,255,0.42);
-  padding: 10px;
+  padding: 8px;
   display: grid;
-  gap: 8px;
+  gap: 6px;
   align-content: start;
   justify-items: center;
 }
@@ -577,37 +577,24 @@ h1 {
 }
 
 .deck-pocket {
-  min-height: 124px;
+  min-height: 102px;
 }
 
 .deck-icon {
   position: relative;
-  width: 60px;
-  height: 78px;
-  margin-top: 20px;
+  width: 50px;
+  height: 66px;
+  margin-top: 16px;
 }
 
-.deck-icon span {
-  position: absolute;
-  inset: 0;
-  border-radius: 12px;
-  background: linear-gradient(180deg, rgba(110, 78, 43, 0.95), rgba(64, 43, 21, 0.95));
-  border: 1px solid rgba(255,255,255,0.3);
-  box-shadow: 0 8px 18px rgba(45, 28, 12, 0.16);
-}
-
-.deck-icon span:nth-child(1) {
-  transform: translate(0, 0);
-}
-
-.deck-icon span:nth-child(2) {
-  transform: translate(4px, -4px);
-  opacity: 0.86;
-}
-
-.deck-icon span:nth-child(3) {
-  transform: translate(8px, -8px);
-  opacity: 0.7;
+.deck-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(45, 28, 12, 0.18);
+  background: rgba(64, 43, 21, 0.28);
 }
 
 .pocket-action {
@@ -618,22 +605,22 @@ h1 {
 .graveyard-pocket-stack {
   position: relative;
   display: inline-block;
-  width: 92px;
-  min-height: 128px;
-  margin-top: 20px;
+  width: 74px;
+  min-height: 100px;
+  margin-top: 16px;
 }
 
 .graveyard-pocket .graveyard-card.compact {
-  width: 92px;
+  width: 74px;
 }
 
 .graveyard-pocket .graveyard-empty.compact {
-  width: 92px;
-  min-height: 128px;
+  width: 74px;
+  min-height: 100px;
   display: grid;
   place-items: center;
   padding: 8px;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .graveyard-pocket-actions {
@@ -646,11 +633,11 @@ h1 {
 .board-zone {
   position: relative;
   width: 100%;
-  min-height: 124px;
-  border-radius: 18px;
+  min-height: 98px;
+  border-radius: 16px;
   border: 1px dashed rgba(106, 73, 36, 0.26);
   background: rgba(255,255,255,0.32);
-  padding: 12px;
+  padding: 8px;
   transition: background 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 120ms ease;
 }
 
@@ -683,20 +670,20 @@ h1 {
 }
 
 .board-zone header {
-  font-size: 0.8rem;
+  font-size: 0.65rem;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .board-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  min-height: 104px;
+  gap: 6px;
+  min-height: 78px;
   align-content: flex-start;
-  padding: 2px;
-  border-radius: 14px;
+  padding: 1px;
+  border-radius: 12px;
 }
 
 .vertical-zone {
@@ -704,12 +691,12 @@ h1 {
 }
 
 .vertical-zone > header {
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .vertical-cards {
   display: grid;
-  grid-template-columns: repeat(2, minmax(68px, 1fr));
+  grid-template-columns: repeat(2, minmax(58px, 1fr));
   justify-content: center;
   align-content: flex-start;
   justify-items: center;
@@ -717,9 +704,8 @@ h1 {
 
 .board-card {
   position: relative;
-  width: 68px;
-  border-radius: 14px;
-  padding-bottom: 18px;
+  width: 58px;
+  border-radius: 12px;
   isolation: isolate;
   z-index: 1;
 }
@@ -728,9 +714,9 @@ h1 {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -4px;
-  width: 22px;
-  height: 6px;
+  bottom: -3px;
+  width: 18px;
+  height: 5px;
   transform: translateX(-50%);
   border-radius: 999px;
   background: rgba(139, 79, 23, 0.92);
@@ -759,8 +745,8 @@ h1 {
 .board-card.is-exhausted::after {
   content: "";
   position: absolute;
-  inset: 0 0 18px;
-  border-radius: 12px;
+  inset: 0;
+  border-radius: 10px;
   background: linear-gradient(180deg, rgba(48, 48, 48, 0.14), rgba(68, 68, 68, 0.28));
   pointer-events: none;
 }
@@ -784,12 +770,40 @@ h1 {
 }
 
 .board-card > img {
-  width: 68px;
-  height: 94px;
+  width: 58px;
+  height: 78px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 10px;
   display: block;
   box-shadow: 0 8px 16px rgba(45, 28, 12, 0.18);
+}
+
+.faction-icon-strip {
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  display: inline-flex;
+  align-items: center;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.faction-icon-badge {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: rgba(255, 248, 236, 0.96);
+  border: 1px solid rgba(90, 64, 38, 0.18);
+  box-shadow: 0 4px 10px rgba(35, 23, 12, 0.12);
+  display: grid;
+  place-items: center;
+  margin-left: calc(var(--icon-index, 0) * -3px);
+}
+
+.faction-icon-badge img {
+  width: 11px;
+  height: 11px;
+  display: block;
 }
 
 .board-card::before {
@@ -805,13 +819,19 @@ h1 {
 }
 
 .board-card-name {
-  display: block;
-  margin-top: 6px;
-  font-size: 0.68rem;
-  line-height: 1.1;
+  position: absolute;
+  left: 3px;
+  right: 3px;
+  top: 3px;
+  padding: 2px 4px;
+  border-radius: 8px;
+  background: rgba(35, 22, 10, 0.82);
+  color: rgba(255, 248, 236, 0.96);
+  backdrop-filter: blur(4px);
+  font-size: 0.5rem;
+  line-height: 1.05;
   text-align: center;
   font-weight: 700;
-  color: var(--ink);
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -821,18 +841,18 @@ h1 {
 
 .power-chip {
   position: absolute;
-  right: -4px;
-  top: -4px;
-  min-width: 28px;
-  height: 28px;
-  padding: 0 6px;
-  border-radius: 14px;
+  right: -3px;
+  top: -3px;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 5px;
+  border-radius: 11px;
   background: rgba(35, 22, 10, 0.95);
   color: white;
   display: grid;
   place-items: center;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.72rem;
 }
 
 .card-hover {
@@ -900,13 +920,13 @@ body.dragging-card #self-board .board-card > * {
 }
 
 .empty-slot {
-  min-height: 94px;
-  min-width: 68px;
+  min-height: 78px;
+  min-width: 58px;
   display: grid;
   place-items: center;
-  font-size: 0.82rem;
+  font-size: 0.72rem;
   color: rgba(81, 58, 33, 0.72);
-  border-radius: 12px;
+  border-radius: 10px;
   background: rgba(131, 101, 73, 0.08);
 }
 
@@ -1145,6 +1165,21 @@ button:disabled {
   background: #f4ead7;
 }
 
+.combat-faction-strip {
+  left: 8px;
+  bottom: 36px;
+}
+
+.combat-faction-strip .faction-icon-badge {
+  width: 18px;
+  height: 18px;
+}
+
+.combat-faction-strip .faction-icon-badge img {
+  width: 14px;
+  height: 14px;
+}
+
 .combat-preview-copy {
   display: grid;
   gap: 2px;
@@ -1181,6 +1216,11 @@ button:disabled {
   border-radius: 14px;
   box-shadow: 0 12px 22px rgba(35, 23, 12, 0.18);
   background: #f4ead7;
+}
+
+.graveyard-faction-strip {
+  left: 6px;
+  bottom: 6px;
 }
 
 .combat-option-card strong,

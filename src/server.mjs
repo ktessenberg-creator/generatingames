@@ -1,7 +1,7 @@
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { buildFactionDecks, writeFactionDecks } from "./lib/decks.mjs";
+import { buildFactionDecks } from "./lib/decks.mjs";
 import { GameServer } from "./lib/game-server.mjs";
 
 const PORT = Number.parseInt(process.env.PORT ?? "3000", 10);
@@ -9,7 +9,6 @@ const PORT = Number.parseInt(process.env.PORT ?? "3000", 10);
 async function main() {
   const rootDir = process.cwd();
   const decks = await buildFactionDecks(rootDir);
-  await writeFactionDecks(rootDir, decks);
   const gameServer = new GameServer(decks);
   const scriptedTest = gameServer.createScriptedTestGame();
   const server = createServer((request, response) => {

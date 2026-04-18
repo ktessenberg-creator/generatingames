@@ -15,7 +15,8 @@ import {
 const OPENING_HAND_SIZE = 5;
 const BOARD_SLOTS_PER_ZONE = 7;
 const BOARD_ZONES = ["frontline", "flank", "backline"];
-const ACTIONS_PER_TURN = 3;
+const OPENING_PLAYER_ACTIONS = 3;
+const ACTIONS_PER_TURN = 4;
 const STARTING_LIFE_TOTAL = 20;
 
 export class GameServer {
@@ -620,9 +621,10 @@ function serializeOpponent(player) {
 function beginTurn(game, seat, { skipDraw }) {
   game.turnPlayerSeat = seat;
   game.turnNumber += 1;
+  const actionsForTurn = game.turnNumber === 1 && seat === "one" ? OPENING_PLAYER_ACTIONS : ACTIONS_PER_TURN;
 
   for (const player of Object.values(game.players)) {
-    player.actionsRemaining = player.seat === seat ? ACTIONS_PER_TURN : 0;
+    player.actionsRemaining = player.seat === seat ? actionsForTurn : 0;
     player.tempCardPower = {};
     player.tempGoblinPower = 0;
     player.directAttackIds = [];
@@ -928,6 +930,7 @@ function serializeCombatCard(player, entry) {
     name: entry.card.name,
     zone: entry.zone,
     power: getCardPower(player, entry.card),
+    factionIconPaths: entry.card.factionIconPaths || [],
     portraitPath: entry.card.portraitPath || entry.card.cardAssetPath,
     cardAssetPath: entry.card.cardAssetPath
   };
@@ -940,6 +943,7 @@ function listReadyBacklineReinforcersDetailed(player) {
       id: card.instanceId,
       name: card.name,
       power: getCardPower(player, card),
+      factionIconPaths: card.factionIconPaths || [],
       portraitPath: card.portraitPath || card.cardAssetPath,
       cardAssetPath: card.cardAssetPath,
       zone: "backline"

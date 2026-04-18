@@ -159,8 +159,9 @@ function renderTurnControls() {
   const self = state.view.players.self;
   const isYourTurn = state.view.turnPlayerSeat === state.view.viewerSeat;
   const canSpendAction = isYourTurn && self.actionsRemaining > 0;
-  const spent = 3 - self.actionsRemaining;
-  const actionDots = Array.from({ length: 3 }, (_, index) => {
+  const totalActions = state.view.turnNumber === 1 && state.view.turnPlayerSeat === "one" ? 3 : 4;
+  const spent = Math.max(0, totalActions - self.actionsRemaining);
+  const actionDots = Array.from({ length: totalActions }, (_, index) => {
     const spentClass = index < spent ? "spent" : "";
     return `<span class="action-dot ${spentClass}"></span>`;
   }).join("");
@@ -267,6 +268,7 @@ function renderCombatPreviewCard(card, role = "") {
   return `
     <article class="combat-preview-card ${role ? `is-${role}` : ""}">
       <img src="${card.cardAssetPath}" alt="${card.name}" draggable="false" />
+      ${renderFactionIconStrip(card, "combat-faction-strip")}
       <div class="combat-preview-copy">
         <strong>${card.name}</strong>
         <span>${card.zone} • ${card.power} power</span>
@@ -282,6 +284,7 @@ function renderCombatOptionCard(option, attributeName = "data-choice") {
   return `
     <button class="secondary modal-option combat-option-card" ${attributeName}="${option.id}">
       <img src="${option.cardAssetPath}" alt="${option.name}" draggable="false" />
+      ${renderFactionIconStrip(option, "combat-faction-strip")}
       <strong>${option.name}</strong>
       <span>${option.power} power</span>
       <div class="card-hover combat-card-hover">
@@ -589,9 +592,7 @@ function renderDeckPocket(deckCount, canDraw, isSelf) {
         ${isSelf ? `<button class="secondary pocket-action pocket-overlay-action" id="draw-card" ${canDraw ? "" : "disabled"}>Draw</button>` : ""}
       </div>
       <div class="deck-icon" aria-hidden="true">
-        <span></span>
-        <span></span>
-        <span></span>
+        <img src="/assets/general/CardReverse.png" alt="" draggable="false" />
       </div>
     </section>
   `;
@@ -635,6 +636,7 @@ function renderGraveyardPocket(discard, playableGraveyard, isSelf) {
               </div>
               <article class="graveyard-card compact">
                 <img src="${topCard.cardAssetPath}" alt="${topCard.name}" />
+                ${renderFactionIconStrip(topCard, "graveyard-faction-strip")}
               </article>
             </div>
           `
@@ -674,12 +676,34 @@ function renderBoardCard(card, interactive, attackSurface = false) {
   return `
     <article class="board-card ${readinessClass} ${hasAbility ? "has-ability" : ""}" data-board-card-id="${card.instanceId}" data-card-name="${card.name}" ${attackTargetAttrs} ${interactive ? `data-drag-board-card="${card.instanceId}" data-zone="${card.zone || ""}"` : ""}>
       <img src="${portraitSrc}" alt="${card.name}" draggable="false" />
+      ${renderFactionIconStrip(card, "board-faction-strip")}
       <span class="board-card-name">${card.name}</span>
       <span class="power-chip">${card.power}</span>
       <div class="card-hover">
         <img src="${card.cardAssetPath}" alt="${card.name}" draggable="false" />
       </div>
     </article>
+  `;
+}
+
+function renderFactionIconStrip(card, className = "") {
+  const iconPaths = (card.factionIconPaths || []).slice(0, 3);
+  if (iconPaths.length === 0) {
+    return "";
+  }
+
+  return `
+    <div class="faction-icon-strip ${className}">
+      ${iconPaths
+        .map(
+          (iconPath, index) => `
+            <span class="faction-icon-badge" style="--icon-index:${index}">
+              <img src="${iconPath}" alt="" draggable="false" />
+            </span>
+          `
+        )
+        .join("")}
+    </div>
   `;
 }
 
@@ -1087,8 +1111,8 @@ async function buildAbilityRequest(ability, self) {
   if (ability.type === "hydra-devour" || ability.type === "orc-marksmen") {
     const choices = self.board.frontline
       .concat(self.board.flank, self.board.backline)
-      .filter((card) => String(card.cardType ?? "").toLowerCase().includes("goblin"))
-      .map((card) => ({ id: card.instanceId, name: card.name, power: card.power }));
+      .filter((card) => isGoblinChoiceCandidate(card))
+      .map((card) => buildBoardCardChoice(card));
     const targetId = await chooseCardOption(ability.targetPrompt || "Choose a Goblin to destroy", choices, true);
     if (!targetId) {
       throw new Error("A Goblin target is required.");
@@ -1099,8 +1123,8 @@ async function buildAbilityRequest(ability, self) {
   if (ability.type === "goblin-warchief") {
     const choices = self.board.frontline
       .concat(self.board.flank, self.board.backline)
-      .filter((card) => String(card.cardType ?? "").toLowerCase().includes("goblin"))
-      .map((card) => ({ id: card.instanceId, name: card.name, power: card.power }));
+      .filter((card) => isGoblinChoiceCandidate(card))
+      .map((card) => buildBoardCardChoice(card));
     const targetId = await chooseCardOption(ability.targetPrompt || "Choose a Goblin to support", choices, true);
     if (!targetId) {
       throw new Error("A Goblin target is required.");
@@ -1121,6 +1145,23 @@ function readyBackliners(board, excludeId = null) {
       cardAssetPath: card.cardAssetPath,
       zone: "backline"
     }));
+}
+
+function isGoblinChoiceCandidate(card) {
+  return (
+    String(card.cardType ?? "").toLowerCase().includes("goblin") ||
+    (card.factions || []).some((faction) => String(faction).toLowerCase() === "goblins")
+  );
+}
+
+function buildBoardCardChoice(card) {
+  return {
+    id: card.instanceId,
+    name: card.name,
+    power: card.power,
+    cardAssetPath: card.cardAssetPath,
+    zone: card.zone || ""
+  };
 }
 
 function findBoardCard(board, instanceId) {
@@ -1198,17 +1239,20 @@ function chooseCardOption(title, options, required = false) {
   return new Promise((resolve) => {
     modalHost.innerHTML = `
       <div class="modal-scrim">
-        <div class="modal-card">
+        <div class="modal-card combat-modal">
           <h3>${title}</h3>
-          <div class="modal-options">
+          <div class="modal-options combat-option-grid">
             ${options
               .map(
-                (option) => `
-                  <button class="secondary modal-option" data-choice="${option.id}">
-                    <strong>${option.name}</strong>
-                    <span>${option.power} power</span>
-                  </button>
-                `
+                (option) =>
+                  option.cardAssetPath
+                    ? renderCombatOptionCard(option, "data-choice")
+                    : `
+                      <button class="secondary modal-option" data-choice="${option.id}">
+                        <strong>${option.name}</strong>
+                        <span>${option.power} power</span>
+                      </button>
+                    `
               )
               .join("")}
           </div>
@@ -1267,9 +1311,9 @@ function chooseCardAction(cardName, ability) {
 
     for (const button of modalHost.querySelectorAll("[data-card-action]")) {
       button.onclick = () => {
-        const useAction = button.dataset.cardAction === "use";
+        const selectedAction = button.dataset.cardAction;
         modalHost.innerHTML = "";
-        resolve(useAction);
+        resolve(selectedAction);
       };
     }
   });
