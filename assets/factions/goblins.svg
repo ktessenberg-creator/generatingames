@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#f4ffe9" />
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#5a8e2f" stroke-width="4" />
+  <path d="M28 80 L42 34 L60 50 L78 34 L92 80 Z" fill="#5a8e2f" />
+  <path d="M46 66 L52 58 L60 66 L68 58 L74 66" fill="none" stroke="#f4ffe9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <title>Goblins</title>
+</svg>

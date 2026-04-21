@@ -7,7 +7,9 @@ const state = {
   view: null,
   viewHash: "",
   dragPayload: null,
-  pointerDrag: null
+  pointerDrag: null,
+  dismissedRevealKey: "",
+  pendingEffectDraft: null
 };
 
 const setupView = document.querySelector("#setup-view");
@@ -68,6 +70,7 @@ function render() {
   renderTurnControls();
   renderPendingDefenseChoice();
   renderPendingEffectChoice();
+  renderSpecialReveal();
   renderSetup();
   renderBoards();
 }
@@ -173,6 +176,7 @@ function renderTurnControls() {
         <strong>${isYourTurn ? "Your turn" : "Opponent turn"}</strong>
         <span>${self.actionsRemaining} actions remaining</span>
       </div>
+      <div class="battle-pocket-chip battle-pocket-count ribbon-life-chip">${self.lifeTotal} life</div>
       <div class="action-track" aria-label="${self.actionsRemaining} actions remaining">
         ${actionDots}
       </div>
@@ -195,6 +199,64 @@ function renderPendingDefenseChoice() {
   }
 
   modalHost.dataset.mode = "pending-defense";
+  if (pending.mode === "redirect") {
+    modalHost.innerHTML = `
+      <div class="modal-scrim">
+        <div class="modal-card combat-modal">
+          <h3>Byron Redirect</h3>
+          <p>${pending.attackerName} is attacking ${pending.defenderName}. You may redirect that attack to Byron.</p>
+          <div class="combat-preview-grid">
+            <section class="combat-preview-column">
+              <span class="combat-preview-label">Attacking</span>
+              <div class="combat-preview-stack">
+                ${renderCombatPreviewCard(pending.attacker, "attacker")}
+                ${
+                  pending.attackingReinforcer
+                    ? `
+                      <div class="combat-preview-connector">+</div>
+                      ${renderCombatPreviewCard(pending.attackingReinforcer, "reinforcer")}
+                    `
+                    : ""
+                }
+              </div>
+            </section>
+            <section class="combat-preview-column">
+              <span class="combat-preview-label">Original Target</span>
+              <div class="combat-preview-stack">
+                ${renderCombatPreviewCard(pending.defender, "defender")}
+              </div>
+            </section>
+          </div>
+          <div class="modal-options combat-option-grid">
+            ${pending.choices.map((option) => renderCombatOptionCard(option, "data-redirect-choice")).join("")}
+          </div>
+          <div class="modal-actions">
+            <button class="primary" data-redirect-choice="">Keep Target</button>
+          </div>
+        </div>
+      </div>
+    `;
+
+    for (const button of modalHost.querySelectorAll("[data-redirect-choice]")) {
+      button.onclick = async () => {
+        const choice = button.dataset.redirectChoice || null;
+        try {
+          await api(`/api/games/${state.gameId}/respond-attack`, {
+            method: "POST",
+            body: { playerId: state.playerId, redirectTargetId: choice }
+          });
+          await refreshView();
+          modalHost.innerHTML = "";
+          modalHost.dataset.mode = "";
+          render();
+        } catch (error) {
+          window.alert(error.message);
+        }
+      };
+    }
+    return;
+  }
+
   modalHost.innerHTML = `
     <div class="modal-scrim">
       <div class="modal-card combat-modal">
@@ -301,8 +363,36 @@ function renderPendingEffectChoice() {
       modalHost.innerHTML = "";
       modalHost.dataset.mode = "";
     }
+    state.pendingEffectDraft = null;
     return;
   }
+
+  if (pending.type === "goblin-strategist") {
+    renderGoblinStrategistChoice(pending);
+    return;
+  }
+
+  if (pending.type === "reese-swap") {
+    renderReeseChoice(pending);
+    return;
+  }
+
+  if (pending.type === "rinse-chaos") {
+    renderRinseChoice(pending);
+    return;
+  }
+
+  if (pending.type === "biddimim-reorder") {
+    renderBiddimimChoice(pending);
+    return;
+  }
+
+  if (pending.type === "alieah-steal") {
+    renderAlieahChoice(pending);
+    return;
+  }
+
+  state.pendingEffectDraft = null;
 
   modalHost.dataset.mode = "pending-effect";
   modalHost.innerHTML = `
@@ -313,12 +403,26 @@ function renderPendingEffectChoice() {
         <div class="modal-options">
           ${pending.choices
             .map(
-              (choice) => `
-                <button class="secondary modal-option" data-effect-choice="${choice.id}">
-                  <strong>${choice.label}</strong>
-                  <span>${choice.detail || ""}</span>
-                </button>
-              `
+              (choice) =>
+                choice.cardAssetPath
+                  ? renderCombatOptionCard(
+                      {
+                        id: choice.id,
+                        name: choice.label,
+                        power: choice.power,
+                        zone: choice.zone,
+                        factionIconPaths: choice.factionIconPaths || [],
+                        cardAssetPath: choice.cardAssetPath,
+                        detail: choice.detail || ""
+                      },
+                      "data-effect-choice"
+                    )
+                  : `
+                    <button class="secondary modal-option" data-effect-choice="${choice.id}">
+                      <strong>${choice.label}</strong>
+                      <span>${choice.detail || ""}</span>
+                    </button>
+                  `
             )
             .join("")}
         </div>
@@ -342,6 +446,486 @@ function renderPendingEffectChoice() {
       }
     };
   }
+}
+
+function renderGoblinStrategistChoice(pending) {
+  if (state.pendingEffectDraft?.effectId !== pending.id) {
+    state.pendingEffectDraft = { effectId: pending.id, targetId: null };
+  }
+
+  const selectedTargetId = state.pendingEffectDraft?.targetId || null;
+  const uniqueTargets = [];
+  const seenTargets = new Set();
+  for (const choice of pending.choices || []) {
+    if (seenTargets.has(choice.targetId)) continue;
+    seenTargets.add(choice.targetId);
+    uniqueTargets.push({
+      id: choice.targetId,
+      name: choice.label,
+      zone: choice.zone,
+      power: choice.power,
+      cardAssetPath: choice.cardAssetPath,
+      factionIconPaths: choice.factionIconPaths || [],
+      detail: `Currently in ${choice.zone}`
+    });
+  }
+
+  const zoneChoices = (pending.choices || [])
+    .filter((choice) => choice.targetId === selectedTargetId)
+    .map((choice) => ({
+      id: choice.id,
+      name: choice.toZone,
+      detail: `Move to ${choice.toZone}`
+    }));
+
+  modalHost.dataset.mode = "pending-effect";
+  modalHost.innerHTML = `
+    <div class="modal-scrim">
+      <div class="modal-card combat-modal">
+        <h3>${pending.sourceName}</h3>
+        <p>${selectedTargetId ? "Choose the destination zone." : "Choose an opposing card to move."}</p>
+        <div class="modal-options combat-option-grid">
+          ${
+            selectedTargetId
+              ? zoneChoices
+                  .map(
+                    (choice) => `
+                      <button class="secondary modal-option" data-effect-choice="${choice.id}">
+                        <strong>${capitalizeZone(choice.name)}</strong>
+                        <span>${choice.detail}</span>
+                      </button>
+                    `
+                  )
+                  .join("")
+              : uniqueTargets.map((choice) => renderCombatOptionCard(choice, "data-effect-target")).join("")
+          }
+        </div>
+        <div class="modal-actions">
+          ${
+            selectedTargetId
+              ? `<button class="secondary" data-effect-back="true">Back</button>`
+              : ""
+          }
+        </div>
+      </div>
+    </div>
+  `;
+
+  for (const button of modalHost.querySelectorAll("[data-effect-target]")) {
+    button.onclick = () => {
+      state.pendingEffectDraft = { effectId: pending.id, targetId: button.dataset.effectTarget };
+      renderGoblinStrategistChoice(pending);
+    };
+  }
+
+  for (const button of modalHost.querySelectorAll("[data-effect-choice]")) {
+    button.onclick = async () => {
+      try {
+        await api(`/api/games/${state.gameId}/resolve-effect`, {
+          method: "POST",
+          body: { playerId: state.playerId, choiceId: button.dataset.effectChoice }
+        });
+        state.pendingEffectDraft = null;
+        await refreshView();
+        modalHost.innerHTML = "";
+        modalHost.dataset.mode = "";
+        render();
+      } catch (error) {
+        window.alert(error.message);
+      }
+    };
+  }
+
+  const backButton = modalHost.querySelector("[data-effect-back]");
+  if (backButton) {
+    backButton.onclick = () => {
+      state.pendingEffectDraft = { effectId: pending.id, targetId: null };
+      renderGoblinStrategistChoice(pending);
+    };
+  }
+}
+
+function renderReeseChoice(pending) {
+  if (state.pendingEffectDraft?.effectId !== pending.id) {
+    state.pendingEffectDraft = { effectId: pending.id, firstId: null };
+  }
+
+  const selectedFirstId = state.pendingEffectDraft?.firstId || null;
+  const choices = pending.choices || [];
+  const firstChoice = choices.find((choice) => choice.id === selectedFirstId) || null;
+  const secondChoices = choices.filter((choice) => choice.id !== selectedFirstId);
+
+  modalHost.dataset.mode = "pending-effect";
+  modalHost.innerHTML = `
+    <div class="modal-scrim">
+      <div class="modal-card combat-modal">
+        <h3>${pending.sourceName}</h3>
+        <p>${selectedFirstId ? "Choose the second card to swap with it." : pending.prompt}</p>
+        ${
+          firstChoice
+            ? `
+              <div class="modal-preview-strip">
+                <span class="combat-preview-label">First Card</span>
+                <div class="modal-options combat-option-grid">
+                  ${renderCombatPreviewCard({
+                    id: firstChoice.id,
+                    name: firstChoice.label,
+                    zone: firstChoice.zone,
+                    power: firstChoice.power,
+                    factionIconPaths: firstChoice.factionIconPaths || [],
+                    cardAssetPath: firstChoice.cardAssetPath
+                  })}
+                </div>
+              </div>
+            `
+            : ""
+        }
+        <div class="modal-options combat-option-grid">
+          ${(selectedFirstId ? secondChoices : choices).map((choice) =>
+            renderCombatOptionCard(
+              {
+                id: choice.id,
+                name: choice.label,
+                zone: choice.zone,
+                power: choice.power,
+                factionIconPaths: choice.factionIconPaths || [],
+                cardAssetPath: choice.cardAssetPath
+              },
+              selectedFirstId ? "data-reese-second" : "data-reese-first"
+            )
+          ).join("")}
+        </div>
+        <div class="modal-actions">
+          ${selectedFirstId ? `<button class="secondary" data-reese-back="true">Back</button>` : `<button class="secondary" data-reese-cancel="true">Cancel</button>`}
+        </div>
+      </div>
+    </div>
+  `;
+
+  for (const button of modalHost.querySelectorAll("[data-reese-first]")) {
+    button.onclick = () => {
+      state.pendingEffectDraft = { effectId: pending.id, firstId: button.dataset.reeseFirst };
+      renderReeseChoice(pending);
+    };
+  }
+
+  for (const button of modalHost.querySelectorAll("[data-reese-second]")) {
+    button.onclick = async () => {
+      await submitPendingEffectChoice(`swap|${selectedFirstId}|${button.dataset.reeseSecond}`);
+    };
+  }
+
+  const backButton = modalHost.querySelector("[data-reese-back]");
+  if (backButton) {
+    backButton.onclick = () => {
+      state.pendingEffectDraft = { effectId: pending.id, firstId: null };
+      renderReeseChoice(pending);
+    };
+  }
+
+  const cancelButton = modalHost.querySelector("[data-reese-cancel]");
+  if (cancelButton) {
+    cancelButton.onclick = () => {
+      modalHost.innerHTML = "";
+      modalHost.dataset.mode = "";
+      state.pendingEffectDraft = null;
+    };
+  }
+}
+
+function renderRinseChoice(pending) {
+  if (state.pendingEffectDraft?.effectId !== pending.id) {
+    state.pendingEffectDraft = { effectId: pending.id, opponentIds: [], selfIds: [] };
+  }
+
+  const opponentIds = state.pendingEffectDraft.opponentIds || [];
+  const selfIds = state.pendingEffectDraft.selfIds || [];
+  const opponentChoices = pending.opponentChoices || [];
+  const selfChoices = pending.selfChoices || [];
+  const maxOpponentSelections = Math.max(1, Number(pending.maxOpponentSelections || Math.min(2, opponentChoices.length || 0)));
+  const maxSelfSelections = Math.max(1, Number(pending.maxSelfSelections || Math.min(2, selfChoices.length || 0)));
+  const selectingOpponent = opponentIds.length < maxOpponentSelections;
+  const activeChoices = selectingOpponent
+    ? opponentChoices.filter((choice) => !opponentIds.includes(choice.id))
+    : selfChoices.filter((choice) => !selfIds.includes(choice.id));
+  const stepPrompt = selectingOpponent
+    ? `Choose enemy card ${opponentIds.length + 1} of ${maxOpponentSelections}.`
+    : `Choose your card ${selfIds.length + 1} of ${maxSelfSelections}.`;
+
+  modalHost.dataset.mode = "pending-effect";
+  modalHost.innerHTML = `
+    <div class="modal-scrim">
+      <div class="modal-card combat-modal">
+        <h3>${pending.sourceName}</h3>
+        <p>${stepPrompt}</p>
+        <div class="modal-preview-strip">
+          <span class="combat-preview-label">Enemy Picks</span>
+          <div class="modal-options combat-option-grid">
+            ${opponentIds
+              .map((id) => opponentChoices.find((choice) => choice.id === id))
+              .filter(Boolean)
+              .map((choice) => renderCombatPreviewCard({
+                id: choice.id,
+                name: choice.label,
+                zone: choice.zone,
+                power: choice.power,
+                factionIconPaths: choice.factionIconPaths || [],
+                cardAssetPath: choice.cardAssetPath
+              }))
+              .join("")}
+          </div>
+          <span class="combat-preview-label">Your Picks</span>
+          <div class="modal-options combat-option-grid">
+            ${selfIds
+              .map((id) => selfChoices.find((choice) => choice.id === id))
+              .filter(Boolean)
+              .map((choice) => renderCombatPreviewCard({
+                id: choice.id,
+                name: choice.label,
+                zone: choice.zone,
+                power: choice.power,
+                factionIconPaths: choice.factionIconPaths || [],
+                cardAssetPath: choice.cardAssetPath
+              }))
+              .join("")}
+          </div>
+        </div>
+        <div class="modal-options combat-option-grid">
+          ${activeChoices.map((choice) =>
+            renderCombatOptionCard(
+              {
+                id: choice.id,
+                name: choice.label,
+                zone: choice.zone,
+                power: choice.power,
+                factionIconPaths: choice.factionIconPaths || [],
+                cardAssetPath: choice.cardAssetPath
+              },
+              selectingOpponent ? "data-rinse-opponent" : "data-rinse-self"
+            )
+          ).join("")}
+        </div>
+        <div class="modal-actions">
+          <button class="secondary" data-rinse-back="true">Back</button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  for (const button of modalHost.querySelectorAll("[data-rinse-opponent]")) {
+    button.onclick = () => {
+      const nextOpponentIds = [...opponentIds, button.dataset.rinseOpponent];
+      state.pendingEffectDraft = { effectId: pending.id, opponentIds: nextOpponentIds, selfIds };
+      renderRinseChoice(pending);
+    };
+  }
+
+  for (const button of modalHost.querySelectorAll("[data-rinse-self]")) {
+    button.onclick = async () => {
+      const nextSelfIds = [...selfIds, button.dataset.rinseSelf];
+      if (nextSelfIds.length < maxSelfSelections) {
+        state.pendingEffectDraft = {
+          effectId: pending.id,
+          opponentIds,
+          selfIds: nextSelfIds
+        };
+        renderRinseChoice(pending);
+        return;
+      }
+      await submitPendingEffectChoice(
+        JSON.stringify({
+          opponentIds,
+          selfIds: nextSelfIds
+        })
+      );
+    };
+  }
+
+  const backButton = modalHost.querySelector("[data-rinse-back]");
+  backButton.onclick = () => {
+    if (selfIds.length > 0) {
+      state.pendingEffectDraft = { effectId: pending.id, opponentIds, selfIds: selfIds.slice(0, -1) };
+    } else if (opponentIds.length > 0) {
+      state.pendingEffectDraft = { effectId: pending.id, opponentIds: opponentIds.slice(0, -1), selfIds };
+    } else {
+      modalHost.innerHTML = "";
+      modalHost.dataset.mode = "";
+      state.pendingEffectDraft = null;
+      return;
+    }
+    renderRinseChoice(pending);
+  };
+}
+
+function renderBiddimimChoice(pending) {
+  if (state.pendingEffectDraft?.effectId !== pending.id) {
+    state.pendingEffectDraft = { effectId: pending.id, topOrder: [] };
+  }
+
+  const topOrder = state.pendingEffectDraft.topOrder || [];
+  const cards = pending.cards || [];
+  const remainingCards = cards.filter((card) => !topOrder.includes(card.id));
+  const stepText =
+    topOrder.length === 0
+      ? "Choose the first card to keep on top, or send both to the bottom."
+      : remainingCards.length
+        ? "Choose the second card for the top, or send the rest to the bottom."
+        : "Confirm the final order.";
+
+  modalHost.dataset.mode = "pending-effect";
+  modalHost.innerHTML = `
+    <div class="modal-scrim">
+      <div class="modal-card combat-modal">
+        <h3>${pending.sourceName}</h3>
+        <p>${stepText}</p>
+        ${
+          topOrder.length
+            ? `
+              <div class="modal-preview-strip">
+                <span class="combat-preview-label">Top of Deck</span>
+                <div class="modal-options combat-option-grid">
+                  ${topOrder
+                    .map((id) => cards.find((card) => card.id === id))
+                    .filter(Boolean)
+                    .map((card) => renderCombatPreviewCard({ ...card, cardAssetPath: card.cardAssetPath }, "attacker"))
+                    .join("")}
+                </div>
+              </div>
+            `
+            : ""
+        }
+        <div class="modal-options combat-option-grid">
+          ${remainingCards.map((card) => renderCombatOptionCard(card, "data-biddimim-card")).join("")}
+        </div>
+        <div class="modal-actions">
+          <button class="primary" data-biddimim-bottom="true">${topOrder.length ? "Put Rest on Bottom" : "Put Both on Bottom"}</button>
+          ${
+            topOrder.length
+              ? `<button class="secondary" data-biddimim-back="true">Back</button>`
+              : ""
+          }
+        </div>
+      </div>
+    </div>
+  `;
+
+  for (const button of modalHost.querySelectorAll("[data-biddimim-card]")) {
+    button.onclick = async () => {
+      const nextOrder = [...topOrder, button.dataset.biddimimCard];
+      const remainingAfterPick = cards.filter((card) => !nextOrder.includes(card.id));
+      if (remainingAfterPick.length) {
+        state.pendingEffectDraft = { effectId: pending.id, topOrder: nextOrder };
+        renderBiddimimChoice(pending);
+        return;
+      }
+
+      const choiceId = resolveBiddimimChoiceId(pending, nextOrder, []);
+      if (!choiceId) {
+        window.alert("Could not resolve that Biddimim order.");
+        return;
+      }
+      await submitPendingEffectChoice(choiceId);
+    };
+  }
+
+  const bottomButton = modalHost.querySelector("[data-biddimim-bottom]");
+  bottomButton.onclick = async () => {
+    const toBottom = cards.filter((card) => !topOrder.includes(card.id)).map((card) => card.id);
+    const choiceId = resolveBiddimimChoiceId(pending, topOrder, toBottom);
+    if (!choiceId) {
+      window.alert("Could not resolve that Biddimim order.");
+      return;
+    }
+    await submitPendingEffectChoice(choiceId);
+  };
+
+  const backButton = modalHost.querySelector("[data-biddimim-back]");
+  if (backButton) {
+    backButton.onclick = () => {
+      state.pendingEffectDraft = { effectId: pending.id, topOrder: topOrder.slice(0, -1) };
+      renderBiddimimChoice(pending);
+    };
+  }
+}
+
+function renderAlieahChoice(pending) {
+  state.pendingEffectDraft = null;
+  modalHost.dataset.mode = "pending-effect";
+  modalHost.innerHTML = `
+    <div class="modal-scrim">
+      <div class="modal-card combat-modal">
+        <h3>${pending.sourceName}</h3>
+        <p>${pending.prompt}</p>
+        <div class="modal-options combat-option-grid">
+          ${(pending.choices || []).map((choice) => renderCombatOptionCard({
+            id: choice.id,
+            name: choice.label,
+            zone: choice.zone,
+            power: choice.power,
+            cardAssetPath: choice.cardAssetPath,
+            factionIconPaths: choice.factionIconPaths || [],
+            detail: `In ${choice.zone}`
+          }, "data-effect-choice")).join("")}
+        </div>
+        <div class="modal-actions">
+          <button class="secondary" data-alieah-decline="true">Decline</button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  for (const button of modalHost.querySelectorAll("[data-effect-choice]")) {
+    button.onclick = async () => {
+      await submitPendingEffectChoice(button.dataset.effectChoice);
+    };
+  }
+
+  const decline = modalHost.querySelector("[data-alieah-decline]");
+  decline.onclick = async () => {
+    await submitPendingEffectChoice(null);
+  };
+}
+
+function renderSpecialReveal() {
+  const reveal = state.view?.specialReveal;
+  const revealKey = reveal ? `${state.view.gameId}:${state.view.turnNumber}:${state.view.lastEvent?.summary}` : "";
+  if (!reveal || state.dismissedRevealKey === revealKey) {
+    if (modalHost.dataset.mode === "special-reveal") {
+      modalHost.innerHTML = "";
+      modalHost.dataset.mode = "";
+    }
+    return;
+  }
+
+  modalHost.dataset.mode = "special-reveal";
+  modalHost.innerHTML = `
+    <div class="modal-scrim">
+      <div class="modal-card combat-modal">
+        <h3>${reveal.sourceName}</h3>
+        <p>${reveal.prompt}</p>
+        <div class="modal-options combat-option-grid">
+          ${reveal.cards.map((card) => renderCombatOptionCard({
+            id: card.instanceId,
+            name: card.name,
+            power: card.power,
+            factionIconPaths: card.factionIconPaths || [],
+            cardAssetPath: card.cardAssetPath,
+            detail: card.arcana ? `${card.arcana} ${card.cardType || ""}`.trim() : card.cardType || ""
+          }, "data-reveal-card")).join("")}
+        </div>
+        <div class="modal-actions">
+          <button class="primary" data-close-reveal="true">Close</button>
+        </div>
+      </div>
+    </div>
+  `;
+
+  const close = modalHost.querySelector("[data-close-reveal]");
+  close.onclick = () => {
+    state.dismissedRevealKey = revealKey;
+    modalHost.innerHTML = "";
+    modalHost.dataset.mode = "";
+  };
 }
 
 function renderSetup() {
@@ -412,7 +996,7 @@ function renderBoards() {
   const opponent = state.view.players.opponent;
   const canAttack = state.view.status === "active" && state.view.turnPlayerSeat === state.view.viewerSeat;
   const playableGraveyard = new Set(self.playableGraveyard || []);
-  const canDraw = state.view.status === "active" && state.view.turnPlayerSeat === state.view.viewerSeat && self.actionsRemaining > 0;
+  const canDraw = state.view.status === "active" && state.view.turnPlayerSeat === state.view.viewerSeat && self.actionsRemaining > 0 && !self.drawActionBlocked;
 
   handMeta.innerHTML = `<span>${self.handCount} cards • ${self.deckCount} in deck • ${self.discardCount} discard</span>`;
 
@@ -608,6 +1192,10 @@ function renderLeaderPocket(lifeTotal, attackSurface, isSelf) {
     `;
   }
 
+  if (isSelf) {
+    return "";
+  }
+
   return `
     <section class="leader-drop own-life">
       <span>${isSelf ? "Your Life" : "Life"}</span>
@@ -670,16 +1258,18 @@ function renderZone(label, zoneKey, cards, interactive, vertical = false, attack
 
 function renderBoardCard(card, interactive, attackSurface = false) {
   const portraitSrc = card.portraitPath || card.cardAssetPath;
-  const attackTargetAttrs = attackSurface ? `data-attack-target="true" data-target-type="unit" data-target-id="${card.instanceId}" data-target-zone="${card.zone || ""}"` : "";
+  const attackTargetAttrs = attackSurface && !card.faceDown ? `data-attack-target="true" data-target-type="unit" data-target-id="${card.instanceId}" data-target-zone="${card.zone || ""}"` : "";
   const readinessClass = card.ready ? "is-ready" : "is-exhausted";
+  const faceDownClass = card.faceDown ? "is-facedown" : "";
   const hasAbility = interactive && state.view?.players?.self?.availableAbilities?.some((entry) => entry.sourceId === card.instanceId);
+  const displayName = card.faceDown ? "Facedown" : card.name;
   return `
-    <article class="board-card ${readinessClass} ${hasAbility ? "has-ability" : ""}" data-board-card-id="${card.instanceId}" data-card-name="${card.name}" ${attackTargetAttrs} ${interactive ? `data-drag-board-card="${card.instanceId}" data-zone="${card.zone || ""}"` : ""}>
+    <article class="board-card ${readinessClass} ${faceDownClass} ${hasAbility ? "has-ability" : ""}" data-board-card-id="${card.instanceId}" data-card-name="${card.name}" data-face-down="${card.faceDown ? "true" : "false"}" ${attackTargetAttrs} ${interactive ? `data-drag-board-card="${card.instanceId}" data-zone="${card.zone || ""}"` : ""}>
       <img src="${portraitSrc}" alt="${card.name}" draggable="false" />
-      ${renderFactionIconStrip(card, "board-faction-strip")}
-      <span class="board-card-name">${card.name}</span>
-      <span class="power-chip">${card.power}</span>
-      <div class="card-hover">
+      ${card.faceDown ? "" : renderFactionIconStrip(card, "board-faction-strip")}
+      <span class="board-card-name">${displayName}</span>
+      ${card.power != null ? `<span class="power-chip">${card.power}</span>` : ""}
+      <div class="card-hover ${card.revealOnHover || !card.faceDown ? "" : "hidden"}">
         <img src="${card.cardAssetPath}" alt="${card.name}" draggable="false" />
       </div>
     </article>
@@ -826,6 +1416,20 @@ function ensureBoardInteractionBindings() {
       return;
     }
 
+    if (card.dataset.faceDown === "true") {
+      try {
+        await api(`/api/games/${state.gameId}/flip-card`, {
+          method: "POST",
+          body: { playerId: state.playerId, instanceId: card.dataset.boardCardId }
+        });
+        await refreshView();
+        render();
+      } catch (error) {
+        window.alert(error.message);
+      }
+      return;
+    }
+
     const self = state.view?.players?.self;
     const abilityMap = new Map((self?.availableAbilities || []).map((ability) => [ability.sourceId, ability]));
     const ability = abilityMap.get(card.dataset.boardCardId);
@@ -838,7 +1442,7 @@ function ensureBoardInteractionBindings() {
       if (selectedAction !== "use") {
         return;
       }
-      const body = await buildAbilityRequest(ability, self);
+      const body = await buildAbilityRequest(ability, self, state.view?.players?.opponent);
       await api(`/api/games/${state.gameId}/use-ability`, {
         method: "POST",
         body: { playerId: state.playerId, sourceId: card.dataset.boardCardId, ...body }
@@ -1082,10 +1686,10 @@ async function buildAttackRequest(dragPayload, target, self, opponent) {
         : { type: "unit", instanceId: target.dataset.targetId }
   };
 
-  if (attacker.zone === "frontline") {
+  if (attacker.zone === "frontline" || attacker.zone === "flank") {
     const attackingReinforcer = await chooseOptionalReinforcer(
       "Choose an attacking reinforcer",
-      readyBackliners(self.board, attacker.card.instanceId),
+      readyAttackingReinforcers(self.board, { ...attacker.card, zone: attacker.zone }),
       {
         attacker: {
           id: attacker.card.instanceId,
@@ -1107,7 +1711,7 @@ async function buildAttackRequest(dragPayload, target, self, opponent) {
   return body;
 }
 
-async function buildAbilityRequest(ability, self) {
+async function buildAbilityRequest(ability, self, opponent) {
   if (ability.type === "hydra-devour" || ability.type === "orc-marksmen") {
     const choices = self.board.frontline
       .concat(self.board.flank, self.board.backline)
@@ -1132,6 +1736,83 @@ async function buildAbilityRequest(ability, self) {
     return { targetId };
   }
 
+  if (ability.type === "twist-shift") {
+    const toZone = await chooseCardOption("Choose a destination zone", buildZoneChoices(["frontline", "flank", "backline"]), true);
+    if (!toZone) {
+      throw new Error("A destination is required.");
+    }
+    return { toZone };
+  }
+
+  if (ability.type === "listener-facedown") {
+    const choices = (self.board.flank || []).map((card) => buildBoardCardChoice(card));
+    const targetId = await chooseCardOption(ability.targetPrompt || "Choose a flank card", choices, true);
+    if (!targetId) {
+      throw new Error("A flank card is required.");
+    }
+    return { targetId };
+  }
+
+  if (ability.type === "watcher-facedown-play") {
+    const choices = (self.hand || [])
+      .filter((card) => String(card.arcana ?? "").toLowerCase() !== "major")
+      .map((card) => buildHandCardChoice(card));
+    const instanceId = await chooseCardOption(ability.targetPrompt || "Choose a non-major card from your hand", choices, true);
+    if (!instanceId) {
+      throw new Error("A hand card is required.");
+    }
+    return { instanceId };
+  }
+
+  if (ability.type === "gunsmith-buff") {
+    const choices = (self.board.flank || []).map((card) => buildBoardCardChoice(card));
+    const targetId = await chooseCardOption(ability.targetPrompt || "Choose a flank card", choices, true);
+    if (!targetId) {
+      throw new Error("A flank card is required.");
+    }
+    return { targetId };
+  }
+
+  if (ability.type === "warden-move-enemy") {
+    const enemyChoices = flattenBoard(opponent?.board).filter((card) => !card.faceDown).map((card) => buildBoardCardChoice(card));
+    const targetId = await chooseCardOption(ability.targetPrompt || "Choose an enemy card", enemyChoices, true);
+    if (!targetId) {
+      throw new Error("An enemy target is required.");
+    }
+    const toZone = await chooseCardOption("Choose the destination zone", buildZoneChoices(["frontline", "flank", "backline"]), true);
+    if (!toZone) {
+      throw new Error("A destination is required.");
+    }
+    return { targetId, toZone };
+  }
+
+  if (ability.type === "father-sentar-suppress") {
+    const enemyChoices = flattenBoard(opponent?.board).filter((card) => !card.faceDown).map((card) => buildBoardCardChoice(card));
+    const targetId = await chooseCardOption(ability.targetPrompt || "Choose an enemy card", enemyChoices, true);
+    if (!targetId) {
+      throw new Error("An enemy target is required.");
+    }
+    return { targetId };
+  }
+
+  if (ability.type === "catherine-return") {
+    const choices = (self.discard || []).map((card) => buildBoardCardChoice(card));
+    const targetId = await chooseCardOption(ability.targetPrompt || "Choose a graveyard card", choices, true);
+    if (!targetId) {
+      throw new Error("A graveyard card is required.");
+    }
+    return { targetId };
+  }
+
+  if (ability.type === "death-harvest") {
+    const choices = (self.discard || []).map((card) => buildBoardCardChoice(card));
+    const targetId = await chooseCardOption(ability.targetPrompt || "Choose a graveyard card", choices, true);
+    if (!targetId) {
+      throw new Error("A graveyard card is required.");
+    }
+    return { targetId };
+  }
+
   return {};
 }
 
@@ -1145,6 +1826,30 @@ function readyBackliners(board, excludeId = null) {
       cardAssetPath: card.cardAssetPath,
       zone: "backline"
     }));
+}
+
+function readyAttackingReinforcers(board, attackerCard) {
+  if (attackerCard.name === "Marcotte") {
+    return [];
+  }
+
+  if (attackerCard.zone === "frontline") {
+    return readyBackliners(board, attackerCard.instanceId);
+  }
+
+  if (attackerCard.zone === "flank") {
+    return (board.backline || [])
+      .filter((card) => card.ready && card.name === "Slum Dweller" && card.instanceId !== attackerCard.instanceId)
+      .map((card) => ({
+        id: card.instanceId,
+        name: card.name,
+        power: card.power,
+        cardAssetPath: card.cardAssetPath,
+        zone: "backline"
+      }));
+  }
+
+  return [];
 }
 
 function isGoblinChoiceCandidate(card) {
@@ -1162,6 +1867,60 @@ function buildBoardCardChoice(card) {
     cardAssetPath: card.cardAssetPath,
     zone: card.zone || ""
   };
+}
+
+function buildHandCardChoice(card) {
+  return {
+    id: card.instanceId,
+    name: card.name,
+    power: card.power,
+    cardAssetPath: card.cardAssetPath,
+    detail: card.arcana ? `${card.arcana} ${card.cardType || ""}`.trim() : card.cardType || ""
+  };
+}
+
+function capitalizeZone(zone) {
+  return String(zone || "").charAt(0).toUpperCase() + String(zone || "").slice(1);
+}
+
+function resolveBiddimimChoiceId(pending, toTop, toBottom) {
+  const topKey = JSON.stringify(toTop);
+  const bottomKey = JSON.stringify(toBottom);
+  const match = (pending.choices || []).find(
+    (choice) => JSON.stringify(choice.toTop || []) === topKey && JSON.stringify(choice.toBottom || []) === bottomKey
+  );
+  return match?.id || null;
+}
+
+async function submitPendingEffectChoice(choiceId) {
+  try {
+    await api(`/api/games/${state.gameId}/resolve-effect`, {
+      method: "POST",
+      body: { playerId: state.playerId, choiceId }
+    });
+    state.pendingEffectDraft = null;
+    await refreshView();
+    modalHost.innerHTML = "";
+    modalHost.dataset.mode = "";
+    render();
+  } catch (error) {
+    window.alert(error.message);
+  }
+}
+
+function flattenBoard(board) {
+  if (!board) {
+    return [];
+  }
+  return ["frontline", "flank", "backline"].flatMap((zone) => (board[zone] || []).map((card) => ({ ...card, zone })));
+}
+
+function buildZoneChoices(zones) {
+  return zones.map((zone) => ({
+    id: zone,
+    name: zone.charAt(0).toUpperCase() + zone.slice(1),
+    detail: "Move here"
+  }));
 }
 
 function findBoardCard(board, instanceId) {
@@ -1250,7 +2009,7 @@ function chooseCardOption(title, options, required = false) {
                     : `
                       <button class="secondary modal-option" data-choice="${option.id}">
                         <strong>${option.name}</strong>
-                        <span>${option.power} power</span>
+                        <span>${option.detail || (option.power != null ? `${option.power} power` : "")}</span>
                       </button>
                     `
               )

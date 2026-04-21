@@ -5,7 +5,8 @@ import {
   ensurePortraitReadme,
   escapeXml,
   factionIconDesigns,
-  factionPalette,
+  getFactionIconDataUri,
+  getFactionIconSvg,
   loadCards,
   slugify,
   writePromptArtifacts
@@ -32,8 +33,8 @@ async function main() {
 
   const cards = await loadCards(rootDir, { resolvePortraits: true });
 
-  for (const [faction, design] of Object.entries(factionIconDesigns)) {
-    await writeFile(path.join(iconDir, `${slugify(faction)}.svg`), design.svg, "utf8");
+  for (const faction of Object.keys(factionIconDesigns)) {
+    await writeFile(path.join(iconDir, `${slugify(faction)}.svg`), getFactionIconSvg(faction), "utf8");
   }
 
   for (const card of cards) {
@@ -57,11 +58,6 @@ function renderCardSvg(card) {
       const y = 744 + index * 34;
       return `<text x="${TEXT_X}" y="${y}" class="rules">${escapeXml(line)}</text>`;
     })
-    .join("\n");
-
-  const factions = card.factions.length > 0 ? card.factions : ["Neutral"];
-  const factionPills = factions
-    .map((faction, index) => renderFactionPill(faction, ART_X + 18 + index * 160, ART_Y + 20))
     .join("\n");
 
   const arcana = arcanaPalette[card.arcana] ?? arcanaPalette[""];
@@ -102,7 +98,6 @@ function renderCardSvg(card) {
   <rect x="${ART_X}" y="${ART_Y}" width="${ART_WIDTH}" height="${ART_HEIGHT}" rx="28" fill="url(#artBg)" filter="url(#shadow)" />
   ${artMarkup}
   <rect x="${ART_X}" y="${ART_Y}" width="${ART_WIDTH}" height="${ART_HEIGHT}" rx="28" fill="url(#grain)" opacity="0.07" />
-  ${factionPills}
   <rect x="${ART_X + 18}" y="${ART_Y + 18}" width="${ART_WIDTH - 36}" height="${ART_HEIGHT - 36}" rx="22" fill="#8d6f46" fill-opacity="0.05" stroke="#cfb077" stroke-opacity="0.72" />
   ${renderFactionIcons(card)}
   <rect x="${ART_X + 24}" y="${ART_Y + ART_HEIGHT - 72}" width="${ART_WIDTH - 48}" height="48" rx="16" fill="${arcana.bg}" fill-opacity="0.92" />
@@ -113,7 +108,6 @@ function renderCardSvg(card) {
   <style>
     .title { font-family: Georgia, 'Times New Roman', serif; font-weight: 700; fill: #f7edd2; letter-spacing: 0.6px; }
     .powerValue { font-family: Georgia, 'Times New Roman', serif; font-size: 52px; font-weight: 700; fill: #3d2b17; }
-    .factionText { font-family: Arial, sans-serif; font-size: 22px; font-weight: 700; }
     .artPrompt { font-family: Arial, sans-serif; font-size: 28px; font-weight: 700; fill: #f8efe0; letter-spacing: 3px; opacity: 0.82; }
     .artName { font-family: Georgia, 'Times New Roman', serif; font-size: 58px; font-weight: 700; fill: #fff5dc; }
     .artHint { font-family: Arial, sans-serif; font-size: 24px; fill: #f2dfbe; opacity: 0.9; }
@@ -126,15 +120,6 @@ function renderCardSvg(card) {
 </svg>`;
 }
 
-function renderFactionPill(faction, x, y) {
-  const palette = factionPalette[faction] ?? { bg: "#ebe4d1", fg: "#5c4d35" };
-  const width = Math.max(112, 26 + faction.length * 11);
-  return `<g transform="translate(${x}, ${y})">
-    <rect width="${width}" height="34" rx="17" fill="${palette.bg}" fill-opacity="0.94" />
-    <text x="${width / 2}" y="23" text-anchor="middle" class="factionText" fill="${palette.fg}">${escapeXml(faction)}</text>
-  </g>`;
-}
-
 function renderFactionIcons(card) {
   const factions = card.factions.length > 0 ? card.factions : ["Neutral"];
   return factions
@@ -142,7 +127,7 @@ function renderFactionIcons(card) {
       const x = 78 + index * 74;
       return `<g transform="translate(${x}, ${ART_Y + ART_HEIGHT - 128})">
         <circle cx="24" cy="24" r="26" fill="rgba(255, 248, 235, 0.92)" stroke="#c9ab6d" stroke-width="3" />
-        <image href="../../assets/factions/${slugify(faction)}.svg" x="0" y="0" width="48" height="48" />
+        <image href="${getFactionIconDataUri(faction)}" x="0" y="0" width="48" height="48" />
       </g>`;
     })
     .join("\n");

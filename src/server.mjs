@@ -101,6 +101,12 @@ async function handleRequest(rootDir, gameServer, scriptedTest, request, respons
     return json(response, gameServer.moveBoardCard(gameId, body.playerId, body.instanceId, body.zone));
   }
 
+  if (request.method === "POST" && url.pathname.match(/^\/api\/games\/[^/]+\/flip-card$/)) {
+    const gameId = url.pathname.split("/")[3];
+    const body = await readJsonBody(request);
+    return json(response, gameServer.flipCardFaceUp(gameId, body.playerId, body.instanceId));
+  }
+
   if (request.method === "POST" && url.pathname.match(/^\/api\/games\/[^/]+\/play-from-graveyard$/)) {
     const gameId = url.pathname.split("/")[3];
     const body = await readJsonBody(request);
@@ -128,7 +134,10 @@ async function handleRequest(rootDir, gameServer, scriptedTest, request, respons
   if (request.method === "POST" && url.pathname.match(/^\/api\/games\/[^/]+\/respond-attack$/)) {
     const gameId = url.pathname.split("/")[3];
     const body = await readJsonBody(request);
-    return json(response, gameServer.respondToPendingAttack(gameId, body.playerId, body.defendingReinforcerId ?? null));
+    return json(
+      response,
+      gameServer.respondToPendingAttack(gameId, body.playerId, body.defendingReinforcerId ?? null, body.redirectTargetId ?? null)
+    );
   }
 
   if (request.method === "POST" && url.pathname.match(/^\/api\/games\/[^/]+\/end-turn$/)) {

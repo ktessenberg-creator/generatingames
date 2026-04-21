@@ -7,7 +7,13 @@ export const factionPalette = {
   Park: { bg: "#d8f0d1", fg: "#1f5b24" },
   Thieves: { bg: "#e0d7f8", fg: "#43206b" },
   Septarchy: { bg: "#f8e0c8", fg: "#7b4512" },
-  Abaddon: { bg: "#2f1f2b", fg: "#f8dbe9" }
+  Medicarium: { bg: "#d7eef0", fg: "#174b52" },
+  "Adams Team": { bg: "#f4dfdb", fg: "#7a3328" },
+  Meatfists: { bg: "#f1d9c7", fg: "#6b3710" },
+  Abaddon: { bg: "#2f1f2b", fg: "#f8dbe9" },
+  Goblins: { bg: "#d7efc5", fg: "#34591e" },
+  "Team Dragon": { bg: "#f7ddcf", fg: "#7b311f" },
+  Neutral: { bg: "#ebe4d1", fg: "#5c4d35" }
 };
 
 export const arcanaPalette = {
@@ -37,15 +43,43 @@ export const factionIconDesigns = {
     accent: "#b86d2c",
     svg: iconSvg("Septarchy", "#b86d2c", "#fff2e4", "M60 18 L70 36 L90 40 L76 56 L80 78 L60 68 L40 78 L44 56 L30 40 L50 36 Z", "M60 34 A8 8 0 1 1 59.9 34 Z")
   },
+  Medicarium: {
+    accent: "#2d7a84",
+    svg: iconSvg("Medicarium", "#2d7a84", "#ebfbfd", "M60 18 C76 26, 88 42, 88 60 C88 78, 76 94, 60 102 C44 94, 32 78, 32 60 C32 42, 44 26, 60 18 Z", "M60 34 L60 86 M34 60 L86 60")
+  },
+  "Adams Team": {
+    accent: "#b24d3e",
+    svg: iconSvg("Adams Team", "#b24d3e", "#fff1ec", "M60 20 L82 40 L74 84 L46 84 L38 40 Z", "M48 50 L72 50 M52 64 L68 64")
+  },
+  Meatfists: {
+    accent: "#b76b2f",
+    svg: iconSvg("Meatfists", "#b76b2f", "#fff1e6", "M34 84 C30 56, 40 30, 56 26 L56 84 Z M64 26 C80 30, 90 56, 86 84 L64 84 Z", "M60 34 L60 82 M48 50 L48 74 M72 50 L72 74")
+  },
   Abaddon: {
     accent: "#5a243f",
     svg: iconSvg("Abaddon", "#5a243f", "#fbeaf1", "M36 84 C36 50, 44 28, 60 20 C76 28, 84 50, 84 84 Z", "M48 58 C52 48, 56 44, 60 42 C64 44, 68 48, 72 58")
+  },
+  Goblins: {
+    accent: "#5a8e2f",
+    svg: iconSvg("Goblins", "#5a8e2f", "#f4ffe9", "M28 80 L42 34 L60 50 L78 34 L92 80 Z", "M46 66 L52 58 L60 66 L68 58 L74 66")
+  },
+  "Team Dragon": {
+    accent: "#b6492e",
+    svg: iconSvg("Team Dragon", "#b6492e", "#fff0e9", "M34 86 C38 48, 54 24, 74 22 C68 42, 82 50, 88 70 C76 64, 62 70, 54 88 Z", "M54 64 C60 52, 68 46, 78 42")
   },
   Neutral: {
     accent: "#7f715e",
     svg: iconSvg("Neutral", "#7f715e", "#f4f0ea", "M60 22 L94 44 L94 76 L60 98 L26 76 L26 44 Z", "M60 34 L80 46 L80 72 L60 84 L40 72 L40 46 Z")
   }
 };
+
+export function getFactionIconSvg(faction) {
+  return (factionIconDesigns[faction] ?? factionIconDesigns.Neutral).svg;
+}
+
+export function getFactionIconDataUri(faction) {
+  return `data:image/svg+xml;utf8,${encodeURIComponent(getFactionIconSvg(faction))}`;
+}
 
 export async function loadCards(rootDir, { resolvePortraits = false } = {}) {
   const inputPath = await resolveInputPath(rootDir);

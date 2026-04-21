@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#ebfbfd" />
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#2d7a84" stroke-width="4" />
+  <path d="M60 18 C76 26, 88 42, 88 60 C88 78, 76 94, 60 102 C44 94, 32 78, 32 60 C32 42, 44 26, 60 18 Z" fill="#2d7a84" />
+  <path d="M60 34 L60 86 M34 60 L86 60" fill="none" stroke="#ebfbfd" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <title>Medicarium</title>
+</svg>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="56" fill="#fff1ec" />
+  <circle cx="60" cy="60" r="54" fill="none" stroke="#b24d3e" stroke-width="4" />
+  <path d="M60 20 L82 40 L74 84 L46 84 L38 40 Z" fill="#b24d3e" />
+  <path d="M48 50 L72 50 M52 64 L68 64" fill="none" stroke="#fff1ec" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <title>Adams Team</title>
+</svg>
