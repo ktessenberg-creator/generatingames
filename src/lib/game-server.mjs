@@ -251,7 +251,7 @@ export class GameServer {
     game.lastEvent = {
       type: "draw",
       attackerSeat: player.seat,
-      summary: `${player.selectedDeckName || "Player"} drew ${drawn[0]?.name || "a card"}.`
+      summary: `${player.selectedDeckName || "Player"} drew a card.`
     };
     return this.buildView(game, player.seat);
   }
